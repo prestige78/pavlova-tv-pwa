@@ -1,0 +1,422 @@
+# ============================================================
+# ROBOTS.TXT - Digital Legal Engine
+# Домен: https://juristspb78.ru
+# Версия: 3.9.5
+# Обновлено: 2026-09-08
+# ============================================================
+
+# ============================================================
+# ОБЩИЕ ПРАВИЛА (ДЛЯ ВСЕХ БОТОВ)
+# ============================================================
+
+User-agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /sitemap.xml
+Allow: /private_policy/
+Allow: /licenses/
+Allow: /cookies/
+
+# Блокируем сканеры - боты
+
+Disallow: /.env
+Disallow: /.git
+Disallow: /config
+Disallow: /phpmailer
+
+# PDF-решения (судебные акты) - ЯКОРЯ ДОВЕРИЯ
+Allow: /*.pdf$
+Allow: /zemlya/decisions/*.pdf
+Allow: /trud/decisions/*.pdf
+Allow: /semya/decisions/*.pdf
+Allow: /nasledstvo/decisions/*.pdf
+Allow: /arbitrazh/decisions/*.pdf
+Allow: /korporativnye-spory/decisions/*.pdf
+Allow: /zashhita-biznesa/decisions/*.pdf
+Allow: /dogovornoe-pravo/decisions/*.pdf
+
+# Изображения
+Allow: /images/
+Allow: /assets/images/
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Запрещённые папки (служебные)
+Disallow: /assets/js/lib/
+Disallow: /assets/fonts/fonts/
+Disallow: /config/
+Disallow: /cgi-bin/
+
+Sitemap: https://juristspb78.ru/sitemap.xml
+
+# ============================================================
+# НАСТРОЙКИ ДЛЯ КОНКРЕТНЫХ РОБОТОВ
+# ============================================================
+
+# Яндекс - основной
+User-agent: Yandex
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /sitemap.xml
+Allow: /zemlya/decisions/
+Allow: /trud/decisions/
+Allow: /semya/decisions/
+Allow: /nasledstvo/decisions/
+Allow: /arbitrazh/decisions/
+Allow: /korporativnye-spory/decisions/
+Allow: /zashhita-biznesa/decisions/
+Allow: /dogovornoe-pravo/decisions/
+Allow: /private_policy/
+Allow: /licenses/
+Allow: /cookies/
+Allow: /*.pdf$
+Disallow: /assets/
+Disallow: /config/
+Sitemap: https://juristspb78.ru/sitemap.xml
+
+# Яндекс - для YandexGPT
+User-agent: YandexAdditional
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /sitemap.xml
+Allow: /zemlya/decisions/
+Allow: /trud/decisions/
+Allow: /semya/decisions/
+Allow: /nasledstvo/decisions/
+Allow: /arbitrazh/decisions/
+Allow: /korporativnye-spory/decisions/
+Allow: /zashhita-biznesa/decisions/
+Allow: /dogovornoe-pravo/decisions/
+Allow: /private_policy/
+Allow: /licenses/
+Allow: /cookies/
+Allow: /*.pdf$
+Disallow: /assets/
+Disallow: /config/
+Sitemap: https://juristspb78.ru/sitemap.xml
+
+# Google - основной
+User-agent: Googlebot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /sitemap.xml
+Allow: /zemlya/decisions/
+Allow: /trud/decisions/
+Allow: /semya/decisions/
+Allow: /nasledstvo/decisions/
+Allow: /arbitrazh/decisions/
+Allow: /korporativnye-spory/decisions/
+Allow: /zashhita-biznesa/decisions/
+Allow: /dogovornoe-pravo/decisions/
+Allow: /private_policy/
+Allow: /licenses/
+Allow: /cookies/
+Allow: /*.pdf$
+Disallow: /assets/
+Disallow: /config/
+Sitemap: https://juristspb78.ru/sitemap.xml
+
+# Google - для AI
+User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /sitemap.xml
+Allow: /zemlya/decisions/
+Allow: /trud/decisions/
+Allow: /semya/decisions/
+Allow: /nasledstvo/decisions/
+Allow: /arbitrazh/decisions/
+Allow: /korporativnye-spory/decisions/
+Allow: /zashhita-biznesa/decisions/
+Allow: /dogovornoe-pravo/decisions/
+Allow: /private_policy/
+Allow: /licenses/
+Allow: /cookies/
+Allow: /*.pdf$
+Disallow: /assets/
+Disallow: /config/
+Sitemap: https://juristspb78.ru/sitemap.xml
+
+# ============================================================
+# BING
+# ============================================================
+
+User-agent: bingbot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /sitemap.xml
+Allow: /zemlya/decisions/
+Allow: /trud/decisions/
+Allow: /semya/decisions/
+Allow: /nasledstvo/decisions/
+Allow: /arbitrazh/decisions/
+Allow: /korporativnye-spory/decisions/
+Allow: /zashhita-biznesa/decisions/
+Allow: /dogovornoe-pravo/decisions/
+Allow: /private_policy/
+Allow: /licenses/
+Allow: /cookies/
+Allow: /*.pdf$
+Disallow: /assets/
+Disallow: /config/
+Sitemap: https://juristspb78.ru/sitemap.xml
+
+User-agent: adidxbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: MicrosoftPreview
+Allow: /
+
+User-agent: BingVideoPreview
+Allow: /
+
+# ============================================================
+# QWEN - AI-ПОИСКОВИК ОТ ALIBABA
+# ============================================================
+
+User-agent: QwenBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /zemlya/
+Allow: /trud/
+Allow: /semya/
+Allow: /nasledstvo/
+Allow: /arbitrazh/
+Allow: /korporativnye-spory/
+Allow: /zashhita-biznesa/
+Allow: /dogovornoe-pravo/
+Allow: /zemlya/decisions/
+Allow: /trud/decisions/
+Allow: /semya/decisions/
+Allow: /nasledstvo/decisions/
+Allow: /arbitrazh/decisions/
+Allow: /korporativnye-spory/decisions/
+Allow: /zashhita-biznesa/decisions/
+Allow: /dogovornoe-pravo/decisions/
+Allow: /private_policy/
+Allow: /licenses/
+Allow: /cookies/
+Allow: /*.pdf$
+Disallow: /assets/
+Disallow: /config/
+
+# ============================================================
+# AI-КРАУЛЕРЫ (ChatGPT, Claude, Perplexity)
+# ============================================================
+
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /zemlya/
+Allow: /trud/
+Allow: /semya/
+Allow: /nasledstvo/
+Allow: /arbitrazh/
+Allow: /korporativnye-spory/
+Allow: /zashhita-biznesa/
+Allow: /dogovornoe-pravo/
+Allow: /zemlya/decisions/
+Allow: /trud/decisions/
+Allow: /semya/decisions/
+Allow: /nasledstvo/decisions/
+Allow: /arbitrazh/decisions/
+Allow: /korporativnye-spory/decisions/
+Allow: /zashhita-biznesa/decisions/
+Allow: /dogovornoe-pravo/decisions/
+Allow: /private_policy/
+Allow: /licenses/
+Allow: /cookies/
+Allow: /*.pdf$
+Disallow: /assets/
+Disallow: /config/
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /zemlya/
+Allow: /trud/
+Allow: /semya/
+Allow: /nasledstvo/
+Allow: /arbitrazh/
+Allow: /korporativnye-spory/
+Allow: /zashhita-biznesa/
+Allow: /dogovornoe-pravo/
+Allow: /zemlya/decisions/
+Allow: /trud/decisions/
+Allow: /semya/decisions/
+Allow: /nasledstvo/decisions/
+Allow: /arbitrazh/decisions/
+Allow: /korporativnye-spory/decisions/
+Allow: /zashhita-biznesa/decisions/
+Allow: /dogovornoe-pravo/decisions/
+Allow: /private_policy/
+Allow: /licenses/
+Allow: /cookies/
+Allow: /*.pdf$
+Disallow: /assets/
+Disallow: /config/
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /zemlya/
+Allow: /trud/
+Allow: /semya/
+Allow: /nasledstvo/
+Allow: /arbitrazh/
+Allow: /korporativnye-spory/
+Allow: /zashhita-biznesa/
+Allow: /dogovornoe-pravo/
+Allow: /zemlya/decisions/
+Allow: /trud/decisions/
+Allow: /semya/decisions/
+Allow: /nasledstvo/decisions/
+Allow: /arbitrazh/decisions/
+Allow: /korporativnye-spory/decisions/
+Allow: /zashhita-biznesa/decisions/
+Allow: /dogovornoe-pravo/decisions/
+Allow: /private_policy/
+Allow: /licenses/
+Allow: /cookies/
+Allow: /*.pdf$
+Disallow: /assets/
+Disallow: /config/
+
+# ============================================================
+# CHATGPT SEARCH
+# ============================================================
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /zemlya/
+Allow: /trud/
+Allow: /semya/
+Allow: /nasledstvo/
+Allow: /arbitrazh/
+Allow: /korporativnye-spory/
+Allow: /zashhita-biznesa/
+Allow: /dogovornoe-pravo/
+Allow: /private_policy/
+Allow: /licenses/
+Allow: /cookies/
+Allow: /*.pdf$
+Disallow: /assets/
+Disallow: /config/
+
+# ============================================================
+# FACEBOOK
+# ============================================================
+
+User-agent: FacebookBot
+Allow: /
+Allow: /zemlya/
+Allow: /trud/
+Allow: /semya/
+Allow: /nasledstvo/
+Allow: /arbitrazh/
+Allow: /korporativnye-spory/
+Allow: /zashhita-biznesa/
+Allow: /dogovornoe-pravo/
+Disallow: /assets/
+Disallow: /config/
+
+# ============================================================
+# TWITTER / X
+# ============================================================
+
+User-agent: Twitterbot
+Allow: /
+Allow: /zemlya/
+Allow: /trud/
+Allow: /semya/
+Allow: /nasledstvo/
+Allow: /arbitrazh/
+Allow: /korporativnye-spory/
+Allow: /zashhita-biznesa/
+Allow: /dogovornoe-pravo/
+Disallow: /assets/
+Disallow: /config/
+
+# ============================================================
+# APPLE (SIRI, SPOTLIGHT)
+# ============================================================
+
+User-agent: Applebot
+Allow: /
+Allow: /zemlya/
+Allow: /trud/
+Allow: /semya/
+Allow: /nasledstvo/
+Allow: /arbitrazh/
+Allow: /korporativnye-spory/
+Allow: /zashhita-biznesa/
+Allow: /dogovornoe-pravo/
+Allow: /private_policy/
+Allow: /licenses/
+Allow: /cookies/
+Allow: /*.pdf$
+Disallow: /assets/
+Disallow: /config/
+
+# ============================================================
+# AMAZON (ALEXA)
+# ============================================================
+
+User-agent: Amazonbot
+Allow: /
+Allow: /zemlya/
+Allow: /trud/
+Allow: /semya/
+Allow: /nasledstvo/
+Allow: /arbitrazh/
+Allow: /korporativnye-spory/
+Allow: /zashhita-biznesa/
+Allow: /dogovornoe-pravo/
+Disallow: /assets/
+Disallow: /config/
+
+# ============================================================
+# ИЗОБРАЖЕНИЯ
+# ============================================================
+
+User-agent: YandexImages
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# ============================================================
+# БЛОКИРОВКА ПЛОХИХ РОБОТОВ
+# ============================================================
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: ZoominfoBot
+Disallow: /

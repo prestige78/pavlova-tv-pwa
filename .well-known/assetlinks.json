@@ -1,0 +1,12 @@
+[
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "ru.juristspb78.app",
+            "sha256_cert_fingerprints": [
+                "68:B4:2F:C0:2A:87:B5:03:63:A6:4D:DC:7D:8C:A8:B3:12:58:0F:B6:3C:90:E9:F2:E0:8E:E7:AE:36:F0:D6:C5"
+            ]
+        }
+    }
+]

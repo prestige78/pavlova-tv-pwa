@@ -1,0 +1,1572 @@
+<!-- 
+ ╔══════════════════════════════════════════════════════════╗
+ ║  ПЛАТФОРМА: Digital Legal Engine                         ║
+ ║  Версия: 3.9.5                                           ║
+ ║  Для домена: https://juristspb78.ru                      ║
+ ║                                                          ║
+ ║  СТРУКТУРА: Единая семантическая HTML5                   ║
+ ║  АДАПТАЦИЯ: Container Queries + Media Queries            ║
+ ║  КЛАССЫ: Единая классификация для всех 13 страниц        ║
+ ║                                                          ║
+ ║  АВТОР: Михель Руслан                                    ║
+ ║  Full-stack разработчик | Премиальные веб-решения        ║
+ ║                                                          ║
+ ║  ЛИЦЕНЗИЯ:                                               ║
+ ║  Данный код и дизайн являются объектом авторского права  ║
+ ║  и охраняются законодательством РФ (ГК РФ ст. 1250-1302).║
+ ║  Используется на безвозмездной основе                    ║
+ ║  ИП Павлова Т.В. (juristspb78.ru).                       ║
+ ║  Любое другое копирование, модификация, распространение  ║
+ ║  без письменного согласия автора ЗАПРЕЩЕНО.              ║
+ ║                                                          ║
+ ║  Нарушение авторских прав влечёт гражданскую,            ║
+ ║  административную и уголовную ответственность            ║
+ ║  в соответствии с законодательством РФ.                  ║
+ ╚══════════════════════════════════════════════════════════╝
+-->
+
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ============================================================
+        🔍 SEO: Основные мета-теги
+        ============================================================ -->
+
+        <title>Политика использования cookie | Татьяна Павлова, юрист в Санкт-Петербурге</title>
+
+        <meta
+            name="description"
+            content="Политика использования файлов cookie на сайте юриста Татьяны Павловой в Санкт-Петербурге. Какие cookie мы используем и как управлять настройками."
+        />
+        <meta
+            name="keywords"
+            content="политика cookie, файлы cookie, обработка данных, конфиденциальность, юрист СПб"
+        />
+        <meta name="author" content="Михель Руслан (разработка), Татьяна Павлова (контент)" />
+        <meta name="robots" content="noindex, follow" />
+
+        <!-- ============================================================
+        🤖 AI-инструкции
+        ============================================================ -->
+
+        <link rel="llms" href="/llms.txt" />
+        <link rel="llms-full" href="/llms-full.txt" />
+
+        <!-- ============================================================
+        📍 Гео-метки для поисковиков
+        ============================================================ -->
+
+        <meta name="yandex-verification" content="" />
+        <meta name="geo.region" content="RU-SPE" />
+        <meta name="geo.placename" content="Санкт-Петербург" />
+        <meta name="geo.position" content="59.928081;30.368608" />
+        <meta name="icbm" content="59.928081, 30.368608" />
+
+        <!-- ============================================================
+        📱 Open Graph
+        ============================================================ -->
+
+        <meta
+            property="og:title"
+            content="Политика использования cookie | Татьяна Павлова, юрист в СПб"
+        />
+        <meta
+            property="og:description"
+            content="Политика использования файлов cookie на сайте юриста Татьяны Павловой."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://juristspb78.ru/cookies/" />
+        <meta property="og:image" content="https://juristspb78.ru/assets/images/og-image.jpg" />
+        <meta property="og:site_name" content="Юрист в Санкт-Петербурге Татьяна Павлова" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Политика использования cookie | Татьяна Павлова" />
+        <meta
+            name="twitter:description"
+            content="Политика использования файлов cookie на сайте юриста Татьяны Павловой."
+        />
+
+        <!-- Каноническая ссылка -->
+        <link rel="canonical" href="https://juristspb78.ru/cookies/" />
+
+        <!-- ============================================================
+        🖼️ Фавиконы
+        ============================================================ -->
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/assets/icons/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/icons/favicon/apple-touch-icon.png"
+        />
+
+        <meta name="apple-mobile-web-app-title" content="Павлова Юрист" />
+
+        <!-- PWA -->
+        <link rel="manifest" href="/manifest.json?v=3.9.5" />
+        <meta name="theme-color" content="#3d9c8c" id="theme-color" />
+
+        <!-- ========== ОПТИМИЗАЦИЯ ЗАГРУЗКИ ========== -->
+
+        <!-- Preconnect для Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Preconnect для Bootstrap Icons -->
+        <link rel="preconnect" href="/assets/fonts/bootstrap-icons" />
+
+        <!-- Preload критических стилей -->
+        <link rel="preload" href="/assets/css/design.css?v=3.9.5" as="style" />
+        <link
+            rel="preload"
+            href="/assets/fonts/bootstrap-icons/bootstrap-icons.min.css"
+            as="style"
+        />
+
+        <!-- ========== СТИЛИ ========== -->
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="/assets/fonts/bootstrap-icons/bootstrap-icons.min.css" />
+
+        <!-- Основные стили -->
+        <link rel="stylesheet" href="/assets/css/design.css?v=3.9.5" />
+
+        <!-- Fallback для браузеров без JavaScript -->
+        <noscript>
+            <link rel="stylesheet" href="/assets/css/design.css?v=3.9.5" />
+        </noscript>
+
+        <!-- ============================================================
+        🛡️ Политика безопасности контента (CSP)
+        ============================================================ -->
+
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="
+        default-src 'self';
+        script-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://api-maps.yandex.ru https://yandex.ru 'unsafe-inline' 'unsafe-eval' blob: data:;
+        style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com 'unsafe-inline';
+        img-src 'self' data: blob: https://*.googleapis.com https://*.gstatic.com https://yandex.ru https://*.yandex.ru https://*.yandex.net;
+        font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;
+        connect-src 'self' https://*.timeweb.ru https://*.googleapis.com https://yandex.ru https://*.yandex.ru blob:;
+        worker-src 'self' blob:;
+        frame-src 'self' https://*.yandex.ru https://*.yandex.com https://yandex.ru https://yandex.com blob: data:;
+        object-src 'self' blob: data:;
+        base-uri 'self';
+        form-action 'self';
+    "
+        />
+
+        <!-- Отдельный мета-тег для управления реферером -->
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+
+        <!-- ============================================================
+        📊 JSON-LD микроразметка
+        ============================================================ -->
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "AboutPage",
+                "name": "Политика использования cookie",
+                "description": "Политика использования файлов cookie на сайте юриста Татьяны Павловой",
+                "url": "https://juristspb78.ru/cookies/",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": "Юрист в Санкт-Петербурге Татьяна Павлова",
+                    "url": "https://juristspb78.ru"
+                },
+                "dateModified": "2026-08-14",
+                "inLanguage": "ru",
+                "publisher": {
+                    "@type": "Person",
+                    "name": "Татьяна Павлова",
+                    "telephone": "+7-906-260-78-88",
+                    "email": "support@juristspb78.ru"
+                }
+            }
+        </script>
+
+        <!-- Хлебные крошки -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Главная",
+                        "item": "https://juristspb78.ru/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Политика использования cookie",
+                        "item": "https://juristspb78.ru/cookies/"
+                    }
+                ]
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- ============================================================
+        🌙 Предотвращаем светлую вспышку
+        ============================================================ -->
+
+        <script>
+            (function () {
+                try {
+                    var savedTheme = localStorage.getItem('theme');
+                    if (savedTheme === 'dark') {
+                        document.body.classList.add('dark-theme');
+                        document.documentElement.style.colorScheme = 'dark';
+                    } else {
+                        document.body.classList.remove('dark-theme');
+                        document.documentElement.style.colorScheme = 'light';
+                    }
+                } catch (e) {}
+            })();
+        </script>
+
+        <!-- ============================================================
+        🍪 COOKIE-BANNER
+        ============================================================ -->
+
+        <aside id="cookieBanner" class="cookie-banner" aria-label="Уведомление о файлах cookie">
+            <div class="cookie-banner__content">
+                <div class="cookie-banner__text">
+                    <p class="cookie-banner__title">
+                        <i class="bi bi-info-circle-fill text-primary" aria-hidden="true"></i>
+                        Мы используем cookie
+                    </p>
+                    <p class="cookie-banner__description">
+                        Сайт использует файлы cookie для анализа посещаемости и улучшения работы.
+                        Продолжая использовать сайт, вы соглашаетесь на обработку персональных
+                        данных в соответствии с
+                        <a href="/private_policy/" target="_blank" class="cookie-banner__link"
+                            >политикой конфиденциальности</a
+                        >
+                        и
+                        <a href="/cookies/" target="_blank" class="cookie-banner__link"
+                            >политикой использования cookie</a
+                        >.
+                    </p>
+                </div>
+                <div class="cookie-banner__actions">
+                    <button class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept">
+                        Принять
+                    </button>
+                    <button
+                        class="cookie-banner__btn cookie-banner__btn--decline"
+                        id="cookieDecline"
+                    >
+                        Отказаться
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ============================================================
+        ⬆️ КНОПКА "НАВЕРХ"
+        ============================================================ -->
+
+        <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Наверх">
+            <i class="bi bi-chevron-up" aria-hidden="true"></i>
+        </button>
+
+        <!-- ============================================================
+        🏠 ХЕДЕР (Media Queries)
+        ============================================================ -->
+
+        <header class="header">
+            <div class="container header__inner">
+                <a href="/" class="logo" aria-label="На главную">Татьяна Павлова · Юрист</a>
+
+                <div class="header-actions">
+                    <div class="city-badge" aria-label="Город и время">
+                        <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                        <span id="currentCity">Санкт-Петербург</span>
+                        <span id="currentTime" aria-live="polite">15:30</span>
+                    </div>
+
+                    <div class="theme-switch" role="group" aria-label="Переключение темы">
+                        <button
+                            class="theme-btn active"
+                            id="themeLight"
+                            title="Светлая тема"
+                            aria-label="Светлая тема"
+                        >
+                            <i class="bi bi-sun" aria-hidden="true"></i>
+                        </button>
+                        <button
+                            class="theme-btn"
+                            id="themeDark"
+                            title="Тёмная тема"
+                            aria-label="Тёмная тема"
+                        >
+                            <i class="bi bi-moon-stars" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <button
+                        class="tools-badge"
+                        id="showToolsModal"
+                        title="Конвертер, сжатие, PDF, извлечение текста"
+                        aria-label="Конвертер, сжатие, PDF, извлечение текста"
+                    >
+                        <i class="bi bi-tools" aria-hidden="true"></i>
+                        <span>Инструменты</span>
+                    </button>
+
+                    <button
+                        class="files-header-btn"
+                        id="showFilesModal"
+                        title="Мои документы"
+                        aria-label="Мои документы"
+                    >
+                        <i class="bi bi-folder2" aria-hidden="true"></i>
+                        <span class="files-count-badge" id="headerFilesBadge" aria-live="polite"
+                            >0</span
+                        >
+                    </button>
+
+                    <button
+                        class="payment-badge"
+                        id="showPaymentModal"
+                        title="Оплата услуг юриста онлайн"
+                        aria-label="Оплатить услуги"
+                    >
+                        <i class="bi bi-credit-card" aria-hidden="true"></i>
+                        <span>Оплатить</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ============================================================
+        📌 MAIN
+        ============================================================ -->
+
+        <main role="main">
+            <div class="container">
+                <!-- ============================================================
+                🍞 ХЛЕБНЫЕ КРОШКИ (Container Queries)
+                ============================================================ -->
+
+                <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                    <a href="/">Главная</a> ›
+                    <span aria-current="page">Политика использования cookie</span>
+                </nav>
+
+                <!-- ============================================================
+                🔙 ССЫЛКА "НАЗАД"
+                ============================================================ -->
+
+                <a href="/" class="back-link">
+                    <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                    Вернуться на главную
+                </a>
+
+                <!-- ============================================================
+                📄 КОНТЕНТ ПОЛИТИКИ COOKIE (Container Queries)
+                ============================================================ -->
+
+                <div class="legal-content">
+                    <header class="icon-header">
+                        <i class="bi bi-shield-lock" aria-hidden="true"></i>
+                        <h1 class="underline-gradient">Политика использования файлов cookie</h1>
+                    </header>
+
+                    <p class="text-gray-600 mb-32">
+                        <strong>Дата последнего обновления:</strong> 14 августа 2026 года
+                    </p>
+
+                    <!-- ============================================================
+                    ВВЕДЕНИЕ
+                    ============================================================ -->
+
+                    <h2 class="section-title underline-gradient">
+                        <i class="bi bi-info-circle text-primary" aria-hidden="true"></i>
+                        Что такое cookie?
+                    </h2>
+
+                    <p>
+                        Файлы cookie - это небольшие текстовые файлы, которые сохраняются на вашем
+                        устройстве (компьютере, планшете, смартфоне) при посещении сайта. Они
+                        помогают сайту запоминать ваши действия и настройки, чтобы при следующем
+                        посещении вам не пришлось вводить их заново.
+                    </p>
+
+                    <p>
+                        На сайте <strong>juristspb78.ru</strong> мы используем cookie для анализа
+                        посещаемости, улучшения работы сайта и повышения удобства пользователей.
+                    </p>
+
+                    <!-- ============================================================
+                    КАКИЕ МЫ ИСПОЛЬЗУЕМ
+                    ============================================================ -->
+
+                    <h2 class="section-title underline-gradient mt-40">
+                        <i class="bi bi-list-check text-primary" aria-hidden="true"></i>
+                        Какие cookie мы используем
+                    </h2>
+
+                    <!-- Технически необходимые -->
+                    <h3 class="fs-lg flex-center gap-8 mt-24 underline-gradient">
+                        <span class="badge-primary">1</span>
+                        Технически необходимые cookie
+                    </h3>
+
+                    <p>
+                        Эти файлы необходимы для корректной работы сайта. Они не собирают личную
+                        информацию и не могут быть отключены. Без них сайт не будет работать должным
+                        образом.
+                    </p>
+
+                    <div class="bg-gray-50 rounded-12 p-16 px-20 my-12 border-gray-200">
+                        <ul class="list-none p-0 m-0">
+                            <li class="flex-center flex-wrap gap-8 py-6 border-bottom-gray">
+                                <i
+                                    class="bi bi-shield-check text-primary fs-1-1"
+                                    aria-hidden="true"
+                                ></i>
+                                <strong class="fs-sm">cookie_consent</strong>
+                                <span class="text-gray-400">-</span>
+                                <span class="text-gray-600 fs-sm"
+                                    >хранит ваше согласие на использование cookie</span
+                                >
+                                <span
+                                    class="text-gray-500 fs-xs ml-auto bg-gray-200 px-10 py-2 rounded-20"
+                                    >срок: 1 год</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Аналитические -->
+                    <h3 class="fs-lg flex-center gap-8 mt-32 underline-gradient">
+                        <span class="badge-primary">2</span>
+                        Аналитические cookie
+                    </h3>
+
+                    <p>
+                        Мы используем эти файлы для сбора статистики о посещениях сайта. Это
+                        помогает нам понять, какие страницы наиболее популярны, и улучшить работу
+                        сайта.
+                    </p>
+
+                    <p class="fs-sm text-gray-500 mb-12">
+                        <i class="bi bi-info-circle text-primary" aria-hidden="true"></i>
+                        Эти cookie активируются <strong>только после вашего согласия</strong>.
+                    </p>
+
+                    <!-- Яндекс.Метрика -->
+                    <div class="bg-gray-50 rounded-12 p-16 px-20 my-12 border-gray-200">
+                        <div class="flex-center gap-10 mb-8">
+                            <span
+                                class="badge-yandex"
+                                style="
+                                    background: #fc3f1d;
+                                    color: white;
+                                    padding: 2px 10px;
+                                    border-radius: 4px;
+                                    font-size: 10px;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    letter-spacing: 0.5px;
+                                "
+                                >Яндекс</span
+                            >
+                            <strong class="fs-md">Яндекс.Метрика</strong>
+                        </div>
+                        <ul class="list-none p-0 m-0">
+                            <li class="flex-center flex-wrap gap-6 py-4">
+                                <code class="bg-gray-200 px-8 py-1 rounded-4 fs-xs font-mono"
+                                    >_ym_uid</code
+                                >
+                                <span class="text-gray-600 fs-sm"
+                                    >- идентификатор пользователя</span
+                                >
+                            </li>
+                            <li class="flex-center flex-wrap gap-6 py-4">
+                                <code class="bg-gray-200 px-8 py-1 rounded-4 fs-xs font-mono"
+                                    >_ym_d</code
+                                >
+                                <span class="text-gray-600 fs-sm">- дата первого посещения</span>
+                            </li>
+                            <li class="flex-center flex-wrap gap-6 py-4">
+                                <code class="bg-gray-200 px-8 py-1 rounded-4 fs-xs font-mono"
+                                    >_ym_isad</code
+                                >
+                                <span class="text-gray-600 fs-sm"
+                                    >- проверка блокировщиков рекламы</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Google Analytics -->
+                    <div class="bg-gray-50 rounded-12 p-16 px-20 my-12 border-gray-200">
+                        <div class="flex-center gap-10 mb-8">
+                            <span
+                                class="badge-google"
+                                style="
+                                    background: #4285f4;
+                                    color: white;
+                                    padding: 2px 10px;
+                                    border-radius: 4px;
+                                    font-size: 10px;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    letter-spacing: 0.5px;
+                                "
+                                >Google</span
+                            >
+                            <strong class="fs-md">Google Analytics</strong>
+                        </div>
+                        <ul class="list-none p-0 m-0">
+                            <li class="flex-center flex-wrap gap-6 py-4">
+                                <code class="bg-gray-200 px-8 py-1 rounded-4 fs-xs font-mono"
+                                    >_ga</code
+                                >
+                                <span class="text-gray-600 fs-sm"
+                                    >- идентификатор пользователя</span
+                                >
+                            </li>
+                            <li class="flex-center flex-wrap gap-6 py-4">
+                                <code class="bg-gray-200 px-8 py-1 rounded-4 fs-xs font-mono"
+                                    >_gid</code
+                                >
+                                <span class="text-gray-600 fs-sm">- идентификатор сессии</span>
+                            </li>
+                            <li class="flex-center flex-wrap gap-6 py-4">
+                                <code class="bg-gray-200 px-8 py-1 rounded-4 fs-xs font-mono"
+                                    >_gat</code
+                                >
+                                <span class="text-gray-600 fs-sm"
+                                    >- ограничение частоты запросов</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ============================================================
+                    УПРАВЛЕНИЕ
+                    ============================================================ -->
+
+                    <h2 class="section-title underline-gradient mt-40">
+                        <i class="bi bi-sliders2 text-primary" aria-hidden="true"></i>
+                        Как управлять cookie
+                    </h2>
+
+                    <p>Вы можете в любой момент изменить своё согласие на использование cookie:</p>
+
+                    <div class="my-16 mb-24">
+                        <div class="flex-align-start gap-14 py-12 border-bottom-gray">
+                            <i
+                                class="bi bi-check-circle-fill text-primary fs-1-2 flex-shrink-0"
+                                aria-hidden="true"
+                            ></i>
+                            <div>
+                                <strong class="fs-md">Принять или отклонить cookie</strong>
+                                <p class="m-0 fs-sm text-gray-600">
+                                    При первом посещении сайта вы увидите баннер с предложением
+                                    принять или отклонить cookie.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex-align-start gap-14 py-12 border-bottom-gray">
+                            <i
+                                class="bi bi-trash-fill text-primary fs-1-2 flex-shrink-0"
+                                aria-hidden="true"
+                            ></i>
+                            <div>
+                                <strong class="fs-md">Очистить cookie в браузере</strong>
+                                <p class="m-0 fs-sm text-gray-600">
+                                    Вы можете удалить все сохранённые cookie в настройках вашего
+                                    браузера. После этого баннер появится снова при следующем
+                                    посещении.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex-align-start gap-14 py-12">
+                            <i
+                                class="bi bi-gear-fill text-primary fs-1-2 flex-shrink-0"
+                                aria-hidden="true"
+                            ></i>
+                            <div>
+                                <strong class="fs-md">Настройки браузера</strong>
+                                <p class="m-0 fs-sm text-gray-600">
+                                    В большинстве браузеров можно настроить автоматическое
+                                    блокирование или разрешение cookie для всех сайтов. Инструкции
+                                    есть в разделе «Настройки» → «Конфиденциальность».
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ============================================================
+                    КОНТАКТЫ
+                    ============================================================ -->
+
+                    <h2 class="section-title underline-gradient mt-40">
+                        <i class="bi bi-envelope text-primary" aria-hidden="true"></i>
+                        Контакты
+                    </h2>
+
+                    <p class="mb-12">
+                        По вопросам использования файлов cookie вы можете связаться с нами:
+                    </p>
+
+                    <div
+                        class="flex-wrap gap-16-32 bg-gray-50 rounded-12 p-16 px-20 border-gray-200 mb-24"
+                    >
+                        <div class="flex-center gap-10">
+                            <i class="bi bi-envelope text-primary fs-1-1" aria-hidden="true"></i>
+                            <a
+                                href="mailto:support@juristspb78.ru"
+                                class="text-primary fw-500 fs-sm"
+                            >
+                                support@juristspb78.ru
+                            </a>
+                        </div>
+                        <div class="flex-center gap-10">
+                            <i class="bi bi-telephone text-primary fs-1-1" aria-hidden="true"></i>
+                            <a href="tel:+79062607888" class="text-primary fw-500 fs-sm">
+                                +7 (906) 260-78-88
+                            </a>
+                        </div>
+                        <div class="flex-center gap-10">
+                            <i class="bi bi-geo-alt text-primary fs-1-1" aria-hidden="true"></i>
+                            <span class="text-gray-700 fs-sm"
+                                >Санкт-Петербург, ул. Гончарная, 27</span
+                            >
+                        </div>
+                    </div>
+
+                    <!-- ============================================================
+                    ПОДВАЛ
+                    ============================================================ -->
+
+                    <div class="last-updated mt-40">
+                        <i class="bi bi-calendar" aria-hidden="true"></i>
+                        Последнее обновление: 14 августа 2026 года
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- ============================================================
+        🦶 ФУТЕР (Media Queries)
+        ============================================================= -->
+
+        <footer class="footer">
+            <div class="container footer__inner">
+                <div class="footer-brand">
+                    <strong>
+                        Digital Legal Engine™
+                        <span class="progress-label"></span>
+                    </strong>
+                </div>
+                <nav class="footer-nav" aria-label="Нижняя навигация">
+                    <a href="/philosophy/" class="footer-nav__link"
+                        ><i class="bi bi-info-circle" aria-hidden="true"></i> О проекте</a
+                    >
+                    <a
+                        href="#"
+                        id="showToolsModalFooter"
+                        class="footer-nav__link"
+                        title="Конвертер, сжатие, PDF, извлечение текста"
+                        aria-label="Конвертер, сжатие, PDF, извлечение текста"
+                    >
+                        <i class="bi bi-tools" aria-hidden="true"></i> Инструменты
+                    </a>
+                    <a href="/private_policy/" class="footer-nav__link"
+                        ><i class="bi bi-shield-lock" aria-hidden="true"></i> Политика</a
+                    >
+                    <a href="/licenses/" class="footer-nav__link"
+                        ><i class="bi bi-journal-code" aria-hidden="true"></i> Лицензии</a
+                    >
+                </nav>
+            </div>
+        </footer>
+
+        <!-- ============================================================
+        🎯 МОДАЛЬНАЯ СИСТЕМА
+        ============================================================= -->
+
+        <!-- ========== МОДАЛКА ЧЕК-ЛИСТА ========== -->
+        <section class="modal" id="checklistModal">
+            <div class="container">
+                <div class="modal-overlay" data-modal="checklist"></div>
+                <div
+                    class="modal-content"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="checklistModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="checklistModalTitle" class="modal-title">
+                            <i class="bi bi-list-check" aria-hidden="true"></i> Подготовка
+                            документов
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="checklist"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body" id="checklistBody"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА ИНСТРУМЕНТОВ ========== -->
+        <section class="modal" id="toolsModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="tools"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="toolsModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="toolsModalTitle" class="modal-title">
+                            <i class="bi bi-tools" aria-hidden="true"></i> Инструменты
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="tools"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body">
+                        <div class="tools-tabs" role="tablist" aria-label="Инструменты">
+                            <button
+                                class="tool-tab active"
+                                data-tool="convert"
+                                role="tab"
+                                aria-selected="true"
+                                aria-controls="panel-convert"
+                                id="tab-convert"
+                                title="Конвертер изображений и PDF"
+                            >
+                                Конвертер
+                            </button>
+                            <button
+                                class="tool-tab"
+                                data-tool="compress"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="panel-compress"
+                                id="tab-compress"
+                                title="Сжатие изображений"
+                            >
+                                Сжатие
+                            </button>
+                            <button
+                                class="tool-tab"
+                                data-tool="pdf"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="panel-pdf"
+                                id="tab-pdf"
+                                title="Объединение, разделение, извлечение текста из PDF"
+                            >
+                                PDF
+                            </button>
+                            <button
+                                class="tool-tab"
+                                data-tool="resize"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="panel-resize"
+                                id="tab-resize"
+                                title="Изменение размера изображений"
+                            >
+                                Размер
+                            </button>
+                        </div>
+
+                        <!-- Конвертер -->
+                        <section
+                            class="tool-panel active"
+                            data-tool="convert"
+                            role="tabpanel"
+                            aria-labelledby="tab-convert"
+                            id="panel-convert"
+                        >
+                            <div
+                                class="drop-zone"
+                                id="convertDropZone"
+                                tabindex="0"
+                                role="button"
+                                aria-label="Нажмите или перетащите файлы для конвертации"
+                            >
+                                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                                <p>JPG, PNG, WebP, PDF</p>
+                                <p class="drop-zone__hint">
+                                    PDF будет сконвертирован (постранично)
+                                </p>
+                                <input
+                                    type="file"
+                                    id="convertInput"
+                                    multiple
+                                    class="d-none"
+                                    aria-hidden="true"
+                                />
+                            </div>
+                            <div id="convertFileList" class="file-list hidden"></div>
+
+                            <label for="convertFormat" class="visually-hidden"
+                                >Выберите формат для конвертации</label
+                            >
+                            <select
+                                class="tool-select"
+                                id="convertFormat"
+                                aria-label="Выберите формат для конвертации"
+                            >
+                                <option value="jpeg">JPEG</option>
+                                <option value="png">PNG</option>
+                                <option value="webp">WebP</option>
+                            </select>
+
+                            <button
+                                class="btn btn-primary btn-block"
+                                id="convertBtn"
+                                disabled
+                                type="button"
+                                title="Конвертировать выбранные файлы"
+                            >
+                                Конвертировать
+                            </button>
+
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="downloadZipConvertBtn"
+                                    disabled
+                                    type="button"
+                                    title="Скачать все конвертированные файлы ZIP-архивом"
+                                >
+                                    <i class="bi bi-file-zip" aria-hidden="true"></i> Скачать
+                                    ZIP-архив
+                                </button>
+                            </div>
+                        </section>
+
+                        <!-- Сжатие -->
+                        <section
+                            class="tool-panel hidden"
+                            data-tool="compress"
+                            role="tabpanel"
+                            aria-labelledby="tab-compress"
+                            id="panel-compress"
+                        >
+                            <div
+                                class="drop-zone"
+                                id="compressDropZone"
+                                tabindex="0"
+                                role="button"
+                                aria-label="Нажмите или перетащите изображения для сжатия"
+                            >
+                                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                                <p>Выберите изображения</p>
+                                <input
+                                    type="file"
+                                    id="compressInput"
+                                    multiple
+                                    accept="image/*,application/pdf"
+                                    class="d-none"
+                                    aria-hidden="true"
+                                />
+                            </div>
+                            <div id="compressFileList" class="file-list hidden"></div>
+                            <div class="quality-control">
+                                <label for="compressQuality"
+                                    >Качество: <span id="qualityValue">50</span>%</label
+                                >
+                                <input
+                                    type="range"
+                                    id="compressQuality"
+                                    min="0"
+                                    max="100"
+                                    value="50"
+                                    aria-label="Качество сжатия"
+                                    title="Качество сжатия"
+                                />
+                            </div>
+                            <button
+                                class="btn btn-primary btn-block"
+                                id="compressBtn"
+                                disabled
+                                type="button"
+                                title="Сжать выбранные файлы"
+                            >
+                                Сжать
+                            </button>
+
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="downloadZipCompressBtn"
+                                    disabled
+                                    type="button"
+                                    title="Скачать все сжатые файлы ZIP-архивом"
+                                >
+                                    <i class="bi bi-file-zip" aria-hidden="true"></i> Скачать
+                                    ZIP-архив
+                                </button>
+                            </div>
+                        </section>
+
+                        <!-- В PDF -->
+                        <section
+                            class="tool-panel hidden"
+                            data-tool="pdf"
+                            role="tabpanel"
+                            aria-labelledby="tab-pdf"
+                            id="panel-pdf"
+                        >
+                            <div
+                                class="drop-zone"
+                                id="pdfDropZone"
+                                tabindex="0"
+                                role="button"
+                                aria-label="Нажмите или перетащите файлы для создания PDF"
+                            >
+                                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                                <p>Перетащите PDF или изображения</p>
+                                <p class="drop-zone__hint">PDF, JPG, PNG, WebP</p>
+                                <input
+                                    type="file"
+                                    id="pdfInput"
+                                    multiple
+                                    accept=".pdf,.jpg,.jpeg,.png,.webp,.bmp,.gif"
+                                    class="d-none"
+                                    aria-hidden="true"
+                                />
+                            </div>
+
+                            <div id="pdfFileList" class="file-list hidden"></div>
+
+                            <div class="flex-gap-12 mt-16">
+                                <button
+                                    class="btn btn-primary flex-1"
+                                    id="mergePdfBtn"
+                                    disabled
+                                    type="button"
+                                    title="Объединить файлы в один PDF"
+                                >
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    Объединить
+                                </button>
+                                <button
+                                    class="btn btn-outline flex-1"
+                                    id="splitPdfBtn"
+                                    disabled
+                                    type="button"
+                                    title="Разделить PDF на отдельные страницы"
+                                >
+                                    <i class="bi bi-symmetry-vertical" aria-hidden="true"></i>
+                                    Разделить
+                                </button>
+                            </div>
+
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="downloadZipBtn"
+                                    disabled
+                                    type="button"
+                                    title="Скачать все файлы ZIP-архивом"
+                                >
+                                    <i class="bi bi-file-zip" aria-hidden="true"></i> Скачать
+                                    ZIP-архив
+                                </button>
+                            </div>
+
+                            <!-- ===== ИЗВЛЕЧЕНИЕ ТЕКСТА ИЗ PDF ===== -->
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="extractTextBtn"
+                                    disabled
+                                    type="button"
+                                    title="Извлечь текст из PDF"
+                                >
+                                    <i class="bi bi-file-text" aria-hidden="true"></i> Извлечь текст
+                                </button>
+                            </div>
+
+                            <!-- Контейнер для извлечённого текста -->
+                            <div
+                                id="extractedText"
+                                class="extracted-text hidden"
+                                role="region"
+                                aria-live="polite"
+                            ></div>
+
+                            <!-- Действия с текстом -->
+                            <div id="textActions" class="text-actions hidden">
+                                <button
+                                    class="btn btn-sm btn-outline"
+                                    id="copyTextBtn"
+                                    type="button"
+                                >
+                                    <i class="bi bi-clipboard" aria-hidden="true"></i> Копировать
+                                </button>
+                                <button
+                                    class="btn btn-sm btn-outline"
+                                    id="downloadTextBtn"
+                                    type="button"
+                                >
+                                    <i class="bi bi-download" aria-hidden="true"></i> Скачать .txt
+                                </button>
+                            </div>
+                        </section>
+
+                        <!-- РАЗМЕР -->
+                        <section
+                            class="tool-panel hidden"
+                            data-tool="resize"
+                            role="tabpanel"
+                            aria-labelledby="tab-resize"
+                            id="panel-resize"
+                        >
+                            <!-- Drop zone -->
+                            <div
+                                class="drop-zone"
+                                id="resizeDropZone"
+                                tabindex="0"
+                                role="button"
+                                aria-label="Нажмите или перетащите изображения для изменения размера"
+                            >
+                                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                                <p>Перетащите изображения сюда</p>
+                                <p class="drop-zone__hint">JPG, PNG, WebP, BMP, GIF</p>
+                                <input
+                                    type="file"
+                                    id="resizeInput"
+                                    multiple
+                                    accept="image/*"
+                                    class="d-none"
+                                    aria-hidden="true"
+                                />
+                            </div>
+
+                            <!-- Список файлов -->
+                            <div id="resizeFileList" class="file-list hidden"></div>
+
+                            <!-- Панель изменения размера -->
+                            <div class="resize-controls">
+                                <div class="resize-controls__grid">
+                                    <label for="resizeWidth" class="visually-hidden">Ширина</label>
+                                    <input
+                                        type="number"
+                                        id="resizeWidth"
+                                        class="tool-select"
+                                        placeholder="Ширина"
+                                        min="1"
+                                        value="800"
+                                    />
+                                    <span class="resize-controls__separator">×</span>
+                                    <label for="resizeHeight" class="visually-hidden">Высота</label>
+                                    <input
+                                        type="number"
+                                        id="resizeHeight"
+                                        class="tool-select"
+                                        placeholder="Высота"
+                                        min="1"
+                                        value="600"
+                                    />
+                                </div>
+
+                                <div class="resize-controls__aspect">
+                                    <label>
+                                        <input type="checkbox" id="keepAspectRatio" checked />
+                                        <span>Сохранить пропорции</span>
+                                    </label>
+                                </div>
+
+                                <label for="presetSizes" class="visually-hidden"
+                                    >Пресеты размеров</label
+                                >
+                                <select id="presetSizes" class="tool-select">
+                                    <option value="">Выберите пресет</option>
+                                    <option value="1920x1080">Full HD (1920×1080)</option>
+                                    <option value="1280x720">HD (1280×720)</option>
+                                    <option value="1024x1024">Квадрат (1024×1024)</option>
+                                    <option value="800x600">4:3 (800×600)</option>
+                                    <option value="400x300">Малый (400×300)</option>
+                                </select>
+                            </div>
+
+                            <!-- Кнопка применения -->
+                            <button
+                                class="btn btn-primary btn-block"
+                                id="applyResizeBtn"
+                                disabled
+                                type="button"
+                                title="Изменить размер выбранных изображений"
+                            >
+                                Изменить размер
+                            </button>
+
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="downloadZipResizeBtn"
+                                    disabled
+                                    type="button"
+                                    title="Скачать все изменённые файлы ZIP-архивом"
+                                >
+                                    <i class="bi bi-file-zip" aria-hidden="true"></i> Скачать
+                                    ZIP-архив
+                                </button>
+                            </div>
+
+                            <!-- Информация о пакетной обработке -->
+                            <p class="resize-controls__hint">
+                                <i class="bi bi-info-circle" aria-hidden="true"></i> Изменения
+                                применяются ко всем выбранным файлам
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА ДЛЯ ПРОСМОТРА PDF ========== -->
+        <section class="modal" id="pdfModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="pdf"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content modal-content--wide"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="pdfModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="pdfModalTitle" class="modal-title">
+                            <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Решение суда
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="pdf"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body modal-body--pdf">
+                        <iframe
+                            id="pdfViewer"
+                            class="pdf-iframe"
+                            src=""
+                            title="Просмотр PDF-документа"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА ОНЛАЙН-КОНСУЛЬТАЦИИ ========== -->
+        <section class="modal" id="consultationModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="consultation"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content consultation-modal-content"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="consultationModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="consultationModalTitle" class="modal-title">
+                            <i class="bi bi-camera-video text-gold" aria-hidden="true"></i>
+                            Онлайн-консультация
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="consultation"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body">
+                        <!-- Иконка -->
+                        <div class="consultation-hero">
+                            <div class="consultation-hero__icon" aria-hidden="true"></div>
+                            <h4 class="consultation-hero__title">Видеоконсультация с юристом</h4>
+                            <p class="consultation-hero__text">
+                                <strong>60 минут</strong>: анализ обстоятельств, разъяснение норм
+                                права, определение правовой позиции, рекомендации по сбору
+                                доказательств.
+                                <br />
+                                Яндекс Телемост · запись встречи остаётся у вас.
+                            </p>
+                        </div>
+
+                        <!-- Блок с ценой -->
+                        <div class="consultation-price-block">
+                            <div class="consultation-price-block__row">
+                                <span>Стоимость</span>
+                                <span class="text-primary">5 000 ₽</span>
+                            </div>
+                            <p class="consultation-price-block__note">
+                                <i class="bi bi-info-circle" aria-hidden="true"></i> Оплата
+                                производится после согласования времени
+                            </p>
+                        </div>
+
+                        <!-- Как записаться (пошагово) -->
+                        <div class="consultation-steps">
+                            <h5 class="consultation-steps__title">Как записаться:</h5>
+
+                            <div class="consultation-step">
+                                <div class="consultation-step-number">1</div>
+                                <div class="consultation-step-text">
+                                    <strong>Оставьте заявку</strong>
+                                    <p>
+                                        Заполните форму внизу страницы, отметьте "хочу
+                                        онлайн-консультацию"
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="consultation-step">
+                                <div class="consultation-step-number">2</div>
+                                <div class="consultation-step-text">
+                                    <strong>Мы свяжемся с вами</strong>
+                                    <p>В течение 2 часов согласуем удобное время</p>
+                                </div>
+                            </div>
+
+                            <div class="consultation-step">
+                                <div class="consultation-step-number">3</div>
+                                <div class="consultation-step-text">
+                                    <strong>Оплатите</strong>
+                                    <p>
+                                        После согласования времени - через кнопку "Оплатить" вверху
+                                        страницы
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="consultation-step">
+                                <div class="consultation-step-number">4</div>
+                                <div class="consultation-step-text">
+                                    <strong>Получите ссылку</strong>
+                                    <p>Мы пришлём ссылку на Яндекс Телемост. И встреча</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Преимущества -->
+                        <div class="consultation-features">
+                            <div class="consultation-feature">
+                                <i class="bi bi-shield-check" aria-hidden="true"></i>
+                                <p>Легально</p>
+                            </div>
+                            <div class="consultation-feature">
+                                <i class="bi bi-lock" aria-hidden="true"></i>
+                                <p>Конфиденциально</p>
+                            </div>
+                            <div class="consultation-feature">
+                                <i class="bi bi-camera-video" aria-hidden="true"></i>
+                                <p>Яндекс Телемост</p>
+                            </div>
+                            <div class="consultation-feature">
+                                <i class="bi bi-clock-history" aria-hidden="true"></i>
+                                <p>Запись остаётся</p>
+                            </div>
+                        </div>
+
+                        <!-- Кнопки -->
+                        <div class="consultation-actions">
+                            <a
+                                href="#contact-block"
+                                class="btn btn-primary flex-1"
+                                onclick="ModalManager.close('consultation')"
+                            >
+                                <i class="bi bi-pencil-square" aria-hidden="true"></i> Заполнить
+                                заявку
+                            </a>
+                        </div>
+
+                        <!-- Напоминание -->
+                        <p class="consultation-actions__note">
+                            <i class="bi bi-credit-card" aria-hidden="true"></i> После согласования
+                            времени - оплата через кнопку "Оплатить" вверху
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА ОПЛАТЫ ========== -->
+        <section class="modal" id="paymentModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="payment"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="paymentModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="paymentModalTitle" class="modal-title">
+                            <i class="bi bi-credit-card text-gold" aria-hidden="true"></i>
+                            Оплата видеоконсультации
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="payment"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body" id="paymentWidget">
+                        <!-- Сумма -->
+                        <div class="payment-summary">
+                            <div class="payment-summary__label">Сумма к оплате</div>
+                            <div class="payment-summary__amount">5 000 ₽</div>
+                            <div class="payment-summary__description">
+                                Видеоконсультация · 60 минут
+                            </div>
+                        </div>
+
+                        <!-- QR-код СБП (ЦЕНТРИРОВАННЫЙ) -->
+                        <div class="payment-qr">
+                            <img
+                                src="/assets/images/qr-tbank.png"
+                                alt="QR-код для оплаты 5 000 ₽ через СБП"
+                                width="200"
+                                height="200"
+                                loading="lazy"
+                                class="payment-qr__image"
+                                aria-describedby="qrHint"
+                            />
+                            <p class="payment-qr__hint">
+                                <i class="bi bi-qr-code text-primary fs-1" aria-hidden="true"></i>
+                                Отсканируйте в приложении банка
+                            </p>
+                        </div>
+
+                        <!-- Кнопки -->
+                        <div class="payment-actions">
+                            <button
+                                class="btn btn-primary"
+                                onclick="copyRequisites()"
+                                style="min-width: 180px"
+                                type="button"
+                            >
+                                <i class="bi bi-copy" aria-hidden="true"></i> Копировать реквизиты
+                            </button>
+                            <a href="tel:+79062607888" class="btn btn-outline min-w-180">
+                                <i class="bi bi-telephone" aria-hidden="true"></i> Позвонить
+                            </a>
+                        </div>
+
+                        <!-- Реквизиты -->
+                        <div class="payment-requisites">
+                            <p style="margin: 0">
+                                <strong>Получатель:</strong> ИП Павлова Татьяна Васильевна
+                            </p>
+                            <p style="margin: 0"><strong>ИНН:</strong> 631629590986</p>
+                            <p style="margin: 0"><strong>Счёт:</strong> 40802810300002352514</p>
+                            <p style="margin: 0"><strong>Банк:</strong> АО «ТБанк»</p>
+                            <p style="margin: 0"><strong>БИК:</strong> 044525974</p>
+                            <p style="margin: 0">
+                                <strong>Назначение:</strong> Оплата юридических услуг
+                            </p>
+                        </div>
+
+                        <!-- Контакты для связи после оплаты -->
+                        <div class="payment-notice">
+                            <i class="bi bi-info-circle text-primary" aria-hidden="true"></i>
+                            После оплаты отправьте чек на
+                            <a href="mailto:support@juristspb78.ru" class="text-primary fw-600">
+                                support@juristspb78.ru
+                            </a>
+                            или через
+                            <a
+                                href="https://max.ru/u/f9LHodD0cOJym_Z7O-LoIhkv_DJ38bFj9HV3maquF536QafEYf1gibeqNaM"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-primary fw-600"
+                            >
+                                MAX
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА "МОИ ФАЙЛЫ" ========== -->
+        <section class="modal" id="filesModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="files"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content modal-content--files"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="filesModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="filesModalTitle" class="modal-title">
+                            <i class="bi bi-folder-open text-gold" aria-hidden="true"></i>
+                            Мои документы
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="files"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body">
+                        <!-- Статистика -->
+                        <div class="files-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Всего файлов:</span>
+                                <span class="stat-value" id="totalFilesCount">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Занято места:</span>
+                                <span class="stat-value" id="totalFilesSize">0 MB</span>
+                            </div>
+                        </div>
+
+                        <!-- Фильтры по типу -->
+                        <div class="files-filters" role="tablist" aria-label="Фильтры файлов">
+                            <button
+                                class="files-filter-btn active"
+                                data-filter="all"
+                                role="tab"
+                                aria-selected="true"
+                                onclick="FilesModal.setFilter('all')"
+                            >
+                                Все
+                            </button>
+                            <button
+                                class="files-filter-btn"
+                                data-filter="pdf"
+                                role="tab"
+                                aria-selected="false"
+                                onclick="FilesModal.setFilter('pdf')"
+                            >
+                                PDF
+                            </button>
+                            <button
+                                class="files-filter-btn"
+                                data-filter="image"
+                                role="tab"
+                                aria-selected="false"
+                                onclick="FilesModal.setFilter('image')"
+                            >
+                                Изображения
+                            </button>
+                            <button
+                                class="files-filter-btn"
+                                data-filter="doc"
+                                role="tab"
+                                aria-selected="false"
+                                onclick="FilesModal.setFilter('doc')"
+                            >
+                                Документы
+                            </button>
+                        </div>
+
+                        <!-- Список файлов -->
+                        <div class="files-list-container" id="filesListContainer">
+                            <div class="loading-files">
+                                <div class="spinner"></div>
+                                <p>Загрузка файлов...</p>
+                            </div>
+                        </div>
+
+                        <!-- Действия -->
+                        <div class="files-actions">
+                            <button
+                                class="btn btn-outline btn-sm"
+                                onclick="FilesModal.clearAllFiles()"
+                                type="button"
+                            >
+                                <i class="bi bi-trash" aria-hidden="true"></i> Очистить всё
+                            </button>
+                            <button
+                                class="btn btn-outline btn-sm"
+                                onclick="FilesModal.loadFiles()"
+                                type="button"
+                            >
+                                <i class="bi bi-arrow-repeat" aria-hidden="true"></i> Обновить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        📜 СКРИПТЫ
+        ============================================================ -->
+
+        <script src="/assets/js/app.js?v=3.9.5" defer></script>
+    </body>
+</html>

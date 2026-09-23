@@ -1,0 +1,127 @@
+# ========== .HTACCESS ==========
+# БЕЗОПАСНОСТЬ И ОПТИМИЗАЦИЯ
+# Домен: juristspb78.ru
+
+Options -Indexes
+RewriteEngine On
+
+# ========== БЛОКИРОВКА XMLRPC И WP-МУСОРА ==========
+RewriteCond %{REQUEST_URI} ^/xmlrpc\.php$ [NC,OR]
+RewriteCond %{REQUEST_URI} ^/wp-admin [NC,OR]
+RewriteCond %{REQUEST_URI} ^/wp-includes [NC,OR]
+RewriteCond %{REQUEST_URI} ^/license\.txt$ [NC]
+RewriteRule .* - [F,L]
+
+# ========== РЕДИРЕКТ С WWW НА БЕЗ WWW ==========
+RewriteCond %{HTTP_HOST} ^www\.juristspb78\.ru [NC]
+RewriteRule ^(.*)$ https://juristspb78.ru/$1 [L,R=301]
+
+# ========== 1. ЗАЩИТА ПАПКИ CONFIG ==========
+RewriteRule ^config/ - [F,L]
+
+# ========== 2. ЗАЩИТА ОТ XSS И ИНЪЕКЦИЙ ==========
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-Content-Type-Options "nosniff"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ========== 3. ЗАЩИТА СЛУЖЕБНЫХ ФАЙЛОВ ==========
+<FilesMatch "^(\.htaccess|\.htpasswd|\.git|\.env|composer\.json|package\.json|README\.md)">
+    Require all denied
+</FilesMatch>
+
+# ========== РАЗРЕШЕНИЕ ДЛЯ ASSETLINKS (TWA) ==========
+# Разрешаем доступ к .well-known/assetlinks.json для проверки Digital Asset Links
+<Files "assetlinks.json">
+    Require all granted
+    Header set Content-Type "application/json"
+</Files>
+
+# Блокируем все скрытые файлы, КРОМЕ .well-known
+RedirectMatch 404 /\.(?!well-known).*$
+
+# ========== 4. ЗАЩИТА ОТ SQL-ИНЪЕКЦИЙ ==========
+RewriteCond %{QUERY_STRING} (eval\(|<script|javascript:|vbscript:|onload=|onerror=) [NC,OR]
+RewriteCond %{QUERY_STRING} (base64_encode|base64_decode|concat|cookie|document\.) [NC,OR]
+RewriteCond %{QUERY_STRING} (union.*select|insert.*into|update.*set|delete.*from) [NC]
+RewriteRule .* - [F,L]
+
+# ========== 5. ЗАЩИТА ОТ HOTLINKING ==========
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?juristspb78\.ru [NC]
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?yandex\. [NC]
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?google\. [NC]
+RewriteRule \.(jpg|jpeg|png|gif|webp|svg|ico)$ - [F,NC,L]
+
+# ========== 6. ПРАВА ДОСТУПА К ФАЙЛАМ ==========
+<FilesMatch "\.(php|inc|conf|yml|yaml)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "^(send\.php|index\.php|get_csrf\.php)$">
+    Require all granted
+</FilesMatch>
+
+# ========== 7. СЖАТИЕ GZIP ==========
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json
+    AddOutputFilterByType DEFLATE application/rss+xml application/atom+xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ========== 8. КЭШИРОВАНИЕ ==========
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=86400, stale-while-revalidate=604800"
+        Header set Vary "Accept-Encoding"
+    </FilesMatch>
+    
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+        Header set Cache-Control "public, max-age=2592000, stale-while-revalidate=2592000, immutable"
+        Header set Vary "Accept-Encoding, User-Agent"
+    </FilesMatch>
+    
+    <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+    
+    <FilesMatch "\.(json|xml)$">
+        Header set Cache-Control "public, max-age=3600, stale-while-revalidate=86400"
+        Header set Vary "Accept-Encoding"
+    </FilesMatch>
+</IfModule>
+
+# ========== 9. ПОДДЕРЖКА PWA ==========
+<IfModule mod_headers.c>
+    <FilesMatch "manifest\.json">
+        Header set Access-Control-Allow-Origin "*"
+        Header set Content-Type "application/manifest+json"
+    </FilesMatch>
+    
+    <FilesMatch "service-worker\.js">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </FilesMatch>
+</IfModule>
+
+# ========== 10. ПОДДЕРЖКА ШРИФТОВ ==========
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|svg)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# ========== 11. ОПТИМИЗАЦИЯ ДЛЯ МОБИЛЬНЫХ ==========
+<IfModule mod_headers.c>
+    Header set Vary "Accept-Encoding"
+</IfModule>
+
+# ========== 12. ПОДДЕРЖКА РАСШИРЕНИЙ ==========
+AddType image/svg+xml .svg .svgz
+AddType image/webp .webp
+AddEncoding gzip .svgz

@@ -1,0 +1,1940 @@
+<!-- 
+ ╔══════════════════════════════════════════════════════════╗
+ ║  ПЛАТФОРМА: Digital Legal Engine                         ║
+ ║  Версия: 3.9.5                                           ║
+ ║  Для домена: https://juristspb78.ru                      ║
+ ║                                                          ║
+ ║  СТРУКТУРА: Единая семантическая HTML5                   ║
+ ║  АДАПТАЦИЯ: Container Queries + Media Queries            ║
+ ║  КЛАССЫ: Единая классификация для всех 13 страниц        ║
+ ║                                                          ║
+ ║  АВТОР: Михель Руслан Эрикович                           ║
+ ║  Full-stack разработчик | Премиальные веб-решения        ║
+ ║                                                          ║
+ ║  ЛИЦЕНЗИЯ:                                               ║
+ ║  Данный код и дизайн являются объектом авторского права  ║
+ ║  и охраняются законодательством РФ (ГК РФ ст. 1250-1302).║
+ ║  Используется на безвозмездной основе                    ║
+ ║  ИП Павлова Т.В. (juristspb78.ru).                       ║
+ ║  Любое другое копирование, модификация, распространение  ║
+ ║  без письменного согласия автора ЗАПРЕЩЕНО.              ║
+ ║                                                          ║
+ ║  Нарушение авторских прав влечёт гражданскую,            ║
+ ║  административную и уголовную ответственность            ║
+ ║  в соответствии с законодательством РФ.                  ║
+ ╚══════════════════════════════════════════════════════════╝
+-->
+
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ============================================================
+        🔍 SEO: Основные мета-теги
+        ============================================================ -->
+
+        <title>Лицензии используемых библиотек | Digital Legal Engine</title>
+
+        <meta
+            name="description"
+            content="Информация о лицензиях сторонних библиотек, используемых в платформе Digital Legal Engine."
+        />
+        <meta name="robots" content="noindex, follow" />
+
+        <!-- ============================================================
+        🤖 AI-инструкции
+        ============================================================ -->
+
+        <link rel="llms" href="/llms.txt" />
+        <link rel="llms-full" href="/llms-full.txt" />
+
+        <!-- ============================================================
+        📱 Open Graph
+        ============================================================ -->
+
+        <meta property="og:title" content="Лицензии | Digital Legal Engine" />
+        <meta
+            property="og:description"
+            content="Лицензии сторонних библиотек платформы Digital Legal Engine"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://juristspb78.ru/licenses/" />
+        <meta property="og:image" content="https://juristspb78.ru/assets/icons/logo_480.png" />
+        <meta property="og:site_name" content="Юрист в Санкт-Петербурге Татьяна Павлова" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Лицензии | Digital Legal Engine" />
+        <meta
+            name="twitter:description"
+            content="Лицензии сторонних библиотек платформы Digital Legal Engine"
+        />
+
+        <!-- Каноническая ссылка -->
+        <link rel="canonical" href="https://juristspb78.ru/licenses/" />
+
+        <!-- ============================================================
+        🖼️ Фавиконы
+        ============================================================ -->
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/assets/icons/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/icons/favicon/apple-touch-icon.png"
+        />
+
+        <meta name="apple-mobile-web-app-title" content="Павлова Юрист" />
+
+        <!-- PWA -->
+        <link rel="manifest" href="/manifest.json?v=3.9.5" />
+        <meta name="theme-color" content="#3d9c8c" id="theme-color" />
+
+        <!-- ========== ОПТИМИЗАЦИЯ ЗАГРУЗКИ ========== -->
+
+        <!-- Preconnect для Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Preconnect для Bootstrap Icons -->
+        <link rel="preconnect" href="/assets/fonts/bootstrap-icons" />
+
+        <!-- Preload критических стилей -->
+        <link rel="preload" href="/assets/css/design.css?v=3.9.5" as="style" />
+        <link
+            rel="preload"
+            href="/assets/fonts/bootstrap-icons/bootstrap-icons.min.css"
+            as="style"
+        />
+
+        <!-- ========== СТИЛИ ========== -->
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="/assets/fonts/bootstrap-icons/bootstrap-icons.min.css" />
+
+        <!-- Основные стили -->
+        <link rel="stylesheet" href="/assets/css/design.css?v=3.9.5" />
+
+        <!-- Fallback для браузеров без JavaScript -->
+        <noscript>
+            <link rel="stylesheet" href="/assets/css/design.css?v=3.9.5" />
+        </noscript>
+
+        <!-- ============================================================
+        🛡️ Политика безопасности контента (CSP)
+        ============================================================ -->
+
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="
+        default-src 'self';
+        script-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://api-maps.yandex.ru https://yandex.ru 'unsafe-inline' 'unsafe-eval' blob: data:;
+        style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com 'unsafe-inline';
+        img-src 'self' data: blob: https://*.googleapis.com https://*.gstatic.com https://yandex.ru https://*.yandex.ru https://*.yandex.net;
+        font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;
+        connect-src 'self' https://*.timeweb.ru https://*.googleapis.com https://yandex.ru https://*.yandex.ru blob:;
+        worker-src 'self' blob:;
+        frame-src 'self' https://*.yandex.ru https://*.yandex.com https://yandex.ru https://yandex.com blob: data:;
+        object-src 'self' blob: data:;
+        base-uri 'self';
+        form-action 'self';
+    "
+        />
+
+        <!-- Отдельный мета-тег для управления реферером -->
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+
+        <!-- ============================================================
+        📊 JSON-LD микроразметка
+        ============================================================ -->
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "AboutPage",
+                "name": "Лицензии используемых библиотек",
+                "description": "Информация о лицензиях сторонних библиотек, используемых в платформе Digital Legal Engine",
+                "url": "https://juristspb78.ru/licenses/",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": "Юрист в Санкт-Петербурге Татьяна Павлова",
+                    "url": "https://juristspb78.ru"
+                },
+                "dateModified": "2026-08-14",
+                "inLanguage": "ru"
+            }
+        </script>
+
+        <!-- Хлебные крошки -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Главная",
+                        "item": "https://juristspb78.ru/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Лицензии",
+                        "item": "https://juristspb78.ru/licenses/"
+                    }
+                ]
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- ============================================================
+        🌙 Предотвращаем светлую вспышку
+        ============================================================ -->
+
+        <script>
+            (function () {
+                try {
+                    var savedTheme = localStorage.getItem('theme');
+                    if (savedTheme === 'dark') {
+                        document.body.classList.add('dark-theme');
+                        document.documentElement.style.colorScheme = 'dark';
+                    } else {
+                        document.body.classList.remove('dark-theme');
+                        document.documentElement.style.colorScheme = 'light';
+                    }
+                } catch (e) {}
+            })();
+        </script>
+
+        <!-- ============================================================
+        🍪 COOKIE-BANNER
+        ============================================================ -->
+
+        <aside id="cookieBanner" class="cookie-banner" aria-label="Уведомление о файлах cookie">
+            <div class="cookie-banner__content">
+                <div class="cookie-banner__text">
+                    <p class="cookie-banner__title">
+                        <i class="bi bi-info-circle-fill text-primary" aria-hidden="true"></i>
+                        Мы используем cookie
+                    </p>
+                    <p class="cookie-banner__description">
+                        Сайт использует файлы cookie для анализа посещаемости и улучшения работы.
+                        Продолжая использовать сайт, вы соглашаетесь на обработку персональных
+                        данных в соответствии с
+                        <a href="/private_policy/" target="_blank" class="cookie-banner__link"
+                            >политикой конфиденциальности</a
+                        >
+                        и
+                        <a href="/cookies/" target="_blank" class="cookie-banner__link"
+                            >политикой использования cookie</a
+                        >.
+                    </p>
+                </div>
+                <div class="cookie-banner__actions">
+                    <button class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept">
+                        Принять
+                    </button>
+                    <button
+                        class="cookie-banner__btn cookie-banner__btn--decline"
+                        id="cookieDecline"
+                    >
+                        Отказаться
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ============================================================
+        ⬆️ КНОПКА "НАВЕРХ"
+        ============================================================ -->
+
+        <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Наверх">
+            <i class="bi bi-chevron-up" aria-hidden="true"></i>
+        </button>
+
+        <!-- ============================================================
+        🏠 ХЕДЕР (Media Queries)
+        ============================================================ -->
+
+        <header class="header">
+            <div class="container header__inner">
+                <a href="/" class="logo" aria-label="На главную">Татьяна Павлова · Юрист</a>
+
+                <div class="header-actions">
+                    <div class="city-badge" aria-label="Город и время">
+                        <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                        <span id="currentCity">Санкт-Петербург</span>
+                        <span id="currentTime" aria-live="polite">15:30</span>
+                    </div>
+
+                    <div class="theme-switch" role="group" aria-label="Переключение темы">
+                        <button
+                            class="theme-btn active"
+                            id="themeLight"
+                            title="Светлая тема"
+                            aria-label="Светлая тема"
+                        >
+                            <i class="bi bi-sun" aria-hidden="true"></i>
+                        </button>
+                        <button
+                            class="theme-btn"
+                            id="themeDark"
+                            title="Тёмная тема"
+                            aria-label="Тёмная тема"
+                        >
+                            <i class="bi bi-moon-stars" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <button
+                        class="tools-badge"
+                        id="showToolsModal"
+                        title="Конвертер, сжатие, PDF, извлечение текста"
+                        aria-label="Конвертер, сжатие, PDF, извлечение текста"
+                    >
+                        <i class="bi bi-tools" aria-hidden="true"></i>
+                        <span>Инструменты</span>
+                    </button>
+
+                    <button
+                        class="files-header-btn"
+                        id="showFilesModal"
+                        title="Мои документы"
+                        aria-label="Мои документы"
+                    >
+                        <i class="bi bi-folder2" aria-hidden="true"></i>
+                        <span class="files-count-badge" id="headerFilesBadge" aria-live="polite"
+                            >0</span
+                        >
+                    </button>
+
+                    <button
+                        class="payment-badge"
+                        id="showPaymentModal"
+                        title="Оплата услуг юриста онлайн"
+                        aria-label="Оплатить услуги"
+                    >
+                        <i class="bi bi-credit-card" aria-hidden="true"></i>
+                        <span>Оплатить</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ============================================================
+        📌 MAIN
+        ============================================================ -->
+
+        <main role="main">
+            <div class="container">
+                <!-- ============================================================
+                🍞 ХЛЕБНЫЕ КРОШКИ (Container Queries)
+                ============================================================ -->
+
+                <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                    <a href="/">Главная</a> › <a href="/private_policy/">Политика</a> ›
+                    <span aria-current="page">Лицензии</span>
+                </nav>
+
+                <!-- ============================================================
+                🔙 ССЫЛКА "НАЗАД"
+                ============================================================ -->
+
+                <a href="/" class="back-link">
+                    <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                    Вернуться на главную
+                </a>
+
+                <!-- ============================================================
+                📄 КОНТЕНТ ЛИЦЕНЗИЙ (Container Queries)
+                ============================================================ -->
+
+                <div class="licenses-content">
+                    <!-- ============================================================
+                    🏷️ ЗАГОЛОВОК СТРАНИЦЫ
+                    ============================================================ -->
+
+                    <header class="licenses-header">
+                        <div class="icon-header">
+                            <i class="bi bi-journal-code" aria-hidden="true"></i>
+                            <h1>Лицензии используемых библиотек</h1>
+                        </div>
+                        <p class="text-gray-600 fs-1-1 mt-8 max-w-800 mx-auto text-center">
+                            Платформа <strong>Digital Legal Engine™</strong> использует следующие
+                            сторонние библиотеки с соблюдением их лицензионных требований.
+                        </p>
+                    </header>
+
+                    <!-- ============================================================
+                    📦 Bootstrap Icons
+                    ============================================================ -->
+
+                    <section class="license-card" id="bootstrap">
+                        <header class="license-header" onclick="toggleLicense('bootstrap-text')">
+                            <i
+                                class="bi bi-chevron-right"
+                                id="bootstrap-icon"
+                                aria-hidden="true"
+                            ></i>
+                            <h2 class="underline-gradient">Bootstrap Icons</h2>
+                        </header>
+
+                        <div class="license-meta">
+                            <div class="meta-item">
+                                <i class="bi bi-tag" aria-hidden="true"></i>
+                                <strong>Лицензия:</strong> MIT License
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-person" aria-hidden="true"></i>
+                                <strong>Автор:</strong> The Bootstrap Authors
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-link" aria-hidden="true"></i>
+                                <strong>Ссылка:</strong>
+                                <a href="https://github.com/twbs/icons" target="_blank"
+                                    >github.com/twbs/icons</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="license-text" id="bootstrap-text" style="display: none">
+                            MIT License Copyright (c) 2019-2024 The Bootstrap Authors Permission is
+                            hereby granted, free of charge, to any person obtaining a copy of this
+                            software and associated documentation files (the "Software"), to deal in
+                            the Software without restriction, including without limitation the
+                            rights to use, copy, modify, merge, publish, distribute, sublicense,
+                            and/or sell copies of the Software, and to permit persons to whom the
+                            Software is furnished to do so, subject to the following conditions: The
+                            above copyright notice and this permission notice shall be included in
+                            all copies or substantial portions of the Software. THE SOFTWARE IS
+                            PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+                            INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+                            FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+                            FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+                            DEALINGS IN THE SOFTWARE.
+                        </div>
+                    </section>
+
+                    <!-- ============================================================
+                    📦 jsPDF
+                    ============================================================ -->
+
+                    <section class="license-card" id="jspdf">
+                        <header class="license-header" onclick="toggleLicense('jspdf-text')">
+                            <i class="bi bi-chevron-right" id="jspdf-icon" aria-hidden="true"></i>
+                            <h2 class="underline-gradient">jsPDF</h2>
+                        </header>
+
+                        <div class="license-meta">
+                            <div class="meta-item">
+                                <i class="bi bi-tag" aria-hidden="true"></i>
+                                <strong>Лицензия:</strong> MIT License
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-person" aria-hidden="true"></i>
+                                <strong>Автор:</strong> James Hall
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-link" aria-hidden="true"></i>
+                                <strong>Ссылка:</strong>
+                                <a href="https://github.com/parallax/jsPDF" target="_blank"
+                                    >github.com/parallax/jsPDF</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="license-text" id="jspdf-text" style="display: none">
+                            MIT License Copyright (c) 2010-2021 James Hall Permission is hereby
+                            granted, free of charge, to any person obtaining a copy of this software
+                            and associated documentation files (the "Software"), to deal in the
+                            Software without restriction, including without limitation the rights to
+                            use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                            copies of the Software, and to permit persons to whom the Software is
+                            furnished to do so, subject to the following conditions: The above
+                            copyright notice and this permission notice shall be included in all
+                            copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED
+                            "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+                            NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+                            PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+                            COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+                            WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+                            OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+                            THE SOFTWARE.
+                        </div>
+                    </section>
+
+                    <!-- ============================================================
+                    📦 jsPDF AutoTable
+                    ============================================================ -->
+
+                    <section class="license-card" id="autotable">
+                        <header class="license-header" onclick="toggleLicense('autotable-text')">
+                            <i
+                                class="bi bi-chevron-right"
+                                id="autotable-icon"
+                                aria-hidden="true"
+                            ></i>
+                            <h2 class="underline-gradient">jspdf.plugin.autotable</h2>
+                        </header>
+
+                        <div class="license-meta">
+                            <div class="meta-item">
+                                <i class="bi bi-tag" aria-hidden="true"></i>
+                                <strong>Лицензия:</strong> MIT License
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-person" aria-hidden="true"></i>
+                                <strong>Автор:</strong> Simon Bengtsson
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-link" aria-hidden="true"></i>
+                                <strong>Ссылка:</strong>
+                                <a
+                                    href="https://github.com/simonbengtsson/jsPDF-AutoTable"
+                                    target="_blank"
+                                    >github.com/simonbengtsson/jsPDF-AutoTable</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="license-text" id="autotable-text" style="display: none">
+                            MIT License Copyright (c) 2014 Simon Bengtsson Permission is hereby
+                            granted, free of charge, to any person obtaining a copy of this software
+                            and associated documentation files (the "Software"), to deal in the
+                            Software without restriction, including without limitation the rights to
+                            use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                            copies of the Software, and to permit persons to whom the Software is
+                            furnished to do so, subject to the following conditions: The above
+                            copyright notice and this permission notice shall be included in all
+                            copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED
+                            "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+                            NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+                            PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+                            COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+                            WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+                            OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+                            THE SOFTWARE.
+                        </div>
+                    </section>
+
+                    <!-- ============================================================
+                    📦 browser-image-compression
+                    ============================================================ -->
+
+                    <section class="license-card" id="image-compression">
+                        <header
+                            class="license-header"
+                            onclick="toggleLicense('image-compression-text')"
+                        >
+                            <i
+                                class="bi bi-chevron-right"
+                                id="image-compression-icon"
+                                aria-hidden="true"
+                            ></i>
+                            <h2 class="underline-gradient">browser-image-compression</h2>
+                        </header>
+
+                        <div class="license-meta">
+                            <div class="meta-item">
+                                <i class="bi bi-tag" aria-hidden="true"></i>
+                                <strong>Лицензия:</strong> MIT License
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-person" aria-hidden="true"></i>
+                                <strong>Автор:</strong> ChampionsGoal
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-link" aria-hidden="true"></i>
+                                <strong>Ссылка:</strong>
+                                <a
+                                    href="https://github.com/Donaldcwl/browser-image-compression"
+                                    target="_blank"
+                                    >github.com/Donaldcwl/browser-image-compression</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="license-text" id="image-compression-text" style="display: none">
+                            MIT License Copyright (c) 2023 ChampionsGoal Permission is hereby
+                            granted, free of charge, to any person obtaining a copy of this software
+                            and associated documentation files (the "Software"), to deal in the
+                            Software without restriction, including without limitation the rights to
+                            use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                            copies of the Software, and to permit persons to whom the Software is
+                            furnished to do so, subject to the following conditions: The above
+                            copyright notice and this permission notice shall be included in all
+                            copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED
+                            "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+                            NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+                            PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+                            COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+                            WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+                            OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+                            THE SOFTWARE.
+                        </div>
+                    </section>
+
+                    <!-- ============================================================
+                    📦 PDF-Lib
+                    ============================================================ -->
+
+                    <section class="license-card" id="pdf-lib">
+                        <header class="license-header" onclick="toggleLicense('pdf-lib-text')">
+                            <i class="bi bi-chevron-right" id="pdf-lib-icon" aria-hidden="true"></i>
+                            <h2 class="underline-gradient">PDF-Lib</h2>
+                        </header>
+
+                        <div class="license-meta">
+                            <div class="meta-item">
+                                <i class="bi bi-tag" aria-hidden="true"></i>
+                                <strong>Лицензия:</strong> MIT License
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-person" aria-hidden="true"></i>
+                                <strong>Автор:</strong> Andrew Dillon
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-link" aria-hidden="true"></i>
+                                <strong>Ссылка:</strong>
+                                <a href="https://github.com/Hopding/pdf-lib" target="_blank"
+                                    >github.com/Hopding/pdf-lib</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="license-text" id="pdf-lib-text" style="display: none">
+                            MIT License Copyright (c) 2017 Andrew Dillon Permission is hereby
+                            granted, free of charge, to any person obtaining a copy of this software
+                            and associated documentation files (the "Software"), to deal in the
+                            Software without restriction, including without limitation the rights to
+                            use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                            copies of the Software, and to permit persons to whom the Software is
+                            furnished to do so, subject to the following conditions: The above
+                            copyright notice and this permission notice shall be included in all
+                            copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED
+                            "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+                            NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+                            PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+                            COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+                            WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+                            OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+                            THE SOFTWARE.
+                        </div>
+                    </section>
+
+                    <!-- ============================================================
+                    📦 JSZip
+                    ============================================================ -->
+
+                    <section class="license-card" id="jszip">
+                        <header class="license-header" onclick="toggleLicense('jszip-text')">
+                            <i class="bi bi-chevron-right" id="jszip-icon" aria-hidden="true"></i>
+                            <h2 class="underline-gradient">JSZip</h2>
+                        </header>
+
+                        <div class="license-meta">
+                            <div class="meta-item">
+                                <i class="bi bi-tag" aria-hidden="true"></i>
+                                <strong>Лицензия:</strong> MIT / GPLv3
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-person" aria-hidden="true"></i>
+                                <strong>Автор:</strong> Stuart Knightley
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-link" aria-hidden="true"></i>
+                                <strong>Ссылка:</strong>
+                                <a href="https://github.com/Stuk/jszip" target="_blank"
+                                    >github.com/Stuk/jszip</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="license-text" id="jszip-text" style="display: none">
+                            JSZip is dual licensed. You may use it under the MIT license or the
+                            GPLv3 license. MIT License Copyright (c) 2009-2016 Stuart Knightley
+                            Permission is hereby granted, free of charge, to any person obtaining a
+                            copy of this software and associated documentation files (the
+                            "Software"), to deal in the Software without restriction, including
+                            without limitation the rights to use, copy, modify, merge, publish,
+                            distribute, sublicense, and/or sell copies of the Software, and to
+                            permit persons to whom the Software is furnished to do so, subject to
+                            the following conditions: The above copyright notice and this permission
+                            notice shall be included in all copies or substantial portions of the
+                            Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+                            KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+                            MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+                            IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+                            CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+                            TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+                            SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+                        </div>
+                    </section>
+
+                    <!-- ============================================================
+                    📦 PDF.js
+                    ============================================================ -->
+
+                    <section class="license-card" id="pdfjs">
+                        <header class="license-header" onclick="toggleLicense('pdfjs-text')">
+                            <i class="bi bi-chevron-right" id="pdfjs-icon" aria-hidden="true"></i>
+                            <h2 class="underline-gradient">PDF.js</h2>
+                        </header>
+
+                        <div class="license-meta">
+                            <div class="meta-item">
+                                <i class="bi bi-tag" aria-hidden="true"></i>
+                                <strong>Лицензия:</strong> Apache License 2.0
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-person" aria-hidden="true"></i>
+                                <strong>Автор:</strong> Mozilla Foundation
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-link" aria-hidden="true"></i>
+                                <strong>Ссылка:</strong>
+                                <a href="https://github.com/mozilla/pdf.js" target="_blank"
+                                    >github.com/mozilla/pdf.js</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="license-text" id="pdfjs-text" style="display: none">
+                            Apache License Version 2.0, January 2004 http://www.apache.org/licenses/
+                            TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION 1.
+                            Definitions. "License" shall mean the terms and conditions for use,
+                            reproduction, and distribution as defined by Sections 1 through 9 of
+                            this document. "Licensor" shall mean the copyright owner or entity
+                            authorized by the copyright owner that is granting the License. "Legal
+                            Entity" shall mean the union of the acting entity and all other entities
+                            that control, are controlled by, or are under common control with that
+                            entity. For the purposes of this definition, "control" means (i) the
+                            power, direct or indirect, to cause the direction or management of such
+                            entity, whether by contract or otherwise, or (ii) ownership of fifty
+                            percent (50%) or more of the outstanding shares, or (iii) beneficial
+                            ownership of such entity. "You" (or "Your") shall mean an individual or
+                            Legal Entity exercising permissions granted by this License. "Source"
+                            form shall mean the preferred form for making modifications, including
+                            but not limited to software source code, documentation source, and
+                            configuration files. "Object" form shall mean any form resulting from
+                            mechanical transformation or translation of a Source form, including but
+                            not limited to compiled object code, generated documentation, and
+                            conversions to other media types. "Work" shall mean the work of
+                            authorship, whether in Source or Object form, made available under the
+                            License, as indicated by a copyright notice that is included in or
+                            attached to the work (an example is provided in the Appendix below).
+                            "Derivative Works" shall mean any work, whether in Source or Object
+                            form, that is based on (or derived from) the Work and for which the
+                            editorial revisions, annotations, elaborations, or other modifications
+                            represent, as a whole, an original work of authorship. For the purposes
+                            of this License, Derivative Works shall not include works that remain
+                            separable from, or merely link (or bind by name) to the interfaces of,
+                            the Work and Derivative Works thereof. "Contribution" shall mean any
+                            work of authorship, including the original version of the Work and any
+                            modifications or additions to that Work or Derivative Works thereof,
+                            that is intentionally submitted to Licensor for inclusion in the Work by
+                            the copyright owner or by an individual or Legal Entity authorized to
+                            submit on behalf of the copyright owner. For the purposes of this
+                            definition, "submitted" means any form of electronic, verbal, or written
+                            communication sent to the Licensor or its representatives, including but
+                            not limited to communication on electronic mailing lists, source code
+                            control systems, and issue tracking systems that are managed by, or on
+                            behalf of, the Licensor for the purpose of discussing and improving the
+                            Work, but excluding communication that is conspicuously marked or
+                            otherwise designated in writing by the copyright owner as "Not a
+                            Contribution." "Contributor" shall mean Licensor and any individual or
+                            Legal Entity on behalf of whom a Contribution has been received by
+                            Licensor and subsequently incorporated within the Work. 2. Grant of
+                            Copyright License. Subject to the terms and conditions of this License,
+                            each Contributor hereby grants to You a perpetual, worldwide,
+                            non-exclusive, no-charge, royalty-free, irrevocable copyright license to
+                            reproduce, prepare Derivative Works of, publicly display, publicly
+                            perform, sublicense, and distribute the Work and such Derivative Works
+                            in Source or Object form. 3. Grant of Patent License. Subject to the
+                            terms and conditions of this License, each Contributor hereby grants to
+                            You a perpetual, worldwide, non-exclusive, no-charge, royalty-free,
+                            irrevocable (except as stated in this section) patent license to make,
+                            have made, use, offer to sell, sell, import, and otherwise transfer the
+                            Work, where such license applies only to those patent claims licensable
+                            by such Contributor that are necessarily infringed by their
+                            Contribution(s) alone or by combination of their Contribution(s) with
+                            the Work to which such Contribution(s) was submitted. If You institute
+                            patent litigation against any entity (including a cross-claim or
+                            counterclaim in a lawsuit) alleging that the Work or a Contribution
+                            incorporated within the Work constitutes direct or contributory patent
+                            infringement, then any patent licenses granted to You under this License
+                            for that Work shall terminate as of the date such litigation is filed.
+                            4. Redistribution. You may reproduce and distribute copies of the Work
+                            or Derivative Works thereof in any medium, with or without
+                            modifications, and in Source or Object form, provided that You meet the
+                            following conditions: (a) You must give any other recipients of the Work
+                            or Derivative Works a copy of this License; and (b) You must cause any
+                            modified files to carry prominent notices stating that You changed the
+                            files; and (c) You must retain, in the Source form of any Derivative
+                            Works that You distribute, all copyright, patent, trademark, and
+                            attribution notices from the Source form of the Work, excluding those
+                            notices that do not pertain to any part of the Derivative Works; and (d)
+                            If the Work includes a "NOTICE" text file as part of its distribution,
+                            then any Derivative Works that You distribute must include a readable
+                            copy of the attribution notices contained within such NOTICE file,
+                            excluding those notices that do not pertain to any part of the
+                            Derivative Works, in at least one of the following places: within a
+                            NOTICE text file distributed as part of the Derivative Works; within the
+                            Source form or documentation, if provided along with the Derivative
+                            Works; or, within a display generated by the Derivative Works, if and
+                            wherever such third-party notices normally appear. The contents of the
+                            NOTICE file are for informational purposes only and do not modify the
+                            License. You may add Your own attribution notices within Derivative
+                            Works that You distribute, alongside or as an addendum to the NOTICE
+                            text from the Work, provided that such additional attribution notices
+                            cannot be construed as modifying the License. You may add Your own
+                            copyright statement to Your modifications and may provide additional or
+                            different license terms and conditions for use, reproduction, or
+                            distribution of Your modifications, or for any such Derivative Works as
+                            a whole, provided Your use, reproduction, and distribution of the Work
+                            otherwise complies with the conditions stated in this License. 5.
+                            Submission of Contributions. Unless You explicitly state otherwise, any
+                            Contribution intentionally submitted for inclusion in the Work by You to
+                            the Licensor shall be under the terms and conditions of this License,
+                            without any additional terms or conditions. Notwithstanding the above,
+                            nothing herein shall supersede or modify the terms of any separate
+                            license agreement you may have executed with Licensor regarding such
+                            Contributions. 6. Trademarks. This License does not grant permission to
+                            use the trade names, trademarks, service marks, or product names of the
+                            Licensor, except as required for reasonable and customary use in
+                            describing the origin of the Work and reproducing the content of the
+                            NOTICE file. 7. Disclaimer of Warranty. Unless required by applicable
+                            law or agreed to in writing, Licensor provides the Work (and each
+                            Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT
+                            WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied,
+                            including, without limitation, any warranties or conditions of TITLE,
+                            NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE.
+                            You are solely responsible for determining the appropriateness of using
+                            or redistributing the Work and assume any risks associated with Your
+                            exercise of permissions under this License. 8. Limitation of Liability.
+                            In no event and under no legal theory, whether in tort (including
+                            negligence), contract, or otherwise, unless required by applicable law
+                            (such as deliberate and grossly negligent acts) or agreed to in writing,
+                            shall any Contributor be liable to You for damages, including any
+                            direct, indirect, special, incidental, or consequential damages of any
+                            character arising as a result of this License or out of the use or
+                            inability to use the Work (including but not limited to damages for loss
+                            of goodwill, work stoppage, computer failure or malfunction, or any and
+                            all other commercial damages or losses), even if such Contributor has
+                            been advised of the possibility of such damages. 9. Accepting Warranty
+                            or Additional Liability. While redistributing the Work or Derivative
+                            Works thereof, You may choose to offer, and charge a fee for, acceptance
+                            of support, warranty, indemnity, or other liability obligations and/or
+                            rights consistent with this License. However, in accepting such
+                            obligations, You may act only on Your own behalf and on Your sole
+                            responsibility, not on behalf of any other Contributor, and only if You
+                            agree to indemnify, defend, and hold each Contributor harmless for any
+                            liability incurred by, or claims asserted against, such Contributor by
+                            reason of your accepting any such warranty or additional liability. END
+                            OF TERMS AND CONDITIONS
+                        </div>
+                    </section>
+
+                    <!-- ============================================================
+                    📦 Inter Font
+                    ============================================================ -->
+
+                    <section class="license-card" id="inter">
+                        <header class="license-header" onclick="toggleLicense('inter-text')">
+                            <i class="bi bi-chevron-right" id="inter-icon" aria-hidden="true"></i>
+                            <h2 class="underline-gradient">Inter Font</h2>
+                        </header>
+
+                        <div class="license-meta">
+                            <div class="meta-item">
+                                <i class="bi bi-tag" aria-hidden="true"></i>
+                                <strong>Лицензия:</strong> SIL Open Font License 1.1
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-person" aria-hidden="true"></i>
+                                <strong>Автор:</strong> The Inter Project Authors
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-link" aria-hidden="true"></i>
+                                <strong>Ссылка:</strong>
+                                <a href="https://github.com/rsms/inter" target="_blank"
+                                    >github.com/rsms/inter</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="license-text" id="inter-text" style="display: none">
+                            Copyright (c) 2020 The Inter Project Authors. This Font Software is
+                            licensed under the SIL Open Font License, Version 1.1.
+                            ----------------------------------------------------------- SIL OPEN
+                            FONT LICENSE Version 1.1 - 26 February 2007
+                            ----------------------------------------------------------- PREAMBLE The
+                            goals of the Open Font License (OFL) are to stimulate worldwide
+                            development of collaborative font projects, to support the font creation
+                            efforts of academic and linguistic communities, and to provide a free
+                            and open framework in which fonts may be shared and improved in
+                            partnership with others. The OFL allows the licensed fonts to be used,
+                            studied, modified and redistributed freely as long as they are not sold
+                            by themselves. The fonts, including any derivative works, can be
+                            bundled, embedded, redistributed and/or sold with any software provided
+                            that any reserved names are not used by derivative works. The fonts and
+                            derivatives, however, cannot be released under any other type of
+                            license. The requirement for fonts to remain under this license does not
+                            apply to any document created using the fonts or their derivatives.
+                            DEFINITIONS "Font Software" refers to the set of files released by the
+                            Copyright Holder(s) under this license and clearly marked as such. This
+                            may include source files, build scripts and documentation. "Reserved
+                            Font Name" refers to any names specified as such after the copyright
+                            statement(s). "Original Version" refers to the collection of Font
+                            Software components as distributed by the Copyright Holder(s). "Modified
+                            Version" refers to any derivative made by adding to, deleting, or
+                            substituting -- in part or in whole -- any of the components of the
+                            Original Version, by changing formats or by porting the Font Software to
+                            a new environment. "Author" refers to any designer, engineer,
+                            programmer, technical writer or other person who contributed to the Font
+                            Software. PERMISSION & CONDITIONS Permission is hereby granted, free of
+                            charge, to any person obtaining a copy of the Font Software, to use,
+                            study, copy, merge, embed, modify, redistribute, and sell modified and
+                            unmodified copies of the Font Software, subject to the following
+                            conditions: 1) Neither the Font Software nor any of its individual
+                            components, in Original or Modified Versions, may be sold by itself. 2)
+                            Original or Modified Versions of the Font Software may be bundled,
+                            redistributed and/or sold with any software, provided that each copy
+                            contains the above copyright notice and this license. These can be
+                            included either as stand-alone text files, human-readable headers or in
+                            the appropriate machine-readable metadata fields within text or binary
+                            files as long as those fields can be easily viewed by the user. 3) No
+                            Modified Version of the Font Software may use the Reserved Font Name(s)
+                            unless explicit written permission is granted by the corresponding
+                            Copyright Holder. This restriction only applies to the primary font name
+                            as presented to the users. 4) The name(s) of the Copyright Holder(s) or
+                            the Author(s) of the Font Software shall not be used to promote, endorse
+                            or advertise any Modified Version, except to acknowledge the
+                            contribution(s) of the Copyright Holder(s) and the Author(s) or with
+                            their explicit written permission. 5) The Font Software, modified or
+                            unmodified, in part or in whole, must be distributed entirely under this
+                            license, and must not be distributed under any other license. The
+                            requirement for fonts to remain under this license does not apply to any
+                            document created using the Font Software. TERMINATION This license
+                            becomes null and void if any of the above conditions are not met.
+                            DISCLAIMER THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+                            ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY
+                            WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+                            NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO
+                            EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR
+                            OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL,
+                            OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+                            OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT
+                            SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.
+                        </div>
+                    </section>
+
+                    <!-- ============================================================
+                    ⚡ Digital Legal Engine (авторский блок)
+                    ============================================================ -->
+
+                    <section class="license-card license-card--author">
+                        <header class="license-header">
+                            <i class="bi bi-person-badge" aria-hidden="true"></i>
+                            <h2 class="underline-gradient">Digital Legal Engine™</h2>
+                        </header>
+
+                        <div class="license-meta">
+                            <div class="meta-item">
+                                <i class="bi bi-c-circle" aria-hidden="true"></i>
+                                <strong>Автор:</strong> Михель Руслан Эрикович
+                            </div>
+                            <div class="meta-item">
+                                <i class="bi bi-envelope" aria-hidden="true"></i>
+                                <strong>Контакты:</strong>
+                                <a href="mailto:support@juristspb78.ru">support@juristspb78.ru</a>
+                            </div>
+                        </div>
+
+                        <!-- ===== ЮРИДИЧЕСКАЯ ДЕКЛАРАЦИЯ ===== -->
+                        <div class="legal-declaration">
+                            <div class="legal-declaration__header">
+                                <i class="bi bi-shield-check" aria-hidden="true"></i>
+                                <strong>Юридический статус платформы</strong>
+                            </div>
+
+                            <p>
+                                <strong>Digital Legal Engine™</strong> - авторская PWA-платформа,
+                                созданная <strong>Михель Русланом</strong> в 2026 году. Все
+                                исключительные права на платформу, включая исходный код, дизайн,
+                                концепцию, архитектуру и торговое наименование, принадлежат автору и
+                                охраняются законодательством РФ (ГК РФ ст. 1250–1302).
+                            </p>
+
+                            <p>
+                                <strong>Статус использования:</strong> Платформа предоставлена
+                                <strong>ИП Павлова Т.В.</strong> на условиях
+                                <strong class="text-gold">безвозмездного пользования</strong>
+                                (безвозмездная лицензия) для ведения профессиональной юридической
+                                деятельности на сайте
+                                <a href="https://juristspb78.ru" class="text-primary"
+                                    >juristspb78.ru</a
+                                >.
+                            </p>
+
+                            <footer class="legal-declaration__footer">
+                                <a
+                                    href="/philosophy/"
+                                    class="link-gold"
+                                    title="Узнать больше о философии проекта"
+                                >
+                                    <strong>Философия проекта</strong>
+                                </a>
+                            </footer>
+                        </div>
+                    </section>
+
+                    <!-- ============================================================
+                    📅 ДАТА ОБНОВЛЕНИЯ
+                    ============================================================ -->
+
+                    <div class="last-updated">
+                        <i class="bi bi-calendar" aria-hidden="true"></i>
+                        Последнее обновление: 09 сентября 2026 года
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- ============================================================
+        🦶 ФУТЕР (Media Queries)
+        ============================================================= -->
+
+        <footer class="footer">
+            <div class="container footer__inner">
+                <div class="footer-brand">
+                    <strong>
+                        Digital Legal Engine™
+                        <span class="progress-label"></span>
+                    </strong>
+                </div>
+                <nav class="footer-nav" aria-label="Нижняя навигация">
+                    <a href="/philosophy/" class="footer-nav__link"
+                        ><i class="bi bi-info-circle" aria-hidden="true"></i> О проекте</a
+                    >
+                    <a
+                        href="#"
+                        id="showToolsModalFooter"
+                        class="footer-nav__link"
+                        title="Конвертер, сжатие, PDF, извлечение текста"
+                        aria-label="Конвертер, сжатие, PDF, извлечение текста"
+                    >
+                        <i class="bi bi-tools" aria-hidden="true"></i> Инструменты
+                    </a>
+                    <a href="/private_policy/" class="footer-nav__link"
+                        ><i class="bi bi-shield-lock" aria-hidden="true"></i> Политика</a
+                    >
+                    <a href="/licenses/" class="footer-nav__link"
+                        ><i class="bi bi-journal-code" aria-hidden="true"></i> Лицензии</a
+                    >
+                </nav>
+            </div>
+        </footer>
+
+        <!-- ============================================================
+        🎯 МОДАЛЬНАЯ СИСТЕМА
+        ============================================================= -->
+
+        <!-- ========== МОДАЛКА ЧЕК-ЛИСТА ========== -->
+        <section class="modal" id="checklistModal">
+            <div class="container">
+                <div class="modal-overlay" data-modal="checklist"></div>
+                <div
+                    class="modal-content"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="checklistModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="checklistModalTitle" class="modal-title">
+                            <i class="bi bi-list-check" aria-hidden="true"></i> Подготовка
+                            документов
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="checklist"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body" id="checklistBody"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА ИНСТРУМЕНТОВ ========== -->
+        <section class="modal" id="toolsModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="tools"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="toolsModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="toolsModalTitle" class="modal-title">
+                            <i class="bi bi-tools" aria-hidden="true"></i> Инструменты
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="tools"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body">
+                        <div class="tools-tabs" role="tablist" aria-label="Инструменты">
+                            <button
+                                class="tool-tab active"
+                                data-tool="convert"
+                                role="tab"
+                                aria-selected="true"
+                                aria-controls="panel-convert"
+                                id="tab-convert"
+                                title="Конвертер изображений и PDF"
+                            >
+                                Конвертер
+                            </button>
+                            <button
+                                class="tool-tab"
+                                data-tool="compress"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="panel-compress"
+                                id="tab-compress"
+                                title="Сжатие изображений"
+                            >
+                                Сжатие
+                            </button>
+                            <button
+                                class="tool-tab"
+                                data-tool="pdf"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="panel-pdf"
+                                id="tab-pdf"
+                                title="Объединение, разделение, извлечение текста из PDF"
+                            >
+                                PDF
+                            </button>
+                            <button
+                                class="tool-tab"
+                                data-tool="resize"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="panel-resize"
+                                id="tab-resize"
+                                title="Изменение размера изображений"
+                            >
+                                Размер
+                            </button>
+                        </div>
+
+                        <!-- Конвертер -->
+                        <section
+                            class="tool-panel active"
+                            data-tool="convert"
+                            role="tabpanel"
+                            aria-labelledby="tab-convert"
+                            id="panel-convert"
+                        >
+                            <div
+                                class="drop-zone"
+                                id="convertDropZone"
+                                tabindex="0"
+                                role="button"
+                                aria-label="Нажмите или перетащите файлы для конвертации"
+                            >
+                                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                                <p>JPG, PNG, WebP, PDF</p>
+                                <p class="drop-zone__hint">
+                                    PDF будет сконвертирован (постранично)
+                                </p>
+                                <input
+                                    type="file"
+                                    id="convertInput"
+                                    multiple
+                                    class="d-none"
+                                    aria-hidden="true"
+                                />
+                            </div>
+                            <div id="convertFileList" class="file-list hidden"></div>
+
+                            <label for="convertFormat" class="visually-hidden"
+                                >Выберите формат для конвертации</label
+                            >
+                            <select
+                                class="tool-select"
+                                id="convertFormat"
+                                aria-label="Выберите формат для конвертации"
+                            >
+                                <option value="jpeg">JPEG</option>
+                                <option value="png">PNG</option>
+                                <option value="webp">WebP</option>
+                            </select>
+
+                            <button
+                                class="btn btn-primary btn-block"
+                                id="convertBtn"
+                                disabled
+                                type="button"
+                                title="Конвертировать выбранные файлы"
+                            >
+                                Конвертировать
+                            </button>
+
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="downloadZipConvertBtn"
+                                    disabled
+                                    type="button"
+                                    title="Скачать все конвертированные файлы ZIP-архивом"
+                                >
+                                    <i class="bi bi-file-zip" aria-hidden="true"></i> Скачать
+                                    ZIP-архив
+                                </button>
+                            </div>
+                        </section>
+
+                        <!-- Сжатие -->
+                        <section
+                            class="tool-panel hidden"
+                            data-tool="compress"
+                            role="tabpanel"
+                            aria-labelledby="tab-compress"
+                            id="panel-compress"
+                        >
+                            <div
+                                class="drop-zone"
+                                id="compressDropZone"
+                                tabindex="0"
+                                role="button"
+                                aria-label="Нажмите или перетащите изображения для сжатия"
+                            >
+                                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                                <p>Выберите изображения</p>
+                                <input
+                                    type="file"
+                                    id="compressInput"
+                                    multiple
+                                    accept="image/*,application/pdf"
+                                    class="d-none"
+                                    aria-hidden="true"
+                                />
+                            </div>
+                            <div id="compressFileList" class="file-list hidden"></div>
+                            <div class="quality-control">
+                                <label for="compressQuality"
+                                    >Качество: <span id="qualityValue">50</span>%</label
+                                >
+                                <input
+                                    type="range"
+                                    id="compressQuality"
+                                    min="0"
+                                    max="100"
+                                    value="50"
+                                    aria-label="Качество сжатия"
+                                    title="Качество сжатия"
+                                />
+                            </div>
+                            <button
+                                class="btn btn-primary btn-block"
+                                id="compressBtn"
+                                disabled
+                                type="button"
+                                title="Сжать выбранные файлы"
+                            >
+                                Сжать
+                            </button>
+
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="downloadZipCompressBtn"
+                                    disabled
+                                    type="button"
+                                    title="Скачать все сжатые файлы ZIP-архивом"
+                                >
+                                    <i class="bi bi-file-zip" aria-hidden="true"></i> Скачать
+                                    ZIP-архив
+                                </button>
+                            </div>
+                        </section>
+
+                        <!-- В PDF -->
+                        <section
+                            class="tool-panel hidden"
+                            data-tool="pdf"
+                            role="tabpanel"
+                            aria-labelledby="tab-pdf"
+                            id="panel-pdf"
+                        >
+                            <div
+                                class="drop-zone"
+                                id="pdfDropZone"
+                                tabindex="0"
+                                role="button"
+                                aria-label="Нажмите или перетащите файлы для создания PDF"
+                            >
+                                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                                <p>Перетащите PDF или изображения</p>
+                                <p class="drop-zone__hint">PDF, JPG, PNG, WebP</p>
+                                <input
+                                    type="file"
+                                    id="pdfInput"
+                                    multiple
+                                    accept=".pdf,.jpg,.jpeg,.png,.webp,.bmp,.gif"
+                                    class="d-none"
+                                    aria-hidden="true"
+                                />
+                            </div>
+
+                            <div id="pdfFileList" class="file-list hidden"></div>
+
+                            <div class="flex-gap-12 mt-16">
+                                <button
+                                    class="btn btn-primary flex-1"
+                                    id="mergePdfBtn"
+                                    disabled
+                                    type="button"
+                                    title="Объединить файлы в один PDF"
+                                >
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    Объединить
+                                </button>
+                                <button
+                                    class="btn btn-outline flex-1"
+                                    id="splitPdfBtn"
+                                    disabled
+                                    type="button"
+                                    title="Разделить PDF на отдельные страницы"
+                                >
+                                    <i class="bi bi-symmetry-vertical" aria-hidden="true"></i>
+                                    Разделить
+                                </button>
+                            </div>
+
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="downloadZipBtn"
+                                    disabled
+                                    type="button"
+                                    title="Скачать все файлы ZIP-архивом"
+                                >
+                                    <i class="bi bi-file-zip" aria-hidden="true"></i> Скачать
+                                    ZIP-архив
+                                </button>
+                            </div>
+
+                            <!-- ===== ИЗВЛЕЧЕНИЕ ТЕКСТА ИЗ PDF ===== -->
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="extractTextBtn"
+                                    disabled
+                                    type="button"
+                                    title="Извлечь текст из PDF"
+                                >
+                                    <i class="bi bi-file-text" aria-hidden="true"></i> Извлечь текст
+                                </button>
+                            </div>
+
+                            <!-- Контейнер для извлечённого текста -->
+                            <div
+                                id="extractedText"
+                                class="extracted-text hidden"
+                                role="region"
+                                aria-live="polite"
+                            ></div>
+
+                            <!-- Действия с текстом -->
+                            <div id="textActions" class="text-actions hidden">
+                                <button
+                                    class="btn btn-sm btn-outline"
+                                    id="copyTextBtn"
+                                    type="button"
+                                >
+                                    <i class="bi bi-clipboard" aria-hidden="true"></i> Копировать
+                                </button>
+                                <button
+                                    class="btn btn-sm btn-outline"
+                                    id="downloadTextBtn"
+                                    type="button"
+                                >
+                                    <i class="bi bi-download" aria-hidden="true"></i> Скачать .txt
+                                </button>
+                            </div>
+                        </section>
+
+                        <!-- РАЗМЕР -->
+                        <section
+                            class="tool-panel hidden"
+                            data-tool="resize"
+                            role="tabpanel"
+                            aria-labelledby="tab-resize"
+                            id="panel-resize"
+                        >
+                            <!-- Drop zone -->
+                            <div
+                                class="drop-zone"
+                                id="resizeDropZone"
+                                tabindex="0"
+                                role="button"
+                                aria-label="Нажмите или перетащите изображения для изменения размера"
+                            >
+                                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                                <p>Перетащите изображения сюда</p>
+                                <p class="drop-zone__hint">JPG, PNG, WebP, BMP, GIF</p>
+                                <input
+                                    type="file"
+                                    id="resizeInput"
+                                    multiple
+                                    accept="image/*"
+                                    class="d-none"
+                                    aria-hidden="true"
+                                />
+                            </div>
+
+                            <!-- Список файлов -->
+                            <div id="resizeFileList" class="file-list hidden"></div>
+
+                            <!-- Панель изменения размера -->
+                            <div class="resize-controls">
+                                <div class="resize-controls__grid">
+                                    <label for="resizeWidth" class="visually-hidden">Ширина</label>
+                                    <input
+                                        type="number"
+                                        id="resizeWidth"
+                                        class="tool-select"
+                                        placeholder="Ширина"
+                                        min="1"
+                                        value="800"
+                                    />
+                                    <span class="resize-controls__separator">×</span>
+                                    <label for="resizeHeight" class="visually-hidden">Высота</label>
+                                    <input
+                                        type="number"
+                                        id="resizeHeight"
+                                        class="tool-select"
+                                        placeholder="Высота"
+                                        min="1"
+                                        value="600"
+                                    />
+                                </div>
+
+                                <div class="resize-controls__aspect">
+                                    <label>
+                                        <input type="checkbox" id="keepAspectRatio" checked />
+                                        <span>Сохранить пропорции</span>
+                                    </label>
+                                </div>
+
+                                <label for="presetSizes" class="visually-hidden"
+                                    >Пресеты размеров</label
+                                >
+                                <select id="presetSizes" class="tool-select">
+                                    <option value="">Выберите пресет</option>
+                                    <option value="1920x1080">Full HD (1920×1080)</option>
+                                    <option value="1280x720">HD (1280×720)</option>
+                                    <option value="1024x1024">Квадрат (1024×1024)</option>
+                                    <option value="800x600">4:3 (800×600)</option>
+                                    <option value="400x300">Малый (400×300)</option>
+                                </select>
+                            </div>
+
+                            <!-- Кнопка применения -->
+                            <button
+                                class="btn btn-primary btn-block"
+                                id="applyResizeBtn"
+                                disabled
+                                type="button"
+                                title="Изменить размер выбранных изображений"
+                            >
+                                Изменить размер
+                            </button>
+
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="downloadZipResizeBtn"
+                                    disabled
+                                    type="button"
+                                    title="Скачать все изменённые файлы ZIP-архивом"
+                                >
+                                    <i class="bi bi-file-zip" aria-hidden="true"></i> Скачать
+                                    ZIP-архив
+                                </button>
+                            </div>
+
+                            <!-- Информация о пакетной обработке -->
+                            <p class="resize-controls__hint">
+                                <i class="bi bi-info-circle" aria-hidden="true"></i> Изменения
+                                применяются ко всем выбранным файлам
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА ДЛЯ ПРОСМОТРА PDF ========== -->
+        <section class="modal" id="pdfModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="pdf"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content modal-content--wide"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="pdfModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="pdfModalTitle" class="modal-title">
+                            <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Решение суда
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="pdf"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body modal-body--pdf">
+                        <iframe
+                            id="pdfViewer"
+                            class="pdf-iframe"
+                            src=""
+                            title="Просмотр PDF-документа"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА ОНЛАЙН-КОНСУЛЬТАЦИИ ========== -->
+        <section class="modal" id="consultationModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="consultation"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content consultation-modal-content"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="consultationModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="consultationModalTitle" class="modal-title">
+                            <i class="bi bi-camera-video text-gold" aria-hidden="true"></i>
+                            Онлайн-консультация
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="consultation"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body">
+                        <!-- Иконка -->
+                        <div class="consultation-hero">
+                            <div class="consultation-hero__icon" aria-hidden="true"></div>
+                            <h4 class="consultation-hero__title">Видеоконсультация с юристом</h4>
+                            <p class="consultation-hero__text">
+                                <strong>60 минут</strong>: анализ обстоятельств, разъяснение норм
+                                права, определение правовой позиции, рекомендации по сбору
+                                доказательств.
+                                <br />
+                                Яндекс Телемост · запись встречи остаётся у вас.
+                            </p>
+                        </div>
+
+                        <!-- Блок с ценой -->
+                        <div class="consultation-price-block">
+                            <div class="consultation-price-block__row">
+                                <span>Стоимость</span>
+                                <span class="text-primary">5 000 ₽</span>
+                            </div>
+                            <p class="consultation-price-block__note">
+                                <i class="bi bi-info-circle" aria-hidden="true"></i> Оплата
+                                производится после согласования времени
+                            </p>
+                        </div>
+
+                        <!-- Как записаться (пошагово) -->
+                        <div class="consultation-steps">
+                            <h5 class="consultation-steps__title">Как записаться:</h5>
+
+                            <div class="consultation-step">
+                                <div class="consultation-step-number">1</div>
+                                <div class="consultation-step-text">
+                                    <strong>Оставьте заявку</strong>
+                                    <p>
+                                        Заполните форму внизу страницы, отметьте "хочу
+                                        онлайн-консультацию"
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="consultation-step">
+                                <div class="consultation-step-number">2</div>
+                                <div class="consultation-step-text">
+                                    <strong>Мы свяжемся с вами</strong>
+                                    <p>В течение 2 часов согласуем удобное время</p>
+                                </div>
+                            </div>
+
+                            <div class="consultation-step">
+                                <div class="consultation-step-number">3</div>
+                                <div class="consultation-step-text">
+                                    <strong>Оплатите</strong>
+                                    <p>
+                                        После согласования времени - через кнопку "Оплатить" вверху
+                                        страницы
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="consultation-step">
+                                <div class="consultation-step-number">4</div>
+                                <div class="consultation-step-text">
+                                    <strong>Получите ссылку</strong>
+                                    <p>Мы пришлём ссылку на Яндекс Телемост. И встреча</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Преимущества -->
+                        <div class="consultation-features">
+                            <div class="consultation-feature">
+                                <i class="bi bi-shield-check" aria-hidden="true"></i>
+                                <p>Легально</p>
+                            </div>
+                            <div class="consultation-feature">
+                                <i class="bi bi-lock" aria-hidden="true"></i>
+                                <p>Конфиденциально</p>
+                            </div>
+                            <div class="consultation-feature">
+                                <i class="bi bi-camera-video" aria-hidden="true"></i>
+                                <p>Яндекс Телемост</p>
+                            </div>
+                            <div class="consultation-feature">
+                                <i class="bi bi-clock-history" aria-hidden="true"></i>
+                                <p>Запись остаётся</p>
+                            </div>
+                        </div>
+
+                        <!-- Кнопки -->
+                        <div class="consultation-actions">
+                            <a
+                                href="#contact-block"
+                                class="btn btn-primary flex-1"
+                                onclick="ModalManager.close('consultation')"
+                            >
+                                <i class="bi bi-pencil-square" aria-hidden="true"></i> Заполнить
+                                заявку
+                            </a>
+                        </div>
+
+                        <!-- Напоминание -->
+                        <p class="consultation-actions__note">
+                            <i class="bi bi-credit-card" aria-hidden="true"></i> После согласования
+                            времени - оплата через кнопку "Оплатить" вверху
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА ОПЛАТЫ ========== -->
+        <section class="modal" id="paymentModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="payment"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="paymentModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="paymentModalTitle" class="modal-title">
+                            <i class="bi bi-credit-card text-gold" aria-hidden="true"></i>
+                            Оплата видеоконсультации
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="payment"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body" id="paymentWidget">
+                        <!-- Сумма -->
+                        <div class="payment-summary">
+                            <div class="payment-summary__label">Сумма к оплате</div>
+                            <div class="payment-summary__amount">5 000 ₽</div>
+                            <div class="payment-summary__description">
+                                Видеоконсультация · 60 минут
+                            </div>
+                        </div>
+
+                        <!-- QR-код СБП (ЦЕНТРИРОВАННЫЙ) -->
+                        <div class="payment-qr">
+                            <img
+                                src="/assets/images/qr-tbank.png"
+                                alt="QR-код для оплаты 5 000 ₽ через СБП"
+                                width="200"
+                                height="200"
+                                loading="lazy"
+                                class="payment-qr__image"
+                                aria-describedby="qrHint"
+                            />
+                            <p class="payment-qr__hint">
+                                <i class="bi bi-qr-code text-primary fs-1" aria-hidden="true"></i>
+                                Отсканируйте в приложении банка
+                            </p>
+                        </div>
+
+                        <!-- Кнопки -->
+                        <div class="payment-actions">
+                            <button
+                                class="btn btn-primary"
+                                onclick="copyRequisites()"
+                                style="min-width: 180px"
+                                type="button"
+                            >
+                                <i class="bi bi-copy" aria-hidden="true"></i> Копировать реквизиты
+                            </button>
+                            <a href="tel:+79062607888" class="btn btn-outline min-w-180">
+                                <i class="bi bi-telephone" aria-hidden="true"></i> Позвонить
+                            </a>
+                        </div>
+
+                        <!-- Реквизиты -->
+                        <div class="payment-requisites">
+                            <p style="margin: 0">
+                                <strong>Получатель:</strong> ИП Павлова Татьяна Васильевна
+                            </p>
+                            <p style="margin: 0"><strong>ИНН:</strong> 631629590986</p>
+                            <p style="margin: 0"><strong>Счёт:</strong> 40802810300002352514</p>
+                            <p style="margin: 0"><strong>Банк:</strong> АО «ТБанк»</p>
+                            <p style="margin: 0"><strong>БИК:</strong> 044525974</p>
+                            <p style="margin: 0">
+                                <strong>Назначение:</strong> Оплата юридических услуг
+                            </p>
+                        </div>
+
+                        <!-- Контакты для связи после оплаты -->
+                        <div class="payment-notice">
+                            <i class="bi bi-info-circle text-primary" aria-hidden="true"></i>
+                            После оплаты отправьте чек на
+                            <a href="mailto:support@juristspb78.ru" class="text-primary fw-600">
+                                support@juristspb78.ru
+                            </a>
+                            или через
+                            <a
+                                href="https://max.ru/u/f9LHodD0cOJym_Z7O-LoIhkv_DJ38bFj9HV3maquF536QafEYf1gibeqNaM"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-primary fw-600"
+                            >
+                                MAX
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА "МОИ ФАЙЛЫ" ========== -->
+        <section class="modal" id="filesModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="files"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content modal-content--files"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="filesModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="filesModalTitle" class="modal-title">
+                            <i class="bi bi-folder-open text-gold" aria-hidden="true"></i>
+                            Мои документы
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="files"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body">
+                        <!-- Статистика -->
+                        <div class="files-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Всего файлов:</span>
+                                <span class="stat-value" id="totalFilesCount">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Занято места:</span>
+                                <span class="stat-value" id="totalFilesSize">0 MB</span>
+                            </div>
+                        </div>
+
+                        <!-- Фильтры по типу -->
+                        <div class="files-filters" role="tablist" aria-label="Фильтры файлов">
+                            <button
+                                class="files-filter-btn active"
+                                data-filter="all"
+                                role="tab"
+                                aria-selected="true"
+                                onclick="FilesModal.setFilter('all')"
+                            >
+                                Все
+                            </button>
+                            <button
+                                class="files-filter-btn"
+                                data-filter="pdf"
+                                role="tab"
+                                aria-selected="false"
+                                onclick="FilesModal.setFilter('pdf')"
+                            >
+                                PDF
+                            </button>
+                            <button
+                                class="files-filter-btn"
+                                data-filter="image"
+                                role="tab"
+                                aria-selected="false"
+                                onclick="FilesModal.setFilter('image')"
+                            >
+                                Изображения
+                            </button>
+                            <button
+                                class="files-filter-btn"
+                                data-filter="doc"
+                                role="tab"
+                                aria-selected="false"
+                                onclick="FilesModal.setFilter('doc')"
+                            >
+                                Документы
+                            </button>
+                        </div>
+
+                        <!-- Список файлов -->
+                        <div class="files-list-container" id="filesListContainer">
+                            <div class="loading-files">
+                                <div class="spinner"></div>
+                                <p>Загрузка файлов...</p>
+                            </div>
+                        </div>
+
+                        <!-- Действия -->
+                        <div class="files-actions">
+                            <button
+                                class="btn btn-outline btn-sm"
+                                onclick="FilesModal.clearAllFiles()"
+                                type="button"
+                            >
+                                <i class="bi bi-trash" aria-hidden="true"></i> Очистить всё
+                            </button>
+                            <button
+                                class="btn btn-outline btn-sm"
+                                onclick="FilesModal.loadFiles()"
+                                type="button"
+                            >
+                                <i class="bi bi-arrow-repeat" aria-hidden="true"></i> Обновить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        📜 СКРИПТЫ
+        ============================================================ -->
+
+        <script src="/assets/js/app.js?v=3.9.5" defer></script>
+        <script>
+            /**
+             * Toggle license text visibility
+             */
+            function toggleLicense(id) {
+                var text = document.getElementById(id);
+                var icon = document.getElementById(id.replace('-text', '-icon'));
+
+                if (text.style.display === 'none' || text.style.display === '') {
+                    text.style.display = 'block';
+                    icon.className = 'bi bi-chevron-down';
+                } else {
+                    text.style.display = 'none';
+                    icon.className = 'bi bi-chevron-right';
+                }
+            }
+
+            // Инициализация: скрыть все тексты лицензий
+            document.addEventListener('DOMContentLoaded', function () {
+                var texts = document.querySelectorAll('.license-text');
+                texts.forEach(function (el) {
+                    el.style.display = 'none';
+                });
+            });
+        </script>
+    </body>
+</html>

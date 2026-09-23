@@ -1,0 +1,13 @@
+/* ============================================================
+   Nickainley-Normal
+   Путь: assets/fonts/fonts/Nickainley-Normal.woff2
+   Формат: woff2
+   ============================================================ */
+
+@font-face {
+    font-family: 'Nickainley-Normal';
+    src: url('/assets/fonts/fonts/Nickainley-Normal.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

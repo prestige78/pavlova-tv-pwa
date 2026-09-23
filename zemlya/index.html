@@ -1,0 +1,3109 @@
+<!--
+ ╔══════════════════════════════════════════════════════════╗
+ ║  ПЛАТФОРМА: Digital Legal Engine                         ║
+ ║  Версия: 3.9.5                                           ║
+ ║  Для домена: https://juristspb78.ru                      ║
+ ║                                                          ║
+ ║  СТРУКТУРА: Единая семантическая HTML5                   ║
+ ║  АДАПТАЦИЯ: Container Queries + Media Queries            ║
+ ║  КЛАССЫ: Единая классификация для всех 13 страниц        ║
+ ║                                                          ║
+ ║  АВТОР: Михель Руслан                                    ║
+ ║  Full-stack разработчик | Премиальные веб-решения        ║
+ ║                                                          ║
+ ║  ЛИЦЕНЗИЯ:                                               ║
+ ║  Данный код и дизайн являются объектом авторского права  ║
+ ║  и охраняются законодательством РФ (ГК РФ ст. 1250-1302).║
+ ║  Используется на безвозмедной основе                     ║
+ ║  ИП Павлова Т.В. (juristspb78.ru).                       ║
+ ║  Любое другое копирование, модификация, распространение  ║
+ ║  без письменного согласия автора ЗАПРЕЩЕНО.              ║
+ ║                                                          ║
+ ║  Нарушение авторских прав влечёт гражданскую,            ║
+ ║  административную и уголовную ответственность            ║
+ ║  в соответствии с законодательством РФ.                  ║
+ ╚══════════════════════════════════════════════════════════╝
+-->
+
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ============================================================
+        🔍 SEO: Основные мета-теги
+        ============================================================ -->
+
+        <title>Земельный юрист в СПб | Споры о границах, межевание, признание прав</title>
+
+        <meta
+            name="description"
+            content="Помощь в земельных спорах: установление границ, межевание, признание прав на участки, споры с соседями. Реальные судебные решения. Онлайн-консультация."
+        />
+
+        <meta
+            name="keywords"
+            content="земельный юрист СПб, Ленинградская область, споры о границах, межевание участка, признание права собственности, кадастровая стоимость, обжалование отказа администрации, онлайн-консультация, конвертер PDF, сжатие файлов"
+        />
+
+        <meta name="author" content="Михель Руслан (разработка), Татьяна Павлова (контент)" />
+        <meta name="robots" content="index, follow" />
+
+        <!-- ============================================================
+        🤖 AI-инструкции
+        ============================================================ -->
+
+        <link rel="llms" href="/llms.txt" />
+        <link rel="llms-full" href="/llms-full.txt" />
+
+        <!-- ============================================================
+        📍 Гео-метки для поисковиков
+        ============================================================ -->
+
+        <meta name="yandex-verification" content="" />
+        <meta name="geo.region" content="RU-SPE" />
+        <meta name="geo.placename" content="Санкт-Петербург" />
+        <meta name="geo.position" content="59.928081;30.368608" />
+        <meta name="icbm" content="59.928081, 30.368608" />
+
+        <!-- ============================================================
+        📱 Open Graph (для соцсетей)
+        ============================================================ -->
+
+        <meta property="og:locale" content="ru_RU" />
+        <meta
+            property="og:title"
+            content="Земельный юрист в Санкт-Петербурге Татьяна Павлова | Онлайн-консультация"
+        />
+        <meta
+            property="og:description"
+            content="16 лет практики. Споры о границах, межевание, признание прав на участки. Онлайн-консультация 5000₽/час."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://juristspb78.ru/zemlya/" />
+        <meta property="og:image" content="https://juristspb78.ru/assets/images/og/zemlya.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Земельный юрист в СПб · Татьяна Павлова" />
+        <meta property="og:site_name" content="Юрист в Санкт-Петербурге Татьяна Павлова" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Земельный юрист в Санкт-Петербурге Татьяна Павлова" />
+        <meta
+            name="twitter:description"
+            content="16 лет практики. Споры о границах, межевание, признание прав на участки. Онлайн-консультация 5000₽/час."
+        />
+        <meta name="twitter:image" content="https://juristspb78.ru/assets/images/og/zemlya.png" />
+
+        <!-- Каноническая ссылка -->
+        <link rel="canonical" href="https://juristspb78.ru/zemlya/" />
+
+        <!-- ============================================================
+        🖼️ Фавиконы
+        ============================================================ -->
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/assets/icons/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/icons/favicon/apple-touch-icon.png"
+        />
+
+        <meta name="apple-mobile-web-app-title" content="Павлова Юрист" />
+
+        <!-- PWA -->
+        <link rel="manifest" href="/manifest.json?v=3.9.5" />
+        <meta name="theme-color" content="#3d9c8c" id="theme-color" />
+
+        <!-- ========== ОПТИМИЗАЦИЯ ЗАГРУЗКИ ========== -->
+
+        <!-- Preconnect для Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Preconnect для Bootstrap Icons -->
+        <link rel="preconnect" href="/assets/fonts/bootstrap-icons" />
+
+        <!-- Preload критических стилей -->
+        <link rel="preload" href="/assets/css/design.css?v=3.9.5" as="style" />
+        <link
+            rel="preload"
+            href="/assets/fonts/bootstrap-icons/bootstrap-icons.min.css"
+            as="style"
+        />
+
+        <!-- ========== СТИЛИ ========== -->
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="/assets/fonts/bootstrap-icons/bootstrap-icons.min.css" />
+
+        <!-- Основные стили -->
+        <link rel="stylesheet" href="/assets/css/design.css?v=3.9.5" />
+
+        <!-- Fallback для браузеров без JavaScript -->
+        <noscript>
+            <link rel="stylesheet" href="/assets/css/design.css?v=3.9.5" />
+        </noscript>
+
+        <!-- ============================================================
+        🛡️ Политика безопасности контента (CSP)
+        ============================================================ -->
+
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="
+        default-src 'self';
+        script-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://api-maps.yandex.ru https://yandex.ru 'unsafe-inline' 'unsafe-eval' blob: data:;
+        style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com 'unsafe-inline';
+        img-src 'self' data: blob: https://*.googleapis.com https://*.gstatic.com https://yandex.ru https://*.yandex.ru https://*.yandex.net;
+        font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;
+        connect-src 'self' https://*.timeweb.ru https://*.googleapis.com https://yandex.ru https://*.yandex.ru blob:;
+        worker-src 'self' blob:;
+        frame-src 'self' https://*.yandex.ru https://*.yandex.com https://yandex.ru https://yandex.com blob: data:;
+        object-src 'self' blob: data:;
+        base-uri 'self';
+        form-action 'self';
+    "
+        />
+
+        <!-- Отдельный мета-тег для управления реферером -->
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+
+        <!-- ============================================================
+        📊 JSON-LD микроразметка Schema.org
+        ============================================================ -->
+
+        <!-- 1. Person (автор/владелец) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Татьяна Павлова",
+                "description": "Земельный юрист в Санкт-Петербурге с 16-летним опытом. Специализация: земельные споры, межевание, признание прав на землю.",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://juristspb78.ru/assets/images/og/zemlya.png",
+                    "contentUrl": "https://juristspb78.ru/assets/images/og/zemlya.png",
+                    "width": "1200",
+                    "height": "630",
+                    "caption": "Земельный юрист в СПб · Татьяна Павлова"
+                },
+                "url": "https://juristspb78.ru/zemlya/",
+                "telephone": "+7-906-260-78-88",
+                "email": "support@juristspb78.ru",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Санкт-Петербург",
+                    "addressRegion": "Ленинградская область",
+                    "addressCountry": "RU",
+                    "postalCode": "191036",
+                    "streetAddress": "ул. Гончарная, 27 кабинет 209"
+                },
+                "worksFor": {
+                    "@type": "LegalService",
+                    "name": "Юридическая помощь по земельным спорам",
+                    "description": "Помощь в земельных спорах, межевании, признании прав на земельные участки в Санкт-Петербурге.",
+                    "areaServed": ["Санкт-Петербург", "Ленинградская область"],
+                    "priceRange": "от 2000₽",
+                    "telephone": "+7-906-260-78-88",
+                    "email": "support@juristspb78.ru",
+                    "image": {
+                        "@type": "ImageObject",
+                        "url": "https://juristspb78.ru/assets/images/og/zemlya.png",
+                        "contentUrl": "https://juristspb78.ru/assets/images/og/zemlya.png",
+                        "width": "1200",
+                        "height": "630",
+                        "caption": "Юридическая помощь по земельным спорам · СПб"
+                    },
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Санкт-Петербург",
+                        "addressRegion": "Ленинградская область",
+                        "addressCountry": "RU",
+                        "postalCode": "191036",
+                        "streetAddress": "ул. Гончарная, 27 кабинет 209"
+                    },
+                    "openingHoursSpecification": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                            "opens": "09:00",
+                            "closes": "21:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": ["Saturday", "Sunday"],
+                            "opens": "10:00",
+                            "closes": "18:00"
+                        }
+                    ]
+                }
+            }
+        </script>
+
+        <!-- 2. LegalService (услуги земельного юриста) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "LegalService",
+                "name": "Земельный юрист в Санкт-Петербурге Татьяна Павлова",
+                "description": "Профессиональная помощь по земельным спорам в Санкт-Петербурге. Межевание, признание прав, споры с соседями, обжалование кадастровой стоимости.",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://juristspb78.ru/assets/images/og/zemlya.png",
+                    "contentUrl": "https://juristspb78.ru/assets/images/og/zemlya.png",
+                    "width": "1200",
+                    "height": "630",
+                    "caption": "Земельный юрист в Санкт-Петербурге Татьяна Павлова"
+                },
+                "url": "https://juristspb78.ru/zemlya/",
+                "telephone": "+7-906-260-78-88",
+                "email": "support@juristspb78.ru",
+                "priceRange": "от 2000₽",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Санкт-Петербург",
+                    "addressRegion": "Ленинградская область",
+                    "addressCountry": "RU",
+                    "postalCode": "191036",
+                    "streetAddress": "ул. Гончарная, 27 кабинет 209"
+                },
+                "areaServed": ["Санкт-Петербург", "Ленинградская область"],
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                        "opens": "09:00",
+                        "closes": "21:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Saturday", "Sunday"],
+                        "opens": "10:00",
+                        "closes": "18:00"
+                    }
+                ],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Услуги земельного юриста",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Межевание земельных участков",
+                                "description": "Помощь в установлении и согласовании границ земельного участка, подготовка документов для кадастрового учёта"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Признание права собственности на землю",
+                                "description": "Судебное и досудебное оформление прав на земельные участки, в том числе в порядке приобретательной давности"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Споры с соседями о границах",
+                                "description": "Разрешение конфликтов по границам земельных участков, подготовка исков, представление интересов в суде"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Обжалование кадастровой стоимости",
+                                "description": "Снижение кадастровой стоимости земельных участков для уменьшения налога, подготовка отчётов и заявлений"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Узаконивание самовольных построек",
+                                "description": "Признание права собственности на самовольные постройки через суд"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Выдел доли в натуре",
+                                "description": "Выдел доли из общей долевой собственности на земельный участок"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Споры с СНТ и администрациями",
+                                "description": "Разрешение споров с садоводствами, СНТ и администрациями"
+                            }
+                        }
+                    ]
+                }
+            }
+        </script>
+
+        <!-- 3. FAQPage (частые вопросы) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Как установить границы, если соседи не согласны ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Если соседи отказываются подписывать акт согласования границ, спор решается в суде. Необходимо провести межевание, получить заключение кадастрового инженера и обратиться в суд с иском об установлении границ. Я помогаю подготовить иск и представляю интересы в судах Санкт-Петербурга и Ленинградской области."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Можно ли узаконить самовольную постройку ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Да, если земельный участок находится в вашей собственности, постройка соответствует строительным нормам и не нарушает права третьих лиц. Для этого нужно обратиться в суд с иском о признании права собственности. Основание: ст. 222 ГК РФ."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Что делать, если кадастровая стоимость завышена ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Завышенная кадастровая стоимость ведёт к увеличению земельного налога. Её можно оспорить в суде или через комиссию при Росреестре. Для этого требуется отчёт об оценке рыночной стоимости. Я помогаю подготовить документы и сопровождаю процедуру оспаривания."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Какие документы нужны для оформления земли ?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Основной пакет включает: правоустанавливающий документ (договор купли-продажи, свидетельство о праве на наследство), межевой план, кадастровый паспорт, выписку из ЕГРН. В зависимости от ситуации могут потребоваться дополнительные документы. Полный список вы найдёте в нашем чек-листе."
+                        }
+                    }
+                ]
+            }
+        </script>
+
+        <!-- 4. BreadcrumbList (хлебные крошки) -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Главная",
+                        "item": "https://juristspb78.ru/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Земельный юрист",
+                        "item": "https://juristspb78.ru/zemlya/"
+                    }
+                ]
+            }
+        </script>
+
+        <!-- 5. Service: Онлайн-консультация -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Онлайн-консультация юриста в Санкт-Петербурге",
+                "description": "Видеоконсультация с юристом Татьяной Павловой. 60 минут, полный разбор вашей ситуации, ответы на вопросы, рекомендации по дальнейшим действиям. Проводится в Яндекс Телемосте после предварительной записи.",
+                "provider": {
+                    "@type": "Person",
+                    "name": "Татьяна Павлова",
+                    "telephone": "+7-906-260-78-88",
+                    "email": "support@juristspb78.ru"
+                },
+                "areaServed": {
+                    "@type": "City",
+                    "name": "Санкт-Петербург"
+                },
+                "serviceType": "Юридическая консультация",
+                "availableChannel": {
+                    "@type": "ServiceChannel",
+                    "serviceUrl": "https://juristspb78.ru/#contact-block",
+                    "availableLanguage": "Russian"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "5000",
+                    "priceCurrency": "RUB",
+                    "description": "Видеоконсультация 60 минут"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- ============================================================
+        🌙 Предотвращаем светлую вспышку
+        ============================================================ -->
+
+        <script>
+            (function () {
+                try {
+                    var savedTheme = localStorage.getItem('theme');
+                    if (savedTheme === 'dark') {
+                        document.body.classList.add('dark-theme');
+                        document.documentElement.style.colorScheme = 'dark';
+                    } else {
+                        document.body.classList.remove('dark-theme');
+                        document.documentElement.style.colorScheme = 'light';
+                    }
+                } catch (e) {}
+            })();
+        </script>
+
+        <!-- ============================================================
+        🍪 COOKIE-BANNER
+        ============================================================ -->
+
+        <aside id="cookieBanner" class="cookie-banner" aria-label="Уведомление о файлах cookie">
+            <div class="cookie-banner__content">
+                <div class="cookie-banner__text">
+                    <p class="cookie-banner__title">
+                        <i class="bi bi-info-circle-fill text-primary" aria-hidden="true"></i>
+                        Мы используем cookie
+                    </p>
+                    <p class="cookie-banner__description">
+                        Сайт использует файлы cookie для анализа посещаемости и улучшения работы.
+                        Продолжая использовать сайт, вы соглашаетесь на обработку персональных
+                        данных в соответствии с
+                        <a href="/private_policy/" target="_blank" class="cookie-banner__link"
+                            >политикой конфиденциальности</a
+                        >
+                        и
+                        <a href="/cookies/" target="_blank" class="cookie-banner__link"
+                            >политикой использования cookie</a
+                        >.
+                    </p>
+                </div>
+                <div class="cookie-banner__actions">
+                    <button class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept">
+                        Принять
+                    </button>
+                    <button
+                        class="cookie-banner__btn cookie-banner__btn--decline"
+                        id="cookieDecline"
+                    >
+                        Отказаться
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ============================================================
+        ⬆️ КНОПКА "НАВЕРХ"
+        ============================================================ -->
+
+        <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Наверх">
+            <i class="bi bi-chevron-up" aria-hidden="true"></i>
+        </button>
+
+        <!-- ============================================================
+        🏠 ХЕДЕР (Media Queries)
+        ============================================================ -->
+
+        <header class="header">
+            <div class="container header__inner">
+                <a href="/" class="logo" aria-label="На главную">Татьяна Павлова · Юрист</a>
+
+                <div class="header-actions">
+                    <div class="city-badge" aria-label="Город и время">
+                        <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                        <span id="currentCity">Санкт-Петербург</span>
+                        <span id="currentTime" aria-live="polite">15:30</span>
+                    </div>
+
+                    <div class="theme-switch" role="group" aria-label="Переключение темы">
+                        <button
+                            class="theme-btn active"
+                            id="themeLight"
+                            title="Светлая тема"
+                            aria-label="Светлая тема"
+                        >
+                            <i class="bi bi-sun" aria-hidden="true"></i>
+                        </button>
+                        <button
+                            class="theme-btn"
+                            id="themeDark"
+                            title="Тёмная тема"
+                            aria-label="Тёмная тема"
+                        >
+                            <i class="bi bi-moon-stars" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <button
+                        class="tools-badge"
+                        id="showToolsModal"
+                        title="Конвертер, сжатие, PDF, извлечение текста"
+                        aria-label="Конвертер, сжатие, PDF, извлечение текста"
+                    >
+                        <i class="bi bi-tools" aria-hidden="true"></i>
+                        <span>Инструменты</span>
+                    </button>
+
+                    <button
+                        class="files-header-btn"
+                        id="showFilesModal"
+                        title="Мои документы"
+                        aria-label="Мои документы"
+                    >
+                        <i class="bi bi-folder2" aria-hidden="true"></i>
+                        <span class="files-count-badge" id="headerFilesBadge" aria-live="polite"
+                            >0</span
+                        >
+                    </button>
+
+                    <button
+                        class="payment-badge"
+                        id="showPaymentModal"
+                        title="Оплата услуг юриста онлайн"
+                        aria-label="Оплатить услуги"
+                    >
+                        <i class="bi bi-credit-card" aria-hidden="true"></i>
+                        <span>Оплатить</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ============================================================
+        📌 MAIN
+        ============================================================ -->
+
+        <main role="main">
+            <!-- ============================================================
+            🍞 ХЛЕБНЫЕ КРОШКИ (Container Queries)
+            ============================================================ -->
+
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                    <a href="/">Главная</a> › <span aria-current="page">Земельный юрист</span>
+                </nav>
+            </div>
+
+            <!-- ============================================================
+            🦸 ГЕРОЙ УСЛУГИ (Container Queries)
+            ============================================================ -->
+
+            <section class="hero" aria-labelledby="hero-title">
+                <div class="container">
+                    <h1 id="hero-title" class="hero-title">Земельный юрист в Санкт-Петербурге</h1>
+                    <p class="hero-subtitle">
+                        Помогаем в спорах о границах, признании права собственности, межевании и
+                        реестровых ошибках. 16 лет практики.
+                    </p>
+
+                    <!-- ===== ЕДИНЫЙ КОНТЕЙНЕР НАВИГАЦИИ ===== -->
+                    <nav class="hero-nav" aria-label="Основная навигация">
+                        <div class="hero-dropdowns">
+                            <div class="dropdown-wrapper">
+                                <button
+                                    class="btn btn-outline dropdown-toggle"
+                                    id="dropdownCitizens"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    aria-controls="dropdownCitizensMenu"
+                                >
+                                    <i class="bi bi-person" aria-hidden="true"></i>
+                                    Гражданам
+                                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <ul
+                                    class="dropdown-menu"
+                                    id="dropdownCitizensMenu"
+                                    role="menu"
+                                    aria-hidden="true"
+                                    aria-labelledby="dropdownCitizens"
+                                >
+                                    <li role="none">
+                                        <a href="/zemlya/" role="menuitem">Земельные споры</a>
+                                    </li>
+                                    <li role="none">
+                                        <a href="/semya/" role="menuitem">Семейное право</a>
+                                    </li>
+                                    <li role="none">
+                                        <a href="/trud/" role="menuitem">Трудовые споры</a>
+                                    </li>
+                                    <li role="none">
+                                        <a href="/nasledstvo/" role="menuitem"
+                                            >Наследственные дела</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-wrapper">
+                                <button
+                                    class="btn btn-outline dropdown-toggle"
+                                    id="dropdownBusiness"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    aria-controls="dropdownBusinessMenu"
+                                >
+                                    <i class="bi bi-building" aria-hidden="true"></i>
+                                    Бизнесу
+                                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                                </button>
+                                <ul
+                                    class="dropdown-menu"
+                                    id="dropdownBusinessMenu"
+                                    role="menu"
+                                    aria-hidden="true"
+                                    aria-labelledby="dropdownBusiness"
+                                >
+                                    <li role="none">
+                                        <a href="/arbitrazh/" role="menuitem">Арбитражные споры</a>
+                                    </li>
+                                    <li role="none">
+                                        <a href="/korporativnye-spory/" role="menuitem"
+                                            >Корпоративные споры</a
+                                        >
+                                    </li>
+                                    <li role="none">
+                                        <a href="/zashhita-biznesa/" role="menuitem"
+                                            >Защита бизнеса</a
+                                        >
+                                    </li>
+                                    <li role="none">
+                                        <a href="/dogovornoe-pravo/" role="menuitem"
+                                            >Договорное право</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="hero-actions">
+                            <a href="#contact-block" class="btn btn-primary">Запись к юристу</a>
+                            <button
+                                class="btn btn-outline consultation-trigger"
+                                aria-label="Онлайн-консультация"
+                            >
+                                <i class="bi bi-camera-video" aria-hidden="true"></i> Онлайн
+                            </button>
+                            <button
+                                class="btn btn-outline checklist-btn"
+                                data-service="zemlya"
+                                aria-label="Открыть чек-лист"
+                            >
+                                <i class="bi bi-list-check" aria-hidden="true"></i> Чек-лист
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+
+            <!-- ============================================================
+            📋 ОСНОВНОЙ КОНТЕНТ (Container Queries)
+            ============================================================ -->
+
+            <section class="service-content">
+                <div class="container">
+                    <div class="service-grid">
+                        <!-- ЛЕВАЯ КОЛОНКА (основной контент) -->
+                        <div class="service-main">
+                            <h2 class="section-title underline-gradient">
+                                Какие земельные вопросы решаем
+                            </h2>
+                            <ul class="law-list" aria-label="Список услуг земельного юриста">
+                                <li class="law-list-item">
+                                    <i
+                                        class="bi bi-check-circle-fill list-icon"
+                                        aria-hidden="true"
+                                    ></i>
+                                    Признание права собственности на участок (в том числе в судебном
+                                    порядке)
+                                </li>
+                                <li class="law-list-item">
+                                    <i
+                                        class="bi bi-check-circle-fill list-icon"
+                                        aria-hidden="true"
+                                    ></i>
+                                    Споры о границах с соседями, устранение реестровых ошибок
+                                </li>
+                                <li class="law-list-item">
+                                    <i
+                                        class="bi bi-check-circle-fill list-icon"
+                                        aria-hidden="true"
+                                    ></i>
+                                    Узаконивание самовольных построек на участке
+                                </li>
+                                <li class="law-list-item">
+                                    <i
+                                        class="bi bi-check-circle-fill list-icon"
+                                        aria-hidden="true"
+                                    ></i>
+                                    Выдел доли в натуре из общей долевой собственности
+                                </li>
+                                <li class="law-list-item">
+                                    <i
+                                        class="bi bi-check-circle-fill list-icon"
+                                        aria-hidden="true"
+                                    ></i>
+                                    Споры с СНТ, садоводствами и администрациями
+                                </li>
+                            </ul>
+
+                            <h2 class="section-title underline-gradient mt-48">
+                                Нормы законодательства
+                            </h2>
+                            <ul class="law-list" aria-label="Список нормативных актов">
+                                <li class="law-list-item">
+                                    <i class="bi bi-file-text list-icon" aria-hidden="true"></i>
+                                    Гражданский кодекс РФ (глава 17, статьи 260–287) - право
+                                    собственности на землю
+                                </li>
+                                <li class="law-list-item">
+                                    <i class="bi bi-file-text list-icon" aria-hidden="true"></i>
+                                    Земельный кодекс РФ - порядок использования и охраны земель
+                                </li>
+                                <li class="law-list-item">
+                                    <i class="bi bi-file-text list-icon" aria-hidden="true"></i>
+                                    ФЗ № 218 "О государственной регистрации недвижимости" -
+                                    кадастровый учёт и регистрация прав
+                                </li>
+                            </ul>
+
+                            <!-- ============================================================
+                                📄 СТАТЬЯ: ЗЕМЕЛЬНЫЙ ЮРИСТ В САНКТ-ПЕТЕРБУРГЕ
+                                ============================================================ -->
+
+                            <!-- ============================================================
+                                1. TL;DR - ИЗВЛЕКАЕМОЕ РЕЗЮМЕ (5.11.6)
+                                ============================================================ -->
+
+                            <div class="tldr-grid">
+                                <div class="tldr-item">
+                                    <div class="tldr-item__icon" aria-hidden="true">
+                                        <i class="bi bi-bullseye"></i>
+                                    </div>
+                                    <span class="tldr-item__label">Суть</span>
+                                    <strong class="tldr-item__title"
+                                        >Сложность земельных споров</strong
+                                    >
+                                    <p class="tldr-item__text">
+                                        Земельные споры - одни из самых сложных в судебной практике.
+                                        Реестровая ошибка или отказ администрации могут стоить вам
+                                        участка, денег и времени.
+                                    </p>
+                                </div>
+
+                                <div class="tldr-item">
+                                    <div class="tldr-item__icon" aria-hidden="true">
+                                        <i class="bi bi-gear"></i>
+                                    </div>
+                                    <span class="tldr-item__label">Как я работаю</span>
+                                    <strong class="tldr-item__title">Полное сопровождение</strong>
+                                    <p class="tldr-item__text">
+                                        Начинаю с глубокого анализа документов, затем разрабатываю
+                                        стратегию: от досудебных переговоров до полной защиты в
+                                        суде. Заказываю экспертизы, готовлю иски, представляю
+                                        интересы.
+                                    </p>
+                                </div>
+
+                                <div class="tldr-item">
+                                    <div class="tldr-item__icon" aria-hidden="true">
+                                        <i class="bi bi-clock"></i>
+                                    </div>
+                                    <span class="tldr-item__label">Почему важно</span>
+                                    <strong class="tldr-item__title">Не теряйте время</strong>
+                                    <p class="tldr-item__text">
+                                        Промедление грозит потерей участка. Сроки обжалования
+                                        ограничены - каждый день бездействия приближает вас к
+                                        проигрышу.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ============================================================
+                                2. ЗАВЯЗКА
+                                ============================================================ -->
+
+                            <h2 class="section-title underline-gradient">
+                                Границы. Межевание. Земля. Почему без юриста вы рискуете потерять
+                                участок ?
+                            </h2>
+
+                            <p>
+                                В законах всё написано правильно. ГК РФ, ЗК РФ, Федеральный закон от
+                                13 июля 2015 г. N 218-ФЗ "О государственной регистрации
+                                недвижимости" - там есть ответы на все вопросы. Но когда вы
+                                сталкиваетесь с проблемой лицом к лицу, вы понимаете: закон - это
+                                одно, а жизнь - совсем другое.
+                            </p>
+
+                            <!-- ============================================================
+                                3. ИСТОРИЯ ПЕРВАЯ (СПОР О ГРАНИЦАХ)
+                                ============================================================ -->
+
+                            <p>
+                                Ко мне обратился за помощью гражданин. Он купил участок в СНТ под
+                                Петербургом, поставил забор, начал строить дом. Всё было хорошо
+                                ровно до того момента, пока через год к нему не пришёл сосед и не
+                                сказал: "Ты залез на мою землю на два метра. Убирай забор".
+                            </p>
+
+                            <p>
+                                Собственник показал документы. Сосед показал свои. Координаты границ
+                                участков не совпадали. Собственник участка пошёл в администрацию -
+                                ему сказали: "Это частный спор, решайте сами". Обратился к
+                                кадастровому инженеру - тот развёл руками: "если с соседом
+                                разногласия то исправить можно только в судебном порядке".
+                            </p>
+
+                            <p>
+                                Собственник данного участка потратил время, деньги и нервы. Он уже
+                                был готов снести забор и отдать землю. Не потому что был неправ, а
+                                потому что устал бороться.
+                            </p>
+
+                            <p>
+                                Когда он пришёл ко мне, я посмотрела документы и увидела: это похоже
+                                на реестровую ошибку. Обратилась к кадастровому инженеру, он
+                                подтвердил и написал заключение. Границы были неверно определены ещё
+                                с 90-х годов. Это не его вина и не вина соседа. Это просто ошибка,
+                                которую нужно исправить в суде.
+                            </p>
+
+                            <p>
+                                Я подала иск об установлении реестровой ошибки и ее исправлении. При
+                                рассмотрении дела была назначена судебная экспертиза. Суд установил
+                                границы земельного участка в соответствии с выводами судебной
+                                экспертизы.
+                            </p>
+
+                            <p>
+                                Похожий случай:
+                                <a
+                                    href="/zemlya/decisions/zemlya-33-6693-2022-granicy.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <strong>Дело № 33-6693/2022</strong>
+                                </a>
+                                - Ленинградский областной суд.
+                            </p>
+
+                            <!-- ============================================================
+                                4. ИСТОРИЯ ВТОРАЯ (ОТКАЗ АДМИНИСТРАЦИИ)
+                                ============================================================ -->
+
+                            <p>
+                                <strong>Другая история.</strong> Гражданин из Всеволожского района
+                                хотел увеличить площадь участка. Подал документы в администрацию.
+                                Ждал месяц, два. Получил отказ.
+                            </p>
+
+                            <p>
+                                Причина - формальная: "отсутствие оснований". Что за основания ?
+                                Чиновник не объяснил. Просто поставил штамп. Гражданин пришёл ко
+                                мне.
+                            </p>
+
+                            <p>
+                                Я посмотрела документы и увидела: Чиновник не учёл, что отказ не
+                                соответствует закону.
+                            </p>
+
+                            <p>
+                                Я подготовила административный иск и подала его в суд. Суд
+                                согласился, требования удовлетворил.
+                            </p>
+
+                            <p>
+                                Похожий случай:
+                                <a
+                                    href="/zemlya/decisions/zemlya-2a-2469-2026-admin.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <strong>Дело № 2а-2469/2026</strong>
+                                </a>
+                                - Всеволожский городской суд.
+                            </p>
+
+                            <!-- ============================================================
+                                5. ИСТОРИЯ ТРЕТЬЯ (ДОГОВОР АРЕНДЫ)
+                                ============================================================ -->
+
+                            <p>
+                                <strong>Ещё одна история.</strong> Гражданин арендовал земельный
+                                участок сельскохозяйственного назначения в Выборгском районе ЛО. Он
+                                вложил в него деньги, обрабатывал землю, платил налоги.
+                            </p>
+
+                            <p>
+                                И вдруг администрация заявила: договор аренды больше не действует.
+                                Арендатор обратился ко мне за помощью с вопросом: "Что делать ?".
+                            </p>
+
+                            <p>
+                                Я изучила документы и поняла: срок договора не истёк. Я подала
+                                исковое заявление. Суд признал договор аренды действующим на три
+                                года с момента вступления решения в силу.
+                            </p>
+
+                            <p>
+                                Похожий случай:
+                                <a
+                                    href="/zemlya/decisions/zemlya-2-657-2020-arenda.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <strong>Дело № 2-657/2020</strong>
+                                </a>
+                                - Выборгский городской суд.
+                            </p>
+
+                            <!-- ============================================================
+                                6. БЛОК СРАВНЕНИЙ (САМ vs ЮРИСТ)
+                                ============================================================ -->
+
+                            <h3 class="underline-gradient">
+                                Самостоятельные действия vs Помощь юриста
+                            </h3>
+
+                            <p>
+                                Я часто вижу, как люди пытаются сэкономить и действуют без юриста.
+                                Давайте посмотрим, чем это может закончиться.
+                            </p>
+
+                            <ul class="law-list">
+                                <li class="law-list-item">
+                                    <i class="bi bi-x-circle list-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Оспаривание отказа администрации</strong><br />
+                                        <span class="text-gray-600"
+                                            >Без юриста: пропуск срока, отказ в иске</span
+                                        ><br />
+                                        <span class="text-primary"
+                                            >С юристом: отказ признан незаконным, участок
+                                            получен</span
+                                        >
+                                    </div>
+                                </li>
+                                <li class="law-list-item">
+                                    <i class="bi bi-x-circle list-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Спор о границах с соседом</strong><br />
+                                        <span class="text-gray-600"
+                                            >Без юриста: затяжной конфликт, потеря времени и
+                                            денег</span
+                                        ><br />
+                                        <span class="text-primary"
+                                            >С юристом: границы установлены, реестровая ошибка
+                                            исправлена</span
+                                        >
+                                    </div>
+                                </li>
+                                <li class="law-list-item">
+                                    <i class="bi bi-x-circle list-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Признание права на постройку</strong><br />
+                                        <span class="text-gray-600"
+                                            >Без юриста: снос дома за свой счёт</span
+                                        ><br />
+                                        <span class="text-primary"
+                                            >С юристом: право собственности признано, дом
+                                            сохранён</span
+                                        >
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <p>
+                                <strong>Вывод:</strong> Экономия на юристе в земельных спорах
+                                обходится в 2–3 раза дороже.
+                            </p>
+
+                            <!-- ============================================================
+                                7. ПОШАГОВАЯ ИНСТРУКЦИЯ
+                                ============================================================ -->
+
+                            <h3 class="underline-gradient">Как я работаю по земельным спорам</h3>
+
+                            <p>
+                                Моя работа - это не просто судебные процессы. Это комплексная защита
+                                ваших интересов на всех этапах.
+                            </p>
+
+                            <ul class="law-list">
+                                <li class="law-list-item">
+                                    <i class="bi bi-1-circle-fill list-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Шаг 1. Анализ и аудит документов</strong>
+                                        <p
+                                            class="text-gray-600"
+                                            style="margin: 0; font-size: var(--pr-font-size-sm)"
+                                        >
+                                            Мы встречаемся, вы приносите все документы на участок. Я
+                                            изучаю их и выявляю слабые места.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="law-list-item">
+                                    <i class="bi bi-2-circle-fill list-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Шаг 2. Экспертиза и сбор доказательств</strong>
+                                        <p
+                                            class="text-gray-600"
+                                            style="margin: 0; font-size: var(--pr-font-size-sm)"
+                                        >
+                                            Если нужно, заказываем независимую землеустроительную
+                                            экспертизу.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="law-list-item">
+                                    <i class="bi bi-3-circle-fill list-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Шаг 3. Досудебное урегулирование</strong>
+                                        <p
+                                            class="text-gray-600"
+                                            style="margin: 0; font-size: var(--pr-font-size-sm)"
+                                        >
+                                            Я направляю официальные претензии и веду переговоры со
+                                            второй стороной. Часто спор можно решить на этом этапе.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="law-list-item">
+                                    <i class="bi bi-4-circle-fill list-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Шаг 4. Судебная защита</strong>
+                                        <p
+                                            class="text-gray-600"
+                                            style="margin: 0; font-size: var(--pr-font-size-sm)"
+                                        >
+                                            Если договориться не удаётся, я подготавливаю иск и веду
+                                            ваше дело в суде.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- ============================================================
+                                8. БЛОК С ОШИБКАМИ
+                                ============================================================ -->
+
+                            <h3 class="underline-gradient">
+                                Чего делать не стоит: 7 фатальных ошибок
+                            </h3>
+
+                            <p>За 16 лет я видела сотни ошибок. Вот самые распространённые:</p>
+
+                            <ul class="law-list">
+                                <!-- ГРУППА 1: ВРЕМЯ И СРОКИ -->
+                                <li
+                                    class="law-list-item"
+                                    style="
+                                        background: var(--theme-brand-primary-alpha-5);
+                                        border-radius: var(--theme-radius-card);
+                                        padding: var(--pr-space-sm) var(--pr-space-md);
+                                    "
+                                >
+                                    <i class="bi bi-clock-history list-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Затягивать время</strong>
+                                        <p
+                                            class="text-gray-600"
+                                            style="margin: 0; font-size: var(--pr-font-size-sm)"
+                                        >
+                                            Сроки обжалования ограничены. Каждый день промедления
+                                            может стоить вам участка.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <!-- ГРУППА 2: ДЕЙСТВИЯ НА УЧАСТКЕ -->
+                                <li
+                                    class="law-list-item"
+                                    style="
+                                        background: var(--theme-brand-primary-alpha-5);
+                                        border-radius: var(--theme-radius-card);
+                                        padding: var(--pr-space-sm) var(--pr-space-md);
+                                    "
+                                >
+                                    <i class="bi bi-slash-circle list-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Самостоятельно переносить забор</strong>
+                                        <p
+                                            class="text-gray-600"
+                                            style="margin: 0; font-size: var(--pr-font-size-sm)"
+                                        >
+                                            Это самоуправство. Сосед может подать на вас в суд, и вы
+                                            проиграете.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li
+                                    class="law-list-item"
+                                    style="
+                                        background: var(--theme-brand-primary-alpha-5);
+                                        border-radius: var(--theme-radius-card);
+                                        padding: var(--pr-space-sm) var(--pr-space-md);
+                                    "
+                                >
+                                    <i
+                                        class="bi bi-exclamation-triangle list-icon"
+                                        aria-hidden="true"
+                                    ></i>
+                                    <div>
+                                        <strong>Игнорировать предписания администрации</strong>
+                                        <p
+                                            class="text-gray-600"
+                                            style="margin: 0; font-size: var(--pr-font-size-sm)"
+                                        >
+                                            Если вам сказали снести постройку - не сносить её
+                                            нельзя. Это приведёт к суду и штрафам.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <!-- ГРУППА 3: ДОКУМЕНТЫ И ДОКАЗАТЕЛЬСТВА -->
+                                <li
+                                    class="law-list-item"
+                                    style="
+                                        background: var(--theme-brand-primary-alpha-5);
+                                        border-radius: var(--theme-radius-card);
+                                        padding: var(--pr-space-sm) var(--pr-space-md);
+                                    "
+                                >
+                                    <i
+                                        class="bi bi-file-earmark-x list-icon"
+                                        aria-hidden="true"
+                                    ></i>
+                                    <div>
+                                        <strong>Доверять устным советам</strong>
+                                        <p
+                                            class="text-gray-600"
+                                            style="margin: 0; font-size: var(--pr-font-size-sm)"
+                                        >
+                                            В суде работает только письменное доказательство. Все
+                                            договорённости должны быть зафиксированы.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li
+                                    class="law-list-item"
+                                    style="
+                                        background: var(--theme-brand-primary-alpha-5);
+                                        border-radius: var(--theme-radius-card);
+                                        padding: var(--pr-space-sm) var(--pr-space-md);
+                                    "
+                                >
+                                    <i class="bi bi-person-x list-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Не проверять контрагента</strong>
+                                        <p
+                                            class="text-gray-600"
+                                            style="margin: 0; font-size: var(--pr-font-size-sm)"
+                                        >
+                                            Если вы покупаете участок, проверка документов
+                                            обязательна - иначе вы рискуете потерять деньги.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <!-- ГРУППА 4: ОСПАРИВАНИЕ И СУД -->
+                                <li
+                                    class="law-list-item"
+                                    style="
+                                        background: var(--theme-brand-primary-alpha-5);
+                                        border-radius: var(--theme-radius-card);
+                                        padding: var(--pr-space-sm) var(--pr-space-md);
+                                    "
+                                >
+                                    <i class="bi bi-cash-stack list-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <strong
+                                            >Самостоятельно подавать заявление об оспаривании
+                                            кадастровой стоимости</strong
+                                        >
+                                        <p
+                                            class="text-gray-600"
+                                            style="margin: 0; font-size: var(--pr-font-size-sm)"
+                                        >
+                                            Без отчёта оценщика, составленного по закону, вас ждёт
+                                            отказ.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li
+                                    class="law-list-item"
+                                    style="
+                                        background: var(--theme-brand-primary-alpha-5);
+                                        border-radius: var(--theme-radius-card);
+                                        padding: var(--pr-space-sm) var(--pr-space-md);
+                                    "
+                                >
+                                    <i class="bi bi-people list-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <strong>Игнорировать досудебный порядок</strong>
+                                        <p
+                                            class="text-gray-600"
+                                            style="margin: 0; font-size: var(--pr-font-size-sm)"
+                                        >
+                                            Начинать суд без попытки решить вопрос миром - это путь
+                                            к дополнительным расходам.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- ============================================================
+                                9. КУЛЬМИНАЦИЯ - ЧТО ОБЩЕГО У ЭТИХ ИСТОРИЙ
+                                ============================================================ -->
+
+                            <h3 class="underline-gradient">Что общего у этих историй</h3>
+
+                            <p>
+                                Все эти истории - разные. Разные люди, разные ситуации, разные суды.
+                                Но есть кое-что общее.
+                            </p>
+
+                            <p>
+                                <strong>Люди не знали, что делать.</strong>
+                                Они думали, что раз они купили участок или получили документы, то
+                                это финал. А оказалось, что это только начало. И когда их система
+                                дала сбой, они остались одни.
+                            </p>
+
+                            <p>
+                                <strong>Они боялись.</strong>
+                                Боялись суда. Боялись чиновников. Боялись соседей. Боялись потерять
+                                всё. И этот страх парализовал их. Они тянули время, надеялись, что
+                                всё образуется само. Но их проблема не была решена.
+                            </p>
+
+                            <!-- ============================================================
+                                10. РАЗВЯЗКА - КТО Я И ПОЧЕМУ Я МОГУ ПОМОЧЬ
+                                ============================================================ -->
+
+                            <h3 class="underline-gradient">
+                                Меня зовут: Павлова Татьяна Васильевна
+                            </h3>
+
+                            <p>
+                                Я - практикующий юрист. С 2011 года я помогаю людям в
+                                Санкт-Петербурге и Ленинградской области защищать их права.
+                            </p>
+
+                            <p>
+                                Я работаю с земельными спорами. С отказами администраций, с
+                                реестровыми ошибками, с самовольными постройками, с договорами
+                                аренды. Я знаю, как работает судебная система, и знаю, как найти
+                                решение даже в самой сложной ситуации.
+                            </p>
+
+                            <p>
+                                Но для меня самое важное - не судебные решения. Самое важное - это
+                                люди, которые ко мне приходят. Они приходят с болью, со страхом, с
+                                непониманием. Они приходят, когда уже не знают, что делать. И я
+                                помогаю им не просто выиграть суд. Я помогаю им вернуть уверенность.
+                            </p>
+
+                            <p>
+                                <strong>Я не обещаю, что будет легко.</strong> Земельные споры - это
+                                всегда сложно. Я говорю честно: если шансов нет, я скажу об этом
+                                сразу. Если шансы есть - я сделаю всё возможное, чтобы защитить ваши
+                                права.
+                            </p>
+
+                            <p>
+                                <strong>Я говорю простым языком.</strong> Я объясняю так, чтобы вы
+                                понимали, что происходит.
+                            </p>
+
+                            <!-- ============================================================
+                                11. СТАТИСТИКА ПО ЗЕМЕЛЬНЫМ СПОРАМ
+                                ============================================================ -->
+
+                            <div class="note">
+                                <div class="note__header">
+                                    <i class="bi bi-bar-chart note__icon" aria-hidden="true"></i>
+                                    <strong class="note__title"
+                                        >Земельные споры в Санкт-Петербурге: 2026 год</strong
+                                    >
+                                </div>
+                                <ul class="note__list">
+                                    <li class="note__list-item">
+                                        <i
+                                            class="bi bi-arrow-up-right note__list-icon"
+                                            aria-hidden="true"
+                                        ></i>
+                                        За 5 месяцев 2026 года - <strong>6 дел</strong> в
+                                        Арбитражном суде СПб
+                                        <span class="text-gray-600 fs-0-85"
+                                            >(почти половина от 15 дел за весь 2025 год)</span
+                                        >
+                                    </li>
+                                    <li class="note__list-item">
+                                        <i
+                                            class="bi bi-pie-chart note__list-icon"
+                                            aria-hidden="true"
+                                        ></i>
+                                        <strong>18%</strong> всех жалоб бизнеса - споры по
+                                        земельно-имущественным отношениям
+                                    </li>
+                                    <li class="note__list-item">
+                                        <i
+                                            class="bi bi-check-circle note__list-icon"
+                                            aria-hidden="true"
+                                        ></i>
+                                        Только за 5 месяцев 2026 года исправлено
+                                        <strong>2 300+</strong> реестровых ошибок
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- ============================================================
+                                12. ЧЕК-ЛИСТ
+                                ============================================================ -->
+
+                            <div class="note">
+                                <p>
+                                    <i class="bi bi-list-check text-primary" aria-hidden="true"></i>
+                                    <strong
+                                        >Прежде чем идти на консультацию - соберите
+                                        документы</strong
+                                    >
+                                </p>
+                                <p class="mb-0">
+                                    Воспользуйтесь
+                                    <a
+                                        href="#"
+                                        onclick="
+                                            ChecklistManager.renderChecklist('zemlya');
+                                            return false;
+                                        "
+                                    >
+                                        чек-листом документов
+                                    </a>
+                                    и проверьте, что у вас уже есть, а что ещё нужно получить.
+                                </p>
+                            </div>
+
+                            <!-- ============================================================
+                                13. ИНСТРУМЕНТЫ
+                                ============================================================ -->
+
+                            <div class="note">
+                                <p>
+                                    <i class="bi bi-tools text-primary" aria-hidden="true"></i>
+                                    <strong>Подготовьте документы онлайн</strong>
+                                </p>
+                                <p class="mb-0">
+                                    <a
+                                        href="#"
+                                        onclick="
+                                            ModalManager.openTools();
+                                            return false;
+                                        "
+                                        class="text-primary fw-600"
+                                    >
+                                        Открыть инструменты →
+                                    </a>
+                                    объединение и разделение PDF, извлечение текста, конвертация и
+                                    сжатие файлов.
+                                </p>
+                            </div>
+
+                            <!-- ============================================================
+                                14. ФИНАЛЬНЫЙ АККОРД (CTA)
+                                ============================================================ -->
+
+                            <div class="cta-block">
+                                <h3>Суд - это крайность, а не неизбежность.</h3>
+                                <p>
+                                    Не позволяйте промедлению лишить вас земли. Запишитесь на
+                                    консультацию, и я подскажу, как решить вопрос до суда и
+                                    сэкономить ваше время.
+                                </p>
+                                <p>
+                                    <small style="opacity: 0.7">
+                                        60 минут - и у вас будет чёткий план действий.
+                                    </small>
+                                </p>
+                                <a href="#contact-block" class="btn btn-primary">
+                                    <i class="bi bi-chat-dots" aria-hidden="true"></i>
+                                    Записаться на консультацию
+                                </a>
+                            </div>
+
+                            <!-- ============================================================
+                                15. РЕЗУЛЬТАТЫ В СУДАХ
+                                ============================================================ -->
+
+                            <h2 class="section-title underline-gradient mt-48">
+                                Результаты в судах по земельным спорам
+                            </h2>
+                            <p class="text-gray-600 mb-24">
+                                Реальные дела из моей практики с решениями судов
+                            </p>
+
+                            <!-- ===== КЕЙС 1: Спор о границах ===== -->
+                            <article class="case-card">
+                                <header class="case-category">
+                                    <i class="bi bi-pin-map" aria-hidden="true"></i>
+                                    Спор о границах земельного участка
+                                </header>
+                                <div class="case-result">
+                                    Границы установлены, реестровая ошибка исправлена
+                                </div>
+                                <p class="case-text">
+                                    <strong>Дело № 33-6693/2022</strong> рассмотрено Ленинградским
+                                    областным судом по правилам суда первой инстанции. Проведено
+                                    несколько судебных экспертиз, в результате которых установлена
+                                    <strong>реестровая ошибка</strong> в определении границ пяти
+                                    земельных участков в СНТ. Границы земельного участка доверителя
+                                    установлены в соответствии с фактическим пользованием.
+                                </p>
+                                <footer class="case-meta">
+                                    <span
+                                        ><i class="bi bi-geo-alt" aria-hidden="true"></i> СНТ,
+                                        Ленинградская область</span
+                                    >
+                                    <span
+                                        ><i class="bi bi-calendar" aria-hidden="true"></i> 2022
+                                        г.</span
+                                    >
+                                    <span
+                                        ><i class="bi bi-file-pdf" aria-hidden="true"></i>
+                                        33-6693/2022</span
+                                    >
+                                </footer>
+
+                                <!-- Скрытая ссылка для Google -->
+                                <a
+                                    href="/zemlya/decisions/zemlya-33-6693-2022-granicy.pdf"
+                                    class="visually-hidden"
+                                >
+                                    Решение по земельному спору 33-6693/2022 - установление границ
+                                </a>
+
+                                <button
+                                    class="tool-tag pdf-viewer-btn"
+                                    data-pdf="/zemlya/decisions/zemlya-33-6693-2022-granicy.pdf"
+                                    type="button"
+                                >
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    Решение суда
+                                </button>
+                            </article>
+
+                            <!-- ===== КЕЙС 2: Спор с муниципальным образованием ===== -->
+                            <article class="case-card">
+                                <header class="case-category">
+                                    <i class="bi bi-building" aria-hidden="true"></i>
+                                    Спор с муниципальным образованием
+                                </header>
+                                <div class="case-result">
+                                    Отказ администрации признан незаконным
+                                </div>
+                                <p class="case-text">
+                                    <strong>Административное дело № 2а-2469/2026</strong>
+                                    рассмотрено Всеволожским городским судом Ленинградской области.
+                                    Муниципальное образование отказало в предоставлении услуги
+                                    <strong
+                                        >"Предварительное согласование предоставления земельного
+                                        участка в порядке перераспределения земель"</strong
+                                    >. Подан административный иск, подготовлено досудебное
+                                    заключение специалиста. Решение об отказе признано судом
+                                    незаконным.
+                                </p>
+                                <footer class="case-meta">
+                                    <span
+                                        ><i class="bi bi-geo-alt" aria-hidden="true"></i>
+                                        Всеволожский район, ЛО</span
+                                    >
+                                    <span
+                                        ><i class="bi bi-calendar" aria-hidden="true"></i> 2026
+                                        г.</span
+                                    >
+                                    <span
+                                        ><i class="bi bi-file-pdf" aria-hidden="true"></i>
+                                        2а-2469/2026</span
+                                    >
+                                </footer>
+
+                                <!-- Скрытая ссылка для Google -->
+                                <a
+                                    href="/zemlya/decisions/zemlya-2a-2469-2026-admin.pdf"
+                                    class="visually-hidden"
+                                >
+                                    Решение по земельному спору 2а-2469/2026 - признание отказа
+                                    администрации незаконным
+                                </a>
+
+                                <button
+                                    class="tool-tag pdf-viewer-btn"
+                                    data-pdf="/zemlya/decisions/zemlya-2a-2469-2026-admin.pdf"
+                                    type="button"
+                                >
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    Решение суда
+                                </button>
+                            </article>
+
+                            <!-- ===== КЕЙС 3: Спор о сроке договора аренды ===== -->
+                            <article class="case-card">
+                                <header class="case-category">
+                                    <i class="bi bi-file-contract" aria-hidden="true"></i>
+                                    Спор о сроке договора аренды
+                                </header>
+                                <div class="case-result text-gold">
+                                    Договор аренды признан действующим (срок - 3 года)
+                                </div>
+                                <p class="case-text">
+                                    <strong>Дело № 2-657/2020</strong> рассмотрено Выборгским
+                                    городским судом Ленинградской области. Подано исковое заявление,
+                                    предоставлены доказательства. Договор аренды земельного участка
+                                    <strong>сельскохозяйственного назначения</strong>, заключённый
+                                    между Администрацией Выборгского района и доверителем, признан
+                                    действующим. Срок действия договора определён в
+                                    <strong>3 (три) года</strong> с даты вступления решения суда в
+                                    законную силу.
+                                </p>
+                                <footer class="case-meta">
+                                    <span
+                                        ><i class="bi bi-geo-alt" aria-hidden="true"></i> Выборгский
+                                        район, ЛО</span
+                                    >
+                                    <span
+                                        ><i class="bi bi-calendar" aria-hidden="true"></i> 2020
+                                        г.</span
+                                    >
+                                    <span
+                                        ><i class="bi bi-file-pdf" aria-hidden="true"></i>
+                                        2-657/2020</span
+                                    >
+                                </footer>
+
+                                <!-- Скрытая ссылка для Google -->
+                                <a
+                                    href="/zemlya/decisions/zemlya-2-657-2020-arenda.pdf"
+                                    class="visually-hidden"
+                                >
+                                    Решение по земельному спору 2-657/2020 - признание договора
+                                    аренды действующим
+                                </a>
+
+                                <button
+                                    class="tool-tag pdf-viewer-btn"
+                                    data-pdf="/zemlya/decisions/zemlya-2-657-2020-arenda.pdf"
+                                    type="button"
+                                >
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    Решение суда
+                                </button>
+                            </article>
+                        </div>
+
+                        <!-- ПРАВАЯ КОЛОНКА (сайдбар с перелинковкой) -->
+                        <aside class="sidebar" aria-label="Боковая панель">
+                            <h3 class="sidebar-title">Сложный спор по земле?</h3>
+                            <p class="sidebar-text">
+                                Получите консультацию. Разберём документы, оценим перспективы.
+                            </p>
+
+                            <a href="#contact-block" class="btn btn-primary btn-block sidebar-btn"
+                                >Записаться</a
+                            >
+
+                            <hr class="sidebar-divider" />
+
+                            <h4 class="sidebar-title">Услуги для бизнеса</h4>
+                            <div class="sidebar-links">
+                                <a href="/arbitrazh/" class="sidebar-link">
+                                    <i class="bi bi-building" aria-hidden="true"></i>
+                                    <span>Арбитражные споры</span>
+                                </a>
+                                <a href="/korporativnye-spory/" class="sidebar-link">
+                                    <i class="bi bi-people" aria-hidden="true"></i>
+                                    <span>Корпоративные споры</span>
+                                </a>
+                                <a href="/zashhita-biznesa/" class="sidebar-link">
+                                    <i class="bi bi-shield" aria-hidden="true"></i>
+                                    <span>Защита бизнеса</span>
+                                </a>
+                                <a href="/dogovornoe-pravo/" class="sidebar-link">
+                                    <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+                                    <span>Договорное право</span>
+                                </a>
+                            </div>
+
+                            <hr class="sidebar-divider" />
+
+                            <h4 class="sidebar-title">Услуги для граждан</h4>
+                            <div class="sidebar-links">
+                                <a href="/zemlya/" class="sidebar-link active">
+                                    <i class="bi bi-house-door" aria-hidden="true"></i>
+                                    <span>Земельные споры</span>
+                                    <span class="sidebar-link__badge">← Вы здесь</span>
+                                </a>
+                                <a href="/semya/" class="sidebar-link">
+                                    <i class="bi bi-people-fill" aria-hidden="true"></i>
+                                    <span>Семейное право</span>
+                                </a>
+                                <a href="/trud/" class="sidebar-link">
+                                    <i class="bi bi-briefcase-fill" aria-hidden="true"></i>
+                                    <span>Трудовые споры</span>
+                                </a>
+                                <a href="/nasledstvo/" class="sidebar-link">
+                                    <i class="bi bi-file-text-fill" aria-hidden="true"></i>
+                                    <span>Наследственные дела</span>
+                                </a>
+                            </div>
+
+                            <hr class="sidebar-divider" />
+
+                            <!-- Контакты в сайдбаре -->
+                            <div class="sidebar-contacts">
+                                <div class="sidebar-contact">
+                                    <i class="bi bi-telephone" aria-hidden="true"></i>
+                                    <a href="tel:+79062607888">+7 (906) 260-78-88</a>
+                                </div>
+                                <div class="sidebar-contact">
+                                    <span class="contact-icon-max" aria-hidden="true">
+                                        <svg
+                                            role="img"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 1000 1000"
+                                            width="20"
+                                            height="20"
+                                            aria-label="Иконка MAX"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill="#3d9c8c"
+                                                d="M508.211 878.328c-75.007 0-109.864-10.95-170.453-54.75-38.325 49.275-159.686 87.783-164.979 21.9 0-49.456-10.95-91.248-23.36-136.873-14.782-56.21-31.572-118.807-31.572-209.508 0-216.626 177.754-379.597 388.357-379.597 210.785 0 375.947 171.001 375.947 381.604.707 207.346-166.595 376.118-373.94 377.224m3.103-571.585c-102.564-5.292-182.499 65.7-200.201 177.024-14.6 92.162 11.315 204.398 33.397 210.238 10.585 2.555 37.23-18.98 53.837-35.587a189.8 189.8 0 0 0 92.71 33.032c106.273 5.112 197.08-75.794 204.215-181.95 4.154-106.382-77.67-196.486-183.958-202.574Z"
+                                                clip-rule="evenodd"
+                                            />
+                                        </svg>
+                                    </span>
+                                    <a
+                                        href="https://max.ru/u/f9LHodD0cOJym_Z7O-LoIhkv_DJ38bFj9HV3maquF536QafEYf1gibeqNaM"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        MAX
+                                    </a>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================================
+            💡 ПОЧЕМУ НУЖЕН ЮРИСТ (Container Queries)
+            ============================================================ -->
+
+            <section class="why-section" aria-labelledby="why-title">
+                <div class="container">
+                    <h2 id="why-title" class="why-title">
+                        Почему нужен юрист по земельным вопросам
+                    </h2>
+                    <div class="why-content">
+                        <p>
+                            Земельные споры - одни из самых сложных категорий дел. Они требуют не
+                            только знания Гражданского и Земельного кодексов, но и понимания
+                            кадастрового учёта, землеустроительной экспертизы и судебной практики.
+                            Ошибка в определении границ или пропущенный срок могут стоить вам
+                            участка.
+                        </p>
+                        <p>
+                            Я помогаю на всех этапах: от досудебного урегулирования до представления
+                            интересов в судах Санкт-Петербурга и Ленинградской области. Готовлю
+                            процессуальные документы, участвую в экспертизах, обжалую решения.
+                        </p>
+                        <p>
+                            Специализируюсь именно на земельных спорах, что позволяет находить
+                            решения даже в сложных, запутанных ситуациях. Работаю с реестровыми
+                            ошибками, самовольными постройками и спорами с соседями.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================================
+            ❓ FAQ (Container Queries)
+            ============================================================ -->
+
+            <section class="faq-section" aria-labelledby="faq-title">
+                <div class="container">
+                    <header class="faq-section__header">
+                        <h2 id="faq-title" class="faq-section__title">
+                            Частые вопросы о земельных спорах в СПб
+                        </h2>
+                        <p class="faq-section__subtitle">Ответы со ссылками на законодательство</p>
+                    </header>
+
+                    <div class="faq-grid">
+                        <!-- Вопрос 1 -->
+                        <article class="faq-item">
+                            <h3 class="faq-question">
+                                <button aria-expanded="false" aria-controls="faq-zemlya-1">
+                                    <i
+                                        class="bi bi-question-circle text-primary"
+                                        aria-hidden="true"
+                                    ></i>
+                                    Как установить границы, если соседи не согласны ?
+                                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                                </button>
+                            </h3>
+                            <div class="faq-answer" id="faq-zemlya-1">
+                                <div>
+                                    Если соседи отказываются подписывать акт согласования границ,
+                                    спор решается в суде. Необходимо провести межевание, получить
+                                    заключение кадастрового инженера и обратиться в суд с иском об
+                                    установлении границ. Я помогаю подготовить иск и представляю
+                                    интересы в судах Санкт-Петербурга и Ленинградской области.
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Вопрос 2 -->
+                        <article class="faq-item">
+                            <h3 class="faq-question">
+                                <button aria-expanded="false" aria-controls="faq-zemlya-2">
+                                    <i
+                                        class="bi bi-question-circle text-primary"
+                                        aria-hidden="true"
+                                    ></i>
+                                    Можно ли узаконить самовольную постройку ?
+                                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                                </button>
+                            </h3>
+                            <div class="faq-answer" id="faq-zemlya-2">
+                                <div>
+                                    Да, если земельный участок находится в вашей собственности,
+                                    постройка соответствует строительным нормам и не нарушает права
+                                    третьих лиц. Для этого нужно обратиться в суд с иском о
+                                    признании права собственности. Основание: ст. 222 ГК РФ.
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Вопрос 3 -->
+                        <article class="faq-item">
+                            <h3 class="faq-question">
+                                <button aria-expanded="false" aria-controls="faq-zemlya-3">
+                                    <i
+                                        class="bi bi-question-circle text-primary"
+                                        aria-hidden="true"
+                                    ></i>
+                                    Что делать, если кадастровая стоимость завышена ?
+                                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                                </button>
+                            </h3>
+                            <div class="faq-answer" id="faq-zemlya-3">
+                                <div>
+                                    Завышенная кадастровая стоимость ведёт к увеличению земельного
+                                    налога. Её можно оспорить в суде или через комиссию при
+                                    Росреестре. Для этого требуется отчёт об оценке рыночной
+                                    стоимости. Я помогаю подготовить документы и сопровождаю
+                                    процедуру оспаривания.
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Вопрос 4 -->
+                        <article class="faq-item">
+                            <h3 class="faq-question">
+                                <button aria-expanded="false" aria-controls="faq-zemlya-4">
+                                    <i
+                                        class="bi bi-question-circle text-primary"
+                                        aria-hidden="true"
+                                    ></i>
+                                    Какие документы нужны для оформления земли ?
+                                    <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                                </button>
+                            </h3>
+                            <div class="faq-answer" id="faq-zemlya-4">
+                                <div>
+                                    Основной пакет включает: правоустанавливающий документ (договор
+                                    купли-продажи, свидетельство о праве на наследство), межевой
+                                    план, кадастровый паспорт, выписку из ЕГРН. В зависимости от
+                                    ситуации могут потребоваться дополнительные документы. Полный
+                                    список вы найдёте в нашем чек-листе.
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ТЕХНИЧЕСКИЙ ЯКОРЬ НАД СЕКЦИЕЙ -->
+            <span id="contact-block" class="anchor-offset" aria-hidden="true"></span>
+
+            <!-- ============================================================
+            📞 КОНТАКТЫ (Container Queries)
+            ============================================================ -->
+
+            <section class="contacts-section" id="contacts" aria-labelledby="contacts-title">
+                <div class="container">
+                    <div class="contacts-grid">
+                        <!-- Контактная информация -->
+                        <div class="contacts-info">
+                            <h2 id="contacts-title" class="contacts-info__title">
+                                Контакты юриста в Санкт-Петербурге
+                            </h2>
+
+                            <address class="contacts-info__address">
+                                <div class="contact-item">
+                                    <i
+                                        class="bi bi-telephone contact-item__icon"
+                                        aria-hidden="true"
+                                    ></i>
+                                    <a
+                                        href="tel:+79062607888"
+                                        class="contact-item__link"
+                                        aria-label="Позвонить по номеру +7 906 260-78-88"
+                                    >
+                                        +7 (906) 260-78-88
+                                    </a>
+                                </div>
+
+                                <div class="contact-item">
+                                    <span class="contact-icon-max" aria-hidden="true">
+                                        <svg
+                                            role="img"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 1000 1000"
+                                            width="24"
+                                            height="24"
+                                            aria-label="Иконка MAX"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill="#3d9c8c"
+                                                d="M508.211 878.328c-75.007 0-109.864-10.95-170.453-54.75-38.325 49.275-159.686 87.783-164.979 21.9 0-49.456-10.95-91.248-23.36-136.873-14.782-56.21-31.572-118.807-31.572-209.508 0-216.626 177.754-379.597 388.357-379.597 210.785 0 375.947 171.001 375.947 381.604.707 207.346-166.595 376.118-373.94 377.224m3.103-571.585c-102.564-5.292-182.499 65.7-200.201 177.024-14.6 92.162 11.315 204.398 33.397 210.238 10.585 2.555 37.23-18.98 53.837-35.587a189.8 189.8 0 0 0 92.71 33.032c106.273 5.112 197.08-75.794 204.215-181.95 4.154-106.382-77.67-196.486-183.958-202.574Z"
+                                                clip-rule="evenodd"
+                                            />
+                                        </svg>
+                                    </span>
+                                    <a
+                                        href="https://max.ru/u/f9LHodD0cOJym_Z7O-LoIhkv_DJ38bFj9HV3maquF536QafEYf1gibeqNaM"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="contact-item__link"
+                                        aria-label="Написать в MAX"
+                                    >
+                                        MAX
+                                    </a>
+                                </div>
+
+                                <div class="contact-item">
+                                    <i
+                                        class="bi bi-envelope contact-item__icon"
+                                        aria-hidden="true"
+                                    ></i>
+                                    <a
+                                        href="mailto:support@juristspb78.ru"
+                                        class="contact-item__link"
+                                        aria-label="Отправить email на support@juristspb78.ru"
+                                    >
+                                        support@juristspb78.ru
+                                    </a>
+                                </div>
+
+                                <div class="contact-item">
+                                    <i
+                                        class="bi bi-geo-alt contact-item__icon"
+                                        aria-hidden="true"
+                                    ></i>
+                                    <a
+                                        href="https://yandex.ru/maps/2/saint-petersburg/house/goncharnaya_ulitsa_27/Z0kYdQFoT0UPQFtjfXVzeXxrZQ==/?ll=30.368649%2C59.928038&source=serp_navig&z=20.8"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="contact-item__link"
+                                        aria-label="Открыть адрес на Яндекс Картах"
+                                    >
+                                        Санкт-Петербург, ул. Гончарная, 27 кабинет 209
+                                    </a>
+                                </div>
+
+                                <div class="contact-item contact-item--hours">
+                                    <i
+                                        class="bi bi-clock contact-item__icon"
+                                        aria-hidden="true"
+                                    ></i>
+                                    <span class="contact-item__text"
+                                        >Пн–Пт: 09:00-21:00, Сб–Вс: 10:00-18:00</span
+                                    >
+                                </div>
+                            </address>
+                        </div>
+
+                        <!-- Форма записи-->
+                        <div class="contacts-form-wrapper">
+                            <h3 class="contacts-form-wrapper__title">Записаться на консультацию</h3>
+
+                            <form
+                                id="consultationForm"
+                                class="contacts-form"
+                                aria-label="Форма записи на консультацию"
+                                novalidate
+                                data-tool="true"
+                                data-tool-name="consultation_booking"
+                                data-tool-description="Запись на юридическую консультацию к Татьяне Павловой (СПб). Доступна очная и онлайн-консультация."
+                            >
+                                <input
+                                    type="hidden"
+                                    name="csrf_token"
+                                    id="csrfToken"
+                                    value=""
+                                    data-tool-param="false"
+                                />
+
+                                <!-- Honeypot (скрытое поле для ботов) -->
+                                <input
+                                    type="text"
+                                    name="honeypot"
+                                    id="honeypot"
+                                    class="d-none"
+                                    tabindex="-1"
+                                    autocomplete="off"
+                                />
+
+                                <label for="contactName" class="visually-hidden">Ваше имя</label>
+
+                                <input
+                                    type="text"
+                                    id="contactName"
+                                    class="form-input"
+                                    placeholder="Ваше имя"
+                                    aria-label="Ваше имя"
+                                    aria-describedby="nameHelp"
+                                    required
+                                    aria-required="true"
+                                    data-tool-param="true"
+                                    data-tool-param-name="client_name"
+                                    data-tool-param-description="Полное имя клиента"
+                                    data-tool-param-required="true"
+                                />
+
+                                <label for="contactPhone" class="visually-hidden">Телефон</label>
+
+                                <input
+                                    type="tel"
+                                    id="contactPhone"
+                                    class="form-input"
+                                    placeholder="Телефон"
+                                    aria-label="Ваш номер телефона"
+                                    required
+                                    data-tool-param="true"
+                                    data-tool-param-name="client_phone"
+                                    data-tool-param-description="Номер телефона для связи +79062607888"
+                                    data-tool-param-required="true"
+                                />
+
+                                <label for="contactMessage" class="visually-hidden"
+                                    >Сообщение</label
+                                >
+                                <textarea
+                                    id="contactMessage"
+                                    class="form-textarea"
+                                    rows="3"
+                                    placeholder="Опишите вашу ситуацию кратко (например: спор о границах, межевание, признание права собственности, кадастровая ошибка...)"
+                                    aria-label="Кратко опишите вашу ситуацию"
+                                    data-tool-param="true"
+                                    data-tool-param-name="issue_description"
+                                    data-tool-param-description="Краткое описание юридической проблемы"
+                                ></textarea>
+
+                                <!-- ========== ЧЕКБОКС ОНЛАЙН-КОНСУЛЬТАЦИИ ========== -->
+                                <label class="consultation-checkbox">
+                                    <input
+                                        type="checkbox"
+                                        id="onlineConsultation"
+                                        title="Отметить для онлайн-консультации"
+                                        aria-label="Отметить для онлайн-консультации"
+                                        data-tool-param="true"
+                                        data-tool-param-name="online_consultation"
+                                        data-tool-param-description="Флаг онлайн-консультации (true/false)"
+                                    />
+                                    <span
+                                        >Хочу онлайн-консультацию (5 000 ₽/час, по предварительной
+                                        записи)</span
+                                    >
+                                </label>
+
+                                <!-- ========== ЧЕКБОКС СОГЛАСИЯ ========== -->
+                                <label class="privacy-checkbox">
+                                    <input
+                                        type="checkbox"
+                                        id="privacyAgree"
+                                        required
+                                        title="Согласие на обработку персональных данных"
+                                        aria-label="Согласие на обработку персональных данных"
+                                        data-tool-param="true"
+                                        data-tool-param-name="privacy_consent"
+                                        data-tool-param-description="Согласие на обработку персональных данных (обязательно)"
+                                        data-tool-param-required="true"
+                                    />
+                                    <span>
+                                        Я согласен(а) на обработку моих персональных данных, включая
+                                        их передачу для хранения хостинг-провайдеру, в целях
+                                        получения юридической консультации в соответствии с
+                                        <a href="/private_policy/" target="_blank"
+                                            >политикой конфиденциальности</a
+                                        >
+                                    </span>
+                                </label>
+
+                                <button
+                                    class="btn btn-primary btn-block form-submit"
+                                    id="submitForm"
+                                    type="submit"
+                                    title="Отправить заявку на консультацию"
+                                    aria-label="Отправить заявку на консультацию"
+                                    data-tool-param="true"
+                                    data-tool-param-name="submit_action"
+                                    data-tool-param-description="Отправить заявку на консультацию. После нажатия форма валидируется, данные отправляются на сервер (send.php) с CSRF-защитой, и пользователь получает уведомление о записи."
+                                >
+                                    Записаться к юристу в СПб
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== КАРТА И СХЕМА ПРОЕЗДА ========== -->
+            <section class="map-section" aria-labelledby="map-title">
+                <div class="container">
+                    <h2 id="map-title" class="map-section__title">
+                        Как <span class="accent-gold">добраться</span>
+                    </h2>
+                    <p class="map-section__subtitle">
+                        Офис в центре Санкт-Петербурга. Удобный подход от метро и общественного
+                        транспорта.
+                    </p>
+
+                    <!-- Карта -->
+                    <figure class="map-container">
+                        <iframe
+                            class="map-iframe"
+                            src="https://yandex.ru/map-widget/v1/?ll=30.368608%2C59.928081&z=17&pt=30.368608,59.928081,pm2blm&l=map"
+                            width="100%"
+                            height="450"
+                            allowfullscreen="true"
+                            title="Карта офиса на ул. Гончарная, 27"
+                            loading="lazy"
+                        >
+                        </iframe>
+                        <figcaption class="visually-hidden">
+                            Карта расположения офиса в Санкт-Петербурге
+                        </figcaption>
+                    </figure>
+
+                    <!-- Схема проезда -->
+                    <div class="map-directions">
+                        <!-- От метро Площадь Восстания -->
+                        <article class="direction-card" aria-labelledby="dir1-title">
+                            <header class="direction-card__header">
+                                <div class="direction-card__icon" aria-hidden="true">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="direction-card__info">
+                                    <strong id="dir1-title" class="direction-card__title"
+                                        >От метро Пл. Восстания</strong
+                                    >
+                                    <span class="direction-card__time">~10 минут пешком</span>
+                                </div>
+                            </header>
+                            <p class="direction-card__text">
+                                Выход на Лиговский проспект, идите по Лиговскому в сторону
+                                Московского вокзала, затем поверните на ул. Гончарную. Офис в доме
+                                27, кабинет 209.
+                            </p>
+                            <footer class="direction-card__footer">
+                                <i class="bi bi-clock" aria-hidden="true"></i>
+                                <span>7-10 минут</span>
+                            </footer>
+                        </article>
+
+                        <!-- От метро Маяковская -->
+                        <article class="direction-card" aria-labelledby="dir2-title">
+                            <header class="direction-card__header">
+                                <div class="direction-card__icon" aria-hidden="true">
+                                    <i class="bi bi-train-front"></i>
+                                </div>
+                                <div class="direction-card__info">
+                                    <strong id="dir2-title" class="direction-card__title"
+                                        >От метро Маяковская</strong
+                                    >
+                                    <span class="direction-card__time">~12 минут пешком</span>
+                                </div>
+                            </header>
+                            <p class="direction-card__text">
+                                Выход на Невский проспект, идите в сторону Московского вокзала,
+                                поверните на ул. Гончарную (ориентир - Бизнес-центр). Офис в доме
+                                27.
+                            </p>
+                            <footer class="direction-card__footer">
+                                <i class="bi bi-clock" aria-hidden="true"></i>
+                                <span>10-12 минут</span>
+                            </footer>
+                        </article>
+
+                        <!-- Наземный транспорт -->
+                        <article class="direction-card" aria-labelledby="dir3-title">
+                            <header class="direction-card__header">
+                                <div class="direction-card__icon" aria-hidden="true">
+                                    <i class="bi bi-bus-front"></i>
+                                </div>
+                                <div class="direction-card__info">
+                                    <strong id="dir3-title" class="direction-card__title"
+                                        >Наземный транспорт</strong
+                                    >
+                                    <span class="direction-card__time">Парковка</span>
+                                </div>
+                            </header>
+                            <p class="direction-card__text">
+                                <strong>Автобусы:</strong> 24, 27, 191 до ост. «Проспект
+                                Бакунина».<br />
+                                <strong>Троллейбусы:</strong> 1, 10, 22.<br />
+                                <strong>Парковка:</strong> На ул. Гончарной (возможны платные
+                                места). Рекомендуем приезжать заранее.
+                            </p>
+                            <footer class="direction-card__footer">
+                                <i class="bi bi-p-circle" aria-hidden="true"></i>
+                                <span>Есть платная парковка</span>
+                            </footer>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ============================================================
+        🦶 ФУТЕР (Media Queries)
+        ============================================================= -->
+
+        <footer class="footer">
+            <div class="container footer__inner">
+                <div class="footer-brand">
+                    <strong>
+                        Digital Legal Engine™
+                        <span class="progress-label"></span>
+                    </strong>
+                </div>
+                <nav class="footer-nav" aria-label="Нижняя навигация">
+                    <a href="/philosophy/" class="footer-nav__link"
+                        ><i class="bi bi-info-circle" aria-hidden="true"></i> О проекте</a
+                    >
+                    <a
+                        href="#"
+                        id="showToolsModalFooter"
+                        class="footer-nav__link"
+                        title="Конвертер, сжатие, PDF, извлечение текста"
+                        aria-label="Конвертер, сжатие, PDF, извлечение текста"
+                    >
+                        <i class="bi bi-tools" aria-hidden="true"></i> Инструменты
+                    </a>
+                    <a href="/private_policy/" class="footer-nav__link"
+                        ><i class="bi bi-shield-lock" aria-hidden="true"></i> Политика</a
+                    >
+                    <a href="/licenses/" class="footer-nav__link"
+                        ><i class="bi bi-journal-code" aria-hidden="true"></i> Лицензии</a
+                    >
+                </nav>
+            </div>
+        </footer>
+
+        <!-- ============================================================
+        🎯 МОДАЛЬНАЯ СИСТЕМА
+        ============================================================= -->
+
+        <!-- ========== МОДАЛКА ЧЕК-ЛИСТА ========== -->
+        <section class="modal" id="checklistModal">
+            <div class="container">
+                <div class="modal-overlay" data-modal="checklist"></div>
+                <div
+                    class="modal-content"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="checklistModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="checklistModalTitle" class="modal-title">
+                            <i class="bi bi-list-check" aria-hidden="true"></i> Подготовка
+                            документов
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="checklist"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body" id="checklistBody"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА ИНСТРУМЕНТОВ ========== -->
+        <section class="modal" id="toolsModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="tools"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="toolsModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="toolsModalTitle" class="modal-title">
+                            <i class="bi bi-tools" aria-hidden="true"></i> Инструменты
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="tools"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body">
+                        <div class="tools-tabs" role="tablist" aria-label="Инструменты">
+                            <button
+                                class="tool-tab active"
+                                data-tool="convert"
+                                role="tab"
+                                aria-selected="true"
+                                aria-controls="panel-convert"
+                                id="tab-convert"
+                                title="Конвертер изображений и PDF"
+                            >
+                                Конвертер
+                            </button>
+                            <button
+                                class="tool-tab"
+                                data-tool="compress"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="panel-compress"
+                                id="tab-compress"
+                                title="Сжатие изображений"
+                            >
+                                Сжатие
+                            </button>
+                            <button
+                                class="tool-tab"
+                                data-tool="pdf"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="panel-pdf"
+                                id="tab-pdf"
+                                title="Объединение, разделение, извлечение текста из PDF"
+                            >
+                                PDF
+                            </button>
+                            <button
+                                class="tool-tab"
+                                data-tool="resize"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="panel-resize"
+                                id="tab-resize"
+                                title="Изменение размера изображений"
+                            >
+                                Размер
+                            </button>
+                        </div>
+
+                        <!-- Конвертер -->
+                        <section
+                            class="tool-panel active"
+                            data-tool="convert"
+                            role="tabpanel"
+                            aria-labelledby="tab-convert"
+                            id="panel-convert"
+                        >
+                            <div
+                                class="drop-zone"
+                                id="convertDropZone"
+                                tabindex="0"
+                                role="button"
+                                aria-label="Нажмите или перетащите файлы для конвертации"
+                            >
+                                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                                <p>JPG, PNG, WebP, PDF</p>
+                                <p class="drop-zone__hint">
+                                    PDF будет сконвертирован (постранично)
+                                </p>
+                                <input
+                                    type="file"
+                                    id="convertInput"
+                                    multiple
+                                    class="d-none"
+                                    aria-hidden="true"
+                                />
+                            </div>
+                            <div id="convertFileList" class="file-list hidden"></div>
+
+                            <label for="convertFormat" class="visually-hidden"
+                                >Выберите формат для конвертации</label
+                            >
+                            <select
+                                class="tool-select"
+                                id="convertFormat"
+                                aria-label="Выберите формат для конвертации"
+                            >
+                                <option value="jpeg">JPEG</option>
+                                <option value="png">PNG</option>
+                                <option value="webp">WebP</option>
+                            </select>
+
+                            <button
+                                class="btn btn-primary btn-block"
+                                id="convertBtn"
+                                disabled
+                                type="button"
+                                title="Конвертировать выбранные файлы"
+                            >
+                                Конвертировать
+                            </button>
+
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="downloadZipConvertBtn"
+                                    disabled
+                                    type="button"
+                                    title="Скачать все конвертированные файлы ZIP-архивом"
+                                >
+                                    <i class="bi bi-file-zip" aria-hidden="true"></i> Скачать
+                                    ZIP-архив
+                                </button>
+                            </div>
+                        </section>
+
+                        <!-- Сжатие -->
+                        <section
+                            class="tool-panel hidden"
+                            data-tool="compress"
+                            role="tabpanel"
+                            aria-labelledby="tab-compress"
+                            id="panel-compress"
+                        >
+                            <div
+                                class="drop-zone"
+                                id="compressDropZone"
+                                tabindex="0"
+                                role="button"
+                                aria-label="Нажмите или перетащите изображения для сжатия"
+                            >
+                                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                                <p>Выберите изображения</p>
+                                <input
+                                    type="file"
+                                    id="compressInput"
+                                    multiple
+                                    accept="image/*,application/pdf"
+                                    class="d-none"
+                                    aria-hidden="true"
+                                />
+                            </div>
+                            <div id="compressFileList" class="file-list hidden"></div>
+                            <div class="quality-control">
+                                <label for="compressQuality"
+                                    >Качество: <span id="qualityValue">50</span>%</label
+                                >
+                                <input
+                                    type="range"
+                                    id="compressQuality"
+                                    min="0"
+                                    max="100"
+                                    value="50"
+                                    aria-label="Качество сжатия"
+                                    title="Качество сжатия"
+                                />
+                            </div>
+                            <button
+                                class="btn btn-primary btn-block"
+                                id="compressBtn"
+                                disabled
+                                type="button"
+                                title="Сжать выбранные файлы"
+                            >
+                                Сжать
+                            </button>
+
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="downloadZipCompressBtn"
+                                    disabled
+                                    type="button"
+                                    title="Скачать все сжатые файлы ZIP-архивом"
+                                >
+                                    <i class="bi bi-file-zip" aria-hidden="true"></i> Скачать
+                                    ZIP-архив
+                                </button>
+                            </div>
+                        </section>
+
+                        <!-- В PDF -->
+                        <section
+                            class="tool-panel hidden"
+                            data-tool="pdf"
+                            role="tabpanel"
+                            aria-labelledby="tab-pdf"
+                            id="panel-pdf"
+                        >
+                            <div
+                                class="drop-zone"
+                                id="pdfDropZone"
+                                tabindex="0"
+                                role="button"
+                                aria-label="Нажмите или перетащите файлы для создания PDF"
+                            >
+                                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                                <p>Перетащите PDF или изображения</p>
+                                <p class="drop-zone__hint">PDF, JPG, PNG, WebP</p>
+                                <input
+                                    type="file"
+                                    id="pdfInput"
+                                    multiple
+                                    accept=".pdf,.jpg,.jpeg,.png,.webp,.bmp,.gif"
+                                    class="d-none"
+                                    aria-hidden="true"
+                                />
+                            </div>
+
+                            <div id="pdfFileList" class="file-list hidden"></div>
+
+                            <div class="flex-gap-12 mt-16">
+                                <button
+                                    class="btn btn-primary flex-1"
+                                    id="mergePdfBtn"
+                                    disabled
+                                    type="button"
+                                    title="Объединить файлы в один PDF"
+                                >
+                                    <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+                                    Объединить
+                                </button>
+                                <button
+                                    class="btn btn-outline flex-1"
+                                    id="splitPdfBtn"
+                                    disabled
+                                    type="button"
+                                    title="Разделить PDF на отдельные страницы"
+                                >
+                                    <i class="bi bi-symmetry-vertical" aria-hidden="true"></i>
+                                    Разделить
+                                </button>
+                            </div>
+
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="downloadZipBtn"
+                                    disabled
+                                    type="button"
+                                    title="Скачать все файлы ZIP-архивом"
+                                >
+                                    <i class="bi bi-file-zip" aria-hidden="true"></i> Скачать
+                                    ZIP-архив
+                                </button>
+                            </div>
+
+                            <!-- ===== ИЗВЛЕЧЕНИЕ ТЕКСТА ИЗ PDF ===== -->
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="extractTextBtn"
+                                    disabled
+                                    type="button"
+                                    title="Извлечь текст из PDF"
+                                >
+                                    <i class="bi bi-file-text" aria-hidden="true"></i> Извлечь текст
+                                </button>
+                            </div>
+
+                            <!-- Контейнер для извлечённого текста -->
+                            <div
+                                id="extractedText"
+                                class="extracted-text hidden"
+                                role="region"
+                                aria-live="polite"
+                            ></div>
+
+                            <!-- Действия с текстом -->
+                            <div id="textActions" class="text-actions hidden">
+                                <button
+                                    class="btn btn-sm btn-outline"
+                                    id="copyTextBtn"
+                                    type="button"
+                                >
+                                    <i class="bi bi-clipboard" aria-hidden="true"></i> Копировать
+                                </button>
+                                <button
+                                    class="btn btn-sm btn-outline"
+                                    id="downloadTextBtn"
+                                    type="button"
+                                >
+                                    <i class="bi bi-download" aria-hidden="true"></i> Скачать .txt
+                                </button>
+                            </div>
+                        </section>
+
+                        <!-- РАЗМЕР -->
+                        <section
+                            class="tool-panel hidden"
+                            data-tool="resize"
+                            role="tabpanel"
+                            aria-labelledby="tab-resize"
+                            id="panel-resize"
+                        >
+                            <!-- Drop zone -->
+                            <div
+                                class="drop-zone"
+                                id="resizeDropZone"
+                                tabindex="0"
+                                role="button"
+                                aria-label="Нажмите или перетащите изображения для изменения размера"
+                            >
+                                <i class="bi bi-cloud-arrow-up" aria-hidden="true"></i>
+                                <p>Перетащите изображения сюда</p>
+                                <p class="drop-zone__hint">JPG, PNG, WebP, BMP, GIF</p>
+                                <input
+                                    type="file"
+                                    id="resizeInput"
+                                    multiple
+                                    accept="image/*"
+                                    class="d-none"
+                                    aria-hidden="true"
+                                />
+                            </div>
+
+                            <!-- Список файлов -->
+                            <div id="resizeFileList" class="file-list hidden"></div>
+
+                            <!-- Панель изменения размера -->
+                            <div class="resize-controls">
+                                <div class="resize-controls__grid">
+                                    <label for="resizeWidth" class="visually-hidden">Ширина</label>
+                                    <input
+                                        type="number"
+                                        id="resizeWidth"
+                                        class="tool-select"
+                                        placeholder="Ширина"
+                                        min="1"
+                                        value="800"
+                                    />
+                                    <span class="resize-controls__separator">×</span>
+                                    <label for="resizeHeight" class="visually-hidden">Высота</label>
+                                    <input
+                                        type="number"
+                                        id="resizeHeight"
+                                        class="tool-select"
+                                        placeholder="Высота"
+                                        min="1"
+                                        value="600"
+                                    />
+                                </div>
+
+                                <div class="resize-controls__aspect">
+                                    <label>
+                                        <input type="checkbox" id="keepAspectRatio" checked />
+                                        <span>Сохранить пропорции</span>
+                                    </label>
+                                </div>
+
+                                <label for="presetSizes" class="visually-hidden"
+                                    >Пресеты размеров</label
+                                >
+                                <select id="presetSizes" class="tool-select">
+                                    <option value="">Выберите пресет</option>
+                                    <option value="1920x1080">Full HD (1920×1080)</option>
+                                    <option value="1280x720">HD (1280×720)</option>
+                                    <option value="1024x1024">Квадрат (1024×1024)</option>
+                                    <option value="800x600">4:3 (800×600)</option>
+                                    <option value="400x300">Малый (400×300)</option>
+                                </select>
+                            </div>
+
+                            <!-- Кнопка применения -->
+                            <button
+                                class="btn btn-primary btn-block"
+                                id="applyResizeBtn"
+                                disabled
+                                type="button"
+                                title="Изменить размер выбранных изображений"
+                            >
+                                Изменить размер
+                            </button>
+
+                            <div class="mt-16">
+                                <button
+                                    class="btn btn-outline btn-block"
+                                    id="downloadZipResizeBtn"
+                                    disabled
+                                    type="button"
+                                    title="Скачать все изменённые файлы ZIP-архивом"
+                                >
+                                    <i class="bi bi-file-zip" aria-hidden="true"></i> Скачать
+                                    ZIP-архив
+                                </button>
+                            </div>
+
+                            <!-- Информация о пакетной обработке -->
+                            <p class="resize-controls__hint">
+                                <i class="bi bi-info-circle" aria-hidden="true"></i> Изменения
+                                применяются ко всем выбранным файлам
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА ДЛЯ ПРОСМОТРА PDF ========== -->
+        <section class="modal" id="pdfModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="pdf"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content modal-content--wide"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="pdfModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="pdfModalTitle" class="modal-title">
+                            <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Решение суда
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="pdf"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body modal-body--pdf">
+                        <iframe
+                            id="pdfViewer"
+                            class="pdf-iframe"
+                            src=""
+                            title="Просмотр PDF-документа"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА ОНЛАЙН-КОНСУЛЬТАЦИИ ========== -->
+        <section class="modal" id="consultationModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="consultation"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content consultation-modal-content"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="consultationModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="consultationModalTitle" class="modal-title">
+                            <i class="bi bi-camera-video text-gold" aria-hidden="true"></i>
+                            Онлайн-консультация
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="consultation"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body">
+                        <!-- Иконка -->
+                        <div class="consultation-hero">
+                            <div class="consultation-hero__icon" aria-hidden="true"></div>
+                            <h4 class="consultation-hero__title">Видеоконсультация с юристом</h4>
+                            <p class="consultation-hero__text">
+                                <strong>60 минут</strong>: анализ обстоятельств, разъяснение норм
+                                права, определение правовой позиции, рекомендации по сбору
+                                доказательств.
+                                <br />
+                                Яндекс Телемост · запись встречи остаётся у вас.
+                            </p>
+                        </div>
+
+                        <!-- Блок с ценой -->
+                        <div class="consultation-price-block">
+                            <div class="consultation-price-block__row">
+                                <span>Стоимость</span>
+                                <span class="text-primary">5 000 ₽</span>
+                            </div>
+                            <p class="consultation-price-block__note">
+                                <i class="bi bi-info-circle" aria-hidden="true"></i> Оплата
+                                производится после согласования времени
+                            </p>
+                        </div>
+
+                        <!-- Как записаться (пошагово) -->
+                        <div class="consultation-steps">
+                            <h5 class="consultation-steps__title">Как записаться:</h5>
+
+                            <div class="consultation-step">
+                                <div class="consultation-step-number">1</div>
+                                <div class="consultation-step-text">
+                                    <strong>Оставьте заявку</strong>
+                                    <p>
+                                        Заполните форму внизу страницы, отметьте "хочу
+                                        онлайн-консультацию"
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="consultation-step">
+                                <div class="consultation-step-number">2</div>
+                                <div class="consultation-step-text">
+                                    <strong>Мы свяжемся с вами</strong>
+                                    <p>В течение 2 часов согласуем удобное время</p>
+                                </div>
+                            </div>
+
+                            <div class="consultation-step">
+                                <div class="consultation-step-number">3</div>
+                                <div class="consultation-step-text">
+                                    <strong>Оплатите</strong>
+                                    <p>
+                                        После согласования времени - через кнопку "Оплатить" вверху
+                                        страницы
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="consultation-step">
+                                <div class="consultation-step-number">4</div>
+                                <div class="consultation-step-text">
+                                    <strong>Получите ссылку</strong>
+                                    <p>Мы пришлём ссылку на Яндекс Телемост. И встреча</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Преимущества -->
+                        <div class="consultation-features">
+                            <div class="consultation-feature">
+                                <i class="bi bi-shield-check" aria-hidden="true"></i>
+                                <p>Легально</p>
+                            </div>
+                            <div class="consultation-feature">
+                                <i class="bi bi-lock" aria-hidden="true"></i>
+                                <p>Конфиденциально</p>
+                            </div>
+                            <div class="consultation-feature">
+                                <i class="bi bi-camera-video" aria-hidden="true"></i>
+                                <p>Яндекс Телемост</p>
+                            </div>
+                            <div class="consultation-feature">
+                                <i class="bi bi-clock-history" aria-hidden="true"></i>
+                                <p>Запись остаётся</p>
+                            </div>
+                        </div>
+
+                        <!-- Кнопки -->
+                        <div class="consultation-actions">
+                            <a
+                                href="#contact-block"
+                                class="btn btn-primary flex-1"
+                                onclick="ModalManager.close('consultation')"
+                            >
+                                <i class="bi bi-pencil-square" aria-hidden="true"></i> Заполнить
+                                заявку
+                            </a>
+                        </div>
+
+                        <!-- Напоминание -->
+                        <p class="consultation-actions__note">
+                            <i class="bi bi-credit-card" aria-hidden="true"></i> После согласования
+                            времени - оплата через кнопку "Оплатить" вверху
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА ОПЛАТЫ ========== -->
+        <section class="modal" id="paymentModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="payment"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="paymentModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="paymentModalTitle" class="modal-title">
+                            <i class="bi bi-credit-card text-gold" aria-hidden="true"></i>
+                            Оплата видеоконсультации
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="payment"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body" id="paymentWidget">
+                        <!-- Сумма -->
+                        <div class="payment-summary">
+                            <div class="payment-summary__label">Сумма к оплате</div>
+                            <div class="payment-summary__amount">5 000 ₽</div>
+                            <div class="payment-summary__description">
+                                Видеоконсультация · 60 минут
+                            </div>
+                        </div>
+
+                        <!-- QR-код СБП (ЦЕНТРИРОВАННЫЙ) -->
+                        <div class="payment-qr">
+                            <img
+                                src="/assets/images/qr-tbank.png"
+                                alt="QR-код для оплаты 5 000 ₽ через СБП"
+                                width="200"
+                                height="200"
+                                loading="lazy"
+                                class="payment-qr__image"
+                                aria-describedby="qrHint"
+                            />
+                            <p class="payment-qr__hint">
+                                <i class="bi bi-qr-code text-primary fs-1" aria-hidden="true"></i>
+                                Отсканируйте в приложении банка
+                            </p>
+                        </div>
+
+                        <!-- Кнопки -->
+                        <div class="payment-actions">
+                            <button
+                                class="btn btn-primary"
+                                onclick="copyRequisites()"
+                                style="min-width: 180px"
+                                type="button"
+                            >
+                                <i class="bi bi-copy" aria-hidden="true"></i> Копировать реквизиты
+                            </button>
+                            <a href="tel:+79062607888" class="btn btn-outline min-w-180">
+                                <i class="bi bi-telephone" aria-hidden="true"></i> Позвонить
+                            </a>
+                        </div>
+
+                        <!-- Реквизиты -->
+                        <div class="payment-requisites">
+                            <p style="margin: 0">
+                                <strong>Получатель:</strong> ИП Павлова Татьяна Васильевна
+                            </p>
+                            <p style="margin: 0"><strong>ИНН:</strong> 631629590986</p>
+                            <p style="margin: 0"><strong>Счёт:</strong> 40802810300002352514</p>
+                            <p style="margin: 0"><strong>Банк:</strong> АО «ТБанк»</p>
+                            <p style="margin: 0"><strong>БИК:</strong> 044525974</p>
+                            <p style="margin: 0">
+                                <strong>Назначение:</strong> Оплата юридических услуг
+                            </p>
+                        </div>
+
+                        <!-- Контакты для связи после оплаты -->
+                        <div class="payment-notice">
+                            <i class="bi bi-info-circle text-primary" aria-hidden="true"></i>
+                            После оплаты отправьте чек на
+                            <a href="mailto:support@juristspb78.ru" class="text-primary fw-600">
+                                support@juristspb78.ru
+                            </a>
+                            или через
+                            <a
+                                href="https://max.ru/u/f9LHodD0cOJym_Z7O-LoIhkv_DJ38bFj9HV3maquF536QafEYf1gibeqNaM"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-primary fw-600"
+                            >
+                                MAX
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== МОДАЛКА "МОИ ФАЙЛЫ" ========== -->
+        <section class="modal" id="filesModal">
+            <div class="container">
+                <div
+                    class="modal-overlay"
+                    data-modal="files"
+                    tabindex="-1"
+                    aria-label="Закрыть"
+                ></div>
+                <div
+                    class="modal-content modal-content--files"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="filesModalTitle"
+                >
+                    <header class="modal-header">
+                        <h3 id="filesModalTitle" class="modal-title">
+                            <i class="bi bi-folder-open text-gold" aria-hidden="true"></i>
+                            Мои документы
+                        </h3>
+                        <button
+                            class="modal-close"
+                            data-modal="files"
+                            title="Закрыть"
+                            aria-label="Закрыть"
+                        >
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </header>
+                    <div class="modal-body">
+                        <!-- Статистика -->
+                        <div class="files-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Всего файлов:</span>
+                                <span class="stat-value" id="totalFilesCount">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Занято места:</span>
+                                <span class="stat-value" id="totalFilesSize">0 MB</span>
+                            </div>
+                        </div>
+
+                        <!-- Фильтры по типу -->
+                        <div class="files-filters" role="tablist" aria-label="Фильтры файлов">
+                            <button
+                                class="files-filter-btn active"
+                                data-filter="all"
+                                role="tab"
+                                aria-selected="true"
+                                onclick="FilesModal.setFilter('all')"
+                            >
+                                Все
+                            </button>
+                            <button
+                                class="files-filter-btn"
+                                data-filter="pdf"
+                                role="tab"
+                                aria-selected="false"
+                                onclick="FilesModal.setFilter('pdf')"
+                            >
+                                PDF
+                            </button>
+                            <button
+                                class="files-filter-btn"
+                                data-filter="image"
+                                role="tab"
+                                aria-selected="false"
+                                onclick="FilesModal.setFilter('image')"
+                            >
+                                Изображения
+                            </button>
+                            <button
+                                class="files-filter-btn"
+                                data-filter="doc"
+                                role="tab"
+                                aria-selected="false"
+                                onclick="FilesModal.setFilter('doc')"
+                            >
+                                Документы
+                            </button>
+                        </div>
+
+                        <!-- Список файлов -->
+                        <div class="files-list-container" id="filesListContainer">
+                            <div class="loading-files">
+                                <div class="spinner"></div>
+                                <p>Загрузка файлов...</p>
+                            </div>
+                        </div>
+
+                        <!-- Действия -->
+                        <div class="files-actions">
+                            <button
+                                class="btn btn-outline btn-sm"
+                                onclick="FilesModal.clearAllFiles()"
+                                type="button"
+                            >
+                                <i class="bi bi-trash" aria-hidden="true"></i> Очистить всё
+                            </button>
+                            <button
+                                class="btn btn-outline btn-sm"
+                                onclick="FilesModal.loadFiles()"
+                                type="button"
+                            >
+                                <i class="bi bi-arrow-repeat" aria-hidden="true"></i> Обновить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        📜 СКРИПТЫ
+        ============================================================ -->
+
+        <script src="/assets/js/app.js?v=3.9.5" defer></script>
+        <script src="/assets/js/pwa-install-yandex.js?v=3.9.5" async defer></script>
+    </body>
+</html>

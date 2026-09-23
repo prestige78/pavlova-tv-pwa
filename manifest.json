@@ -1,0 +1,167 @@
+{
+    "name": "Pavlova T.V. — юрист в СПб",
+    "short_name": "Pavlova T.V.",
+    "version": "3.9.5",
+    "description": "Юридические услуги в Санкт-Петербурге. Арбитраж, корпоративные споры, защита бизнеса, договорное право, семейные, земельные, трудовые споры, наследство. 16 лет практики. PWA-платформа.",
+    "lang": "ru",
+    "dir": "ltr",
+    "start_url": "/?utm_source=pwa",
+    "display": "standalone",
+    "orientation": "any",
+    "theme_color": "#3d9c8c",
+    "background_color": "#f7f9f8",
+    "categories": ["legal", "law", "business", "services"],
+
+    "icons": [
+        {
+            "src": "/assets/icons/logo_512.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/icons/logo_512.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/icons/logo_512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+
+    "shortcuts": [
+        {
+            "name": "Арбитражные споры",
+            "short_name": "Арбитраж",
+            "description": "Взыскание долгов, споры по договорам",
+            "url": "/arbitrazh/?utm_source=pwa-shortcut",
+            "icons": [
+                {
+                    "src": "/assets/icons/favicon/favicon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Корпоративные споры",
+            "short_name": "Корпоратив",
+            "description": "Споры между участниками, выход из ООО",
+            "url": "/korporativnye-spory/?utm_source=pwa-shortcut",
+            "icons": [
+                {
+                    "src": "/assets/icons/favicon/favicon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Защита бизнеса",
+            "short_name": "Защита",
+            "description": "Проверки, налоговые споры, корпоративные конфликты",
+            "url": "/zashhita-biznesa/?utm_source=pwa-shortcut",
+            "icons": [
+                {
+                    "src": "/assets/icons/favicon/favicon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Договорное право",
+            "short_name": "Договоры",
+            "description": "Составление договоров, проверка контрагентов",
+            "url": "/dogovornoe-pravo/?utm_source=pwa-shortcut",
+            "icons": [
+                {
+                    "src": "/assets/icons/favicon/favicon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Земельные споры",
+            "short_name": "Земля",
+            "description": "Межевание, признание прав, споры с соседями",
+            "url": "/zemlya/?utm_source=pwa-shortcut",
+            "icons": [
+                {
+                    "src": "/assets/icons/favicon/favicon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Семейное право",
+            "short_name": "Семья",
+            "description": "Развод, алименты, раздел имущества",
+            "url": "/semya/?utm_source=pwa-shortcut",
+            "icons": [
+                {
+                    "src": "/assets/icons/favicon/favicon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Трудовые споры",
+            "short_name": "Работа",
+            "description": "Увольнение, зарплата, сокращение штата",
+            "url": "/trud/?utm_source=pwa-shortcut",
+            "icons": [
+                {
+                    "src": "/assets/icons/favicon/favicon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Наследство",
+            "short_name": "Наследство",
+            "description": "Вступление, споры, восстановление сроков",
+            "url": "/nasledstvo/?utm_source=pwa-shortcut",
+            "icons": [
+                {
+                    "src": "/assets/icons/favicon/favicon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Контакты",
+            "short_name": "Контакты",
+            "description": "Связаться с юристом",
+            "url": "/#contact-block",
+            "icons": [
+                {
+                    "src": "/assets/icons/favicon/favicon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ],
+
+    "prefer_related_applications": false,
+    "scope": "/",
+    "display_override": ["standalone", "minimal-ui"],
+    "handle_links": "auto",
+    "launch_handler": {
+        "client_mode": "focus-existing"
+    },
+
+    "author": "Михель Руслан Эрикович",
+    "platform": "Digital Legal Engine v3.9.5",
+    "license": "Для ИП Павлова Т.В., безвозмездно для использования на домене juristspb78.ru"
+}

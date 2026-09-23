@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- ============================================================ -->
+    <!--  ГЛАВНАЯ СТРАНИЦА                                            -->
+    <!-- ============================================================ -->
+    <url>
+        <loc>https://juristspb78.ru/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/juristspb78.png</image:loc>
+            <image:title>Юрист в Санкт-Петербурге Татьяна Павлова · 16 лет практики</image:title>
+        </image:image>
+    </url>
+
+    <!-- ============================================================ -->
+    <!--  СТРАНИЦЫ УСЛУГ (8)                                          -->
+    <!-- ============================================================ -->
+    <url>
+        <loc>https://juristspb78.ru/zemlya/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/zemlya.png</image:loc>
+            <image:title>Земельные споры в СПб — Татьяна Павлова</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/semya/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/semya.png</image:loc>
+            <image:title>Семейное право в СПб — Татьяна Павлова</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/trud/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/trud.png</image:loc>
+            <image:title>Трудовые споры в СПб — Татьяна Павлова</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/nasledstvo/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/nasledstvo.png</image:loc>
+            <image:title>Наследственные дела в СПб — Татьяна Павлова</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/arbitrazh/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/arbitrazh.png</image:loc>
+            <image:title>Арбитражные споры в СПб — Татьяна Павлова</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/korporativnye-spory/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/korporativnye-spory.png</image:loc>
+            <image:title>Корпоративные споры в СПб — Татьяна Павлова</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/zashhita-biznesa/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/zashhita-biznesa.png</image:loc>
+            <image:title>Защита бизнеса в СПб — Татьяна Павлова</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/dogovornoe-pravo/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/dogovornoe-pravo.png</image:loc>
+            <image:title>Договорное право в СПб — Татьяна Павлова</image:title>
+        </image:image>
+    </url>
+
+    <!-- ============================================================ -->
+    <!--  СЛУЖЕБНЫЕ СТРАНИЦЫ                                          -->
+    <!-- ============================================================ -->
+    <url>
+        <loc>https://juristspb78.ru/philosophy/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://juristspb78.ru/private_policy/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/licenses/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/cookies/</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- ============================================================ -->
+    <!--  PDF-РЕШЕНИЯ — ЗЕМЕЛЬНЫЕ СПОРЫ (3)                           -->
+    <!-- ============================================================ -->
+    <url>
+        <loc>https://juristspb78.ru/zemlya/decisions/zemlya-33-6693-2022-granicy.pdf</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/zemlya.png</image:loc>
+            <image:title>Решение суда по земельному спору 33-6693/2022 — установление границ</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/zemlya/decisions/zemlya-2a-2469-2026-admin.pdf</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/zemlya.png</image:loc>
+            <image:title>Решение суда по земельному спору 2а-2469/2026 — признание отказа администрации незаконным</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/zemlya/decisions/zemlya-2-657-2020-arenda.pdf</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/zemlya.png</image:loc>
+            <image:title>Решение суда по земельному спору 2-657/2020 — признание договора аренды действующим</image:title>
+        </image:image>
+    </url>
+
+    <!-- ============================================================ -->
+    <!--  PDF-РЕШЕНИЯ — ТРУДОВЫЕ СПОРЫ (3)                            -->
+    <!-- ============================================================ -->
+    <url>
+        <loc>https://juristspb78.ru/trud/decisions/trud-33-7636-2023-uvolnenie.pdf</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/trud.png</image:loc>
+            <image:title>Решение суда по трудовому спору 33-7636/2023 — восстановление на работе, взыскано 1 038 912 ₽</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/trud/decisions/trud-2-805-2020-zarplata.pdf</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/trud.png</image:loc>
+            <image:title>Решение суда по трудовому спору 2-805/2020 — взыскание заработной платы</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/trud/decisions/trud-2-6376-2024-progul.pdf</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/trud.png</image:loc>
+            <image:title>Решение суда по трудовому спору 2-6376/2024 — изменение формулировки увольнения</image:title>
+        </image:image>
+    </url>
+
+    <!-- ============================================================ -->
+    <!--  PDF-РЕШЕНИЯ — СЕМЕЙНОЕ ПРАВО (3)                            -->
+    <!-- ============================================================ -->
+    <url>
+        <loc>https://juristspb78.ru/semya/decisions/semya-2-1426-2025-obshchenie.pdf</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/semya.png</image:loc>
+            <image:title>Решение суда по семейному спору 2-1426/2025 — установление порядка общения с ребёнком</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/semya/decisions/semya-2-30-2021-prava.pdf</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/semya.png</image:loc>
+            <image:title>Решение суда по семейному спору 2-30/2021 — лишение родительских прав</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/semya/decisions/semya-2-323-2020-imushchestvo.pdf</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/semya.png</image:loc>
+            <image:title>Решение суда по семейному спору 2-323/2020 — раздел имущества, мировое соглашение</image:title>
+        </image:image>
+    </url>
+
+    <!-- ============================================================ -->
+    <!--  PDF-РЕШЕНИЯ — НАСЛЕДСТВЕННЫЕ ДЕЛА (2)                       -->
+    <!-- ============================================================ -->
+    <url>
+        <loc>https://juristspb78.ru/nasledstvo/decisions/nasledstvo-2-256-2025-prinyatie.pdf</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/nasledstvo.png</image:loc>
+            <image:title>Решение суда по наследственному делу 2-256/2025 — включение долей в наследственную массу</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://juristspb78.ru/nasledstvo/decisions/nasledstvo-2-2558-2019-darenie.pdf</loc>
+        <lastmod>2026-09-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://juristspb78.ru/assets/images/og/nasledstvo.png</image:loc>
+            <image:title>Решение суда по наследственному делу 2-2558/2019 — признание договора дарения ничтожным</image:title>
+        </image:image>
+    </url>
+
+</urlset>
