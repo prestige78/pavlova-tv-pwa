@@ -26,23 +26,23 @@
 
 ### Услуги
 
-![Услуги](screenshots/1-services.jpeg)
+![Услуги](screenshots/1-services.jpeg?v=1)
 
 ### Форма записи
 
-![Форма записи](screenshots/2-contact-form.jpeg)
+![Форма записи](screenshots/2-contact-form.jpeg?v=1)
 
 ### Инструменты
 
-![Инструменты](screenshots/3-tools.jpeg)
+![Инструменты](screenshots/3-tools.jpeg?v=1)
 
 ### Локальное хранилище
 
-![Локальное хранилище](screenshots/4-local-save.jpeg)
+![Локальное хранилище](screenshots/4-local-save.jpeg?v=1)
 
 ### Чек-лист
 
-![Чек-лист](screenshots/5-checklist.jpeg)
+![Чек-лист](screenshots/5-checklist.jpeg?v=1)
 
 ## Технологии
 
