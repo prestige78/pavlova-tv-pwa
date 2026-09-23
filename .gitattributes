@@ -1,0 +1,32 @@
+# Автоопределение текстовых/бинарных файлов
+* text=auto
+
+# Явно указать бинарные форматы — НЕ конвертировать
+*.jpeg binary
+*.jpg binary
+*.png binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
+*.zip binary
+*.apk binary
+*.jks binary
+*.keystore binary
+
+# Текстовые — конвертировать LF ↔ CRLF
+*.html text
+*.css text
+*.js text
+*.json text
+*.md text
+*.txt text
+*.php text
+*.svg text
+*.xml text
+*.htaccess text
